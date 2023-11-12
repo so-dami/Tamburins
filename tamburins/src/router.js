@@ -1,9 +1,12 @@
 import { createWebHistory, createRouter } from 'vue-router';
 
+// component
+import Sub from './components/Sub.vue';
+
 const routes = [
   {
-    path: '/경로',
-    component: '',
+    path: '/:category1',
+    component: Sub,
     children: [],
   },
 ];
