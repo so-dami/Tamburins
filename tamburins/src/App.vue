@@ -29,8 +29,8 @@
 </template>
 
 <script>
-import Gnb from './components/Gnb.vue';
-import Footer from './components/Footer.vue';
+import Gnb from './components/common/common/Gnb.vue';
+import Footer from './components/common/common/Footer.vue';
 
 export default {
   name: 'App',

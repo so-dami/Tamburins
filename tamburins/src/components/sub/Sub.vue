@@ -14,5 +14,5 @@ export default {
 </script>
 
 <style>
-@import '../assets/css/sub.css';
+@import '../../assets/css/sub/sub.css';
 </style>

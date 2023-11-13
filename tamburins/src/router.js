@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
 
 // component
-import Sub from './components/Sub.vue';
+import Sub from './components/sub/Sub.vue';
 
 const routes = [
   {
