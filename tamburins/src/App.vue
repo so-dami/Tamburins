@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 상단 -->
-    <Gnb />
+    <Header></Header>
 
     <!-- 메인 -->
     <main id="main">
@@ -24,18 +24,18 @@
     </main>
 
     <!-- 하단 -->
-    <Footer />
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Gnb from './components/common/common/Gnb.vue';
-import Footer from './components/common/common/Footer.vue';
+import Header from './components/common/Header.vue';
+import Footer from './components/common/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    Gnb,
+    Header,
     Footer,
   },
 };

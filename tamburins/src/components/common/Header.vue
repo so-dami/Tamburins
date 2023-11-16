@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  name: 'Gnb',
+  name: 'Header',
   data() {
     return {};
   },
