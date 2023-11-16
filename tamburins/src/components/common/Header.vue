@@ -62,55 +62,5 @@ export default {
 </script>
 
 <style>
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.header {
-  height: 70px;
-  padding: 0 40px;
-}
-
-.header > nav {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-}
-
-.header > nav li {
-  color: #fff;
-}
-
-.nav-wrap {
-  display: flex;
-  gap: 40px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo > a {
-  height: 100%;
-}
-
-.logo-svg {
-  height: 100%;
-}
-
-.logo-svg path {
-  fill: #fff;
-}
-
-.list-flex {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+@import '../../assets/css/common/header.css';
 </style>

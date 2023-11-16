@@ -48,34 +48,5 @@ export default {
 </script>
 
 <style>
-.footer a {
-  color: #535353;
-}
-
-.footer-wrap {
-  padding: 50px;
-  font-size: 10px;
-  color: #535353;
-  text-align: center;
-  line-height: 15px;
-}
-
-.company-info a {
-  text-decoration: underline;
-}
-
-.sns {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.copyright {
-  margin-top: 20px;
-}
-
-.copyright > span {
-  margin: 0 6px;
-}
+@import '../../assets/css/common/footer.css';
 </style>
