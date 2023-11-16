@@ -1,36 +1,84 @@
 <template>
   <main id="cont">
-    <div class="cont">
+    <div class="category">
+      <!-- 카테고리 -->
       <nav>
         <div class="cat-wrap">
           <ul class="cat-list list-flex">
-            <li>
-              <div class="thumbnail_wrap">
-                <img class="thumbnail_img" src="../../assets/image/category/cat_hand_all.png" alt="" />
-                <span class="thumbnail_txt">All</span>
+            <li class="cat-list-item">
+              <div class="cat-thumbnail-wrap">
+                <div>
+                  <img class="cat-thumbnail-img" src="../../assets/image/category/cat_hand_all.png" alt="" />
+                </div>
+                <span class="cat-thumbnail-txt">All</span>
               </div>
             </li>
-            <li>
-              <div class="thumbnail_wrap">
-                <img class="thumbnail_img" src="../../assets/image/category/cat_hand_perfumehand.png" alt="Perfume Hand" />
-                <span class="thumbnail_txt">Perfume Hand</span>
+            <li class="cat-list-item">
+              <div class="cat-thumbnail-wrap">
+                <div>
+                  <img
+                    class="cat-thumbnail-img"
+                    src="../../assets/image/category/cat_hand_perfumehand.png"
+                    alt="Perfume Hand"
+                  />
+                </div>
+                <span class="cat-thumbnail-txt">Perfume Hand</span>
               </div>
             </li>
-            <li>
-              <div class="thumbnail_wrap">
-                <img class="thumbnail_img" src="../../assets/image/category/cat_hand_tubehand.png" alt="Tube Hand" />
-                <span class="thumbnail_txt">Tube Hand</span>
+            <li class="cat-list-item">
+              <div class="cat-thumbnail-wrap">
+                <div>
+                  <img
+                    class="cat-thumbnail-img"
+                    src="../../assets/image/category/cat_hand_tubehand.png"
+                    alt="Tube Hand"
+                  />
+                </div>
+                <span class="cat-thumbnail-txt">Tube Hand</span>
               </div>
             </li>
-            <li>
-              <div class="thumbnail_wrap">
-                <img class="thumbnail_img" src="../../assets/image/category/cat_hand_sanitizer.png" alt="Hand Sanitizer" />
-                <span class="thumbnail_txt">Hand Sanitizer</span>
+            <li class="cat-list-item">
+              <div class="cat-thumbnail-wrap">
+                <div>
+                  <img
+                    class="cat-thumbnail-img"
+                    src="../../assets/image/category/cat_hand_sanitizer.png"
+                    alt="Hand Sanitizer"
+                  />
+                </div>
+                <span class="cat-thumbnail-txt">Hand-Sanitizer</span>
               </div>
             </li>
           </ul>
         </div>
       </nav>
+
+      <!-- 상품 목록 -->
+      <div class="prd-wrap">
+        <div class="prd-top">
+          <div class="list-title">
+            <strong>Perfume Hand</strong>
+            <span class="list-count">(30)</span>
+          </div>
+        </div>
+
+        <div class="prd-list">
+          <div class="prd-list-inner">
+            <div class="prd-box">
+              <div class="prd-thumbnail">
+                <img
+                  class="prd-thumbnail-img"
+                  src="../../assets/image/prd/hand/prd_hand_perfumehand_0.jpg"
+                  alt="퍼퓸 쉘 엑스 카모"
+                />
+              </div>
+              <div class="prd-desc">진득한 카모마일 | 부드러운 나무결 | 머스크</div>
+              <div class="prd-name">퍼퓸 쉘 엑스 카모</div>
+              <div class="prd-price">32,000원</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -42,7 +90,11 @@ export default {
     return {};
   },
   components: {},
-  methods: {},
+  props: {
+    perfumdHandData: Array,
+    tubeHandData: Array,
+    sanitizerData: Array,
+  },
 };
 </script>
 

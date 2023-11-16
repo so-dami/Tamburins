@@ -6,6 +6,9 @@
   left: 0;
   width: 100%;
   z-index: 1;
+
+  /* sub page 속성 */
+  background-color: #fff;
 }
 
 .header {
@@ -22,6 +25,8 @@
 
 .header > nav li {
   /* color: #fff; */
+
+  /* sub page 속성 */
   color: #000;
 }
 
@@ -45,6 +50,8 @@
 
 .logo-svg path {
   /* fill: #fff; */
+
+  /* sub page 속성 */
   fill: #000;
 }
 
