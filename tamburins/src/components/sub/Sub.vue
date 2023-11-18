@@ -1,7 +1,7 @@
 <template>
   <main id="cont">
     <div class="category">
-      <!-- 카테고리 -->
+      <!-- 카테고리 메뉴 -->
       <nav>
         <div class="cat-wrap">
           <ul class="cat-list list-flex">
@@ -46,7 +46,7 @@
                     alt="Hand Sanitizer"
                   />
                 </div>
-                <span class="cat-thumbnail-txt">Hand-Sanitizer</span>
+                <span class="cat-thumbnail-txt">Hand Sanitizer</span>
               </div>
             </li>
           </ul>
@@ -57,7 +57,7 @@
       <div class="prd-wrap">
         <div class="prd-top">
           <div class="list-title">
-            <strong>Perfume Hand</strong>
+            <strong>퍼퓸 핸드</strong>
             <span class="list-count">(30)</span>
           </div>
         </div>
