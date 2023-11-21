@@ -1,4 +1,4 @@
-const perfumdHandData = [
+const perfumeHandData = [
   {
     id: 0,
     cat1: 'Hand',
@@ -437,4 +437,4 @@ const sanitizerData = [
   },
 ];
 
-export { perfumdHandData, tubeHandData, sanitizerData };
+export { perfumeHandData, tubeHandData, sanitizerData };

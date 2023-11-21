@@ -64,7 +64,21 @@
 
         <div class="prd-list">
           <div class="prd-list-inner prd-grid">
-            <div class="prd-box">
+            <div class="prd-box" v-for="(perfumeHandData, i) in perfumeHandData" :key="i">
+              <div class="prd-thumbnail">
+                <img
+                  class="prd-thumbnail-img"
+                  :src="`../assets/image/prd/hand/${perfumeHandData['prdImg']}`"
+                  :alt="`${perfumeHandData['name']}`"
+                />
+              </div>
+              <div class="prd-info">
+                <div class="prd-desc">{{ perfumeHandData['desc'] }}</div>
+                <div class="prd-name">{{ perfumeHandData['name'] }}</div>
+                <div class="prd-price">{{ perfumeHandData['price'][0] }}원</div>
+              </div>
+            </div>
+            <!-- <div class="prd-box">
               <div class="prd-thumbnail">
                 <img
                   class="prd-thumbnail-img"
@@ -77,8 +91,8 @@
                 <div class="prd-name">퍼퓸 쉘 엑스 카모</div>
                 <div class="prd-price">32,000원</div>
               </div>
-            </div>
-            <div class="prd-box">
+            </div> -->
+            <!-- <div class="prd-box">
               <div class="prd-thumbnail">
                 <img
                   class="prd-thumbnail-img"
@@ -91,8 +105,8 @@
                 <div class="prd-name">퍼퓸 쉘 엑스 카모</div>
                 <div class="prd-price">32,000원</div>
               </div>
-            </div>
-            <div class="prd-box">
+            </div> -->
+            <!-- <div class="prd-box">
               <div class="prd-thumbnail">
                 <img
                   class="prd-thumbnail-img"
@@ -105,21 +119,7 @@
                 <div class="prd-name">퍼퓸 쉘 엑스 카모</div>
                 <div class="prd-price">32,000원</div>
               </div>
-            </div>
-            <div class="prd-box">
-              <div class="prd-thumbnail">
-                <img
-                  class="prd-thumbnail-img"
-                  src="../../assets/image/prd/hand/prd_hand_perfumehand_0.jpg"
-                  alt="퍼퓸 쉘 엑스 카모"
-                />
-              </div>
-              <div class="prd-info">
-                <div class="prd-desc">진득한 카모마일 | 부드러운 나무결 | 머스크</div>
-                <div class="prd-name">퍼퓸 쉘 엑스 카모</div>
-                <div class="prd-price">32,000원</div>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ export default {
   },
   components: {},
   props: {
-    perfumdHandData: Array,
+    perfumeHandData: Array,
     tubeHandData: Array,
     sanitizerData: Array,
   },

@@ -5,7 +5,7 @@
 
     <!-- 메인 -->
     <!-- <Home></Home> -->
-    <Sub :perfumdHandData="perfumdHandData" :tubeHandData="tubeHandData" :sanitizerData="sanitizerData"></Sub>
+    <Sub :perfumeHandData="perfumeHandData" :tubeHandData="tubeHandData" :sanitizerData="sanitizerData"></Sub>
 
     <!-- 하단 -->
     <Footer></Footer>
@@ -20,13 +20,13 @@ import Sub from './components/sub/Sub.vue';
 import Footer from './components/common/Footer.vue';
 
 // 데이터
-import { perfumdHandData, tubeHandData, sanitizerData } from './assets/js/prdData/handData.js';
+import { perfumeHandData, tubeHandData, sanitizerData } from './assets/js/prdData/handData-2.js';
 
 export default {
   name: 'App',
   data() {
     return {
-      perfumdHandData: perfumdHandData,
+      perfumeHandData: perfumeHandData,
       tubeHandData: tubeHandData,
       sanitizerData: sanitizerData,
     };
