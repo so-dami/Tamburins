@@ -8,32 +8,32 @@
   padding: 0 45px;
 }
 
-.cat-wrap {
+.ctg-menu {
   padding: 40px 0px;
 }
 
-.cat-list-item {
+.ctg-list-item {
   min-width: 110px;
   width: 110px;
   cursor: pointer;
 }
 
-.cat-list-item:hover .cat-thumbnail-wrap > div {
+.ctg-list-item:hover .ctg-thumbnail > div {
   border-color: #000;
 }
 
-.cat-thumbnail-wrap {
+.ctg-thumbnail {
   text-align: center;
 }
 
-.cat-thumbnail-wrap > div {
+.ctg-thumbnail > div {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0);
   box-sizing: border-box;
   transition: border-color 0.6s ease;
 }
 
-.cat-thumbnail-img {
+.ctg-thumbnail-img {
   display: block;
   padding: 5px;
   margin: 0 auto;
@@ -43,11 +43,11 @@
   border-radius: 50%;
 }
 
-.prd-top {
+.ctg-title-bx {
   height: 50px;
 }
 
-.list-title {
+.ctg-title {
   font-size: 16px;
   font-weight: 400;
   line-height: 50px;
@@ -59,31 +59,31 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.prd-grid {
+.prd-list-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 7px;
 }
 
-.prd-info {
-  padding: 20px 20px 50px;
-}
-
-.prd-thumbnail-img {
+.prd-list-thumbnail-img {
   width: 100%;
   height: auto;
 }
 
-.prd-desc {
+.prd-list-info {
+  padding: 20px 20px 50px;
+}
+
+.prd-list-desc {
   font-size: 12px;
 }
 
-.prd-name {
+.prd-list-name {
   margin: 6px 0;
   font-size: 15px;
   font-weight: 500;
 }
 
-.prd-price {
+.prd-list-price {
   font-size: 14px;
 }
