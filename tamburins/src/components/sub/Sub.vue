@@ -66,11 +66,8 @@
           <div class="prd-list-inner prd-grid">
             <div class="prd-box" v-for="(perfumeHandData, i) in perfumeHandData" :key="i">
               <div class="prd-thumbnail">
-                <img
-                  class="prd-thumbnail-img"
-                  :src=require("../../assets/image/prd/hand/")
-                  :alt="`${perfumeHandData['name']}`"
-                />
+                <img class="prd-thumbnail-img" src="../../assets/image/prd/hand/prd_hand_perfumehand_0.jpg"
+                :alt="`${perfumeHandData['name']}`" />
               </div>
               <div class="prd-info">
                 <div class="prd-desc">{{ perfumeHandData['desc'] }}</div>
