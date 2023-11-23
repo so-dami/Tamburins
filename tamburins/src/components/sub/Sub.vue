@@ -1,6 +1,6 @@
 <template>
   <main id="cont">
-    <div class="category">
+    <div class="cont">
       <!-- 카테고리 메뉴 -->
       <nav>
         <div class="cat-wrap">
@@ -58,7 +58,7 @@
         <div class="prd-top">
           <div class="list-title">
             <span>퍼퓸 핸드</span>
-            <span class="list-count">(30)</span>
+            <span class="list-count">({{ perfumeHandData.length }})</span>
           </div>
         </div>
 

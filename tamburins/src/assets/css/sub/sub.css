@@ -5,11 +5,11 @@
 }
 
 .cont {
-  padding: 0 40px;
+  padding: 0 45px;
 }
 
-.category {
-  padding: 0 45px;
+.cat-wrap {
+  padding: 40px 0px;
 }
 
 .cat-list-item {
@@ -56,6 +56,7 @@
 .list-count {
   margin-left: 5px;
   font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .prd-grid {
