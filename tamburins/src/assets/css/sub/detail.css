@@ -7,7 +7,7 @@
 }
 
 .detail-prd-img-bx {
-  width: 70%;
+  width: 65%;
   height: 100vh;
   overflow: scroll;
 }
@@ -28,7 +28,7 @@
 }
 
 .detail-prd-info-bx {
-  width: 25%;
+  width: 30%;
 }
 
 .detail-ctg {
@@ -119,7 +119,11 @@
 }
 
 .info-txt {
-  display: none;
+  /* display: none; */
+  padding: 0 20px;
+  margin-bottom: 20px;
+  word-break: break-word;
+  line-height: 1.7;
 }
 
 .mbt {

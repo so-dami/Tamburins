@@ -58,16 +58,42 @@
                   <span class="info-arrow">+</span>
                 </div>
               </div>
-              <div class="info-txt">어쩌고저쩌고</div>
+              <div class="info-txt">
+                탬버린즈는 고객님들께 빠른 배송 및 반품과 최고의 경험을 제공하기 위해 언제나 세심한 주의를 기울입니다.
+                고객님을 위한 익스클루시브 서비스를 경험해보세요.
+                <br />
+                <br />
+                * 회원가입 및 카카오톡 플러스 친구 추가 시 적립금 3,000원 지급
+                <br />
+                * 구매 금액의 2% 적립
+                <br />
+                * 생일 축하 5,000 포인트 혜택 (1년 이내 구매 이력 있을 시)
+              </div>
 
               <!-- 배송 & 반품 설명 -->
-              <div class="info-bx mbt bdbt">
+              <div class="info-bx">
                 <div class="info-subject-bx">
                   <span class="info-subject"> 배송 & 반품 </span>
                   <span class="info-arrow">+</span>
                 </div>
               </div>
-              <div class="info-txt">어쩌고저쩌고</div>
+              <div class="info-txt">
+                3만원 이상 구매하실 경우 배송비는 무료입니다.
+                <br />
+                <br />
+                <span>주문일로부터 1-2 영업일 이내 출고됩니다.</span>
+                <br />
+                <br />
+                배송은 지역 택배사 사정에 따라 약간의 지연이 생길 수 있습니다. 배송이 시작되면 구매자에게는 이메일,
+                수령인에게는 카카오톡으로 배송 정보를 전송해 드립니다.
+                <br />
+                - CJ대한통운(<a href="https://www.cjlogistics.com" target="_blank">https://www.cjlogistics.com</a>)
+                <br />
+                <br />
+                * 상품 혹은 증정품의 포장(랩핑)을 개봉 및 훼손한 경우 반품이 불가합니다.
+                <br />
+                * 단순 변심 또는 주문 실수로 인한 교환이 불가합니다. 신중한 구매 부탁드립니다.
+              </div>
             </div>
           </div>
         </div>
