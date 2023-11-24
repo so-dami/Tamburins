@@ -89,7 +89,7 @@
 }
 
 .cart-btn-bx {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .cart-btn {
@@ -102,5 +102,30 @@
 }
 
 .info-wrap {
-  margin-top: 70px;
+  margin-top: 50px;
+}
+
+.info-bx {
+  border-top: 1px solid lightgray;
+}
+
+.info-subject-bx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.info-txt {
+  display: none;
+}
+
+.mbt {
+  margin-bottom: 70px;
+}
+
+.bdbt {
+  border-bottom: 1px solid lightgray;
 }

@@ -52,8 +52,8 @@
             <!-- 정보...? -->
             <div class="info-wrap">
               <!-- 온라인 혜택 설명 -->
-              <div class="info-benefit">
-                <div>
+              <div class="info-bx">
+                <div class="info-subject-bx">
                   <span class="info-subject"> 온라인 단독 혜택 </span>
                   <span class="info-arrow">+</span>
                 </div>
@@ -61,15 +61,13 @@
               <div class="info-txt">어쩌고저쩌고</div>
 
               <!-- 배송 & 반품 설명 -->
-              <!-- <div class="info-delivery">
-                <div>
-                  <button class="info-subject">
-                    배송, 반품
-                    <span class="info-arrow">+</span>
-                  </button>
+              <div class="info-bx mbt bdbt">
+                <div class="info-subject-bx">
+                  <span class="info-subject"> 배송 & 반품 </span>
+                  <span class="info-arrow">+</span>
                 </div>
-                <div class="info-txt">어쩌고저쩌고</div>
-              </div> -->
+              </div>
+              <div class="info-txt">어쩌고저쩌고</div>
             </div>
           </div>
         </div>
