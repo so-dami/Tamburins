@@ -77,7 +77,7 @@
                   <span class="info-arrow">+</span>
                 </div>
               </div>
-              <div class="info-txt">
+              <div class="info-txt show">
                 3만원 이상 구매하실 경우 배송비는 무료입니다.
                 <br />
                 <br />
