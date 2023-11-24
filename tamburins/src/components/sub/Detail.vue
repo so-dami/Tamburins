@@ -10,12 +10,12 @@
             :alt="`${perfumeHandData['name']}`"
           />
           <img
-            class="detail-img"
+            class="detail-img mt"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_1.jpg"
             :alt="`${perfumeHandData['name']}`"
           />
           <img
-            class="detail-img"
+            class="detail-img mt"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_2.jpg"
             :alt="`${perfumeHandData['name']}`"
           />
@@ -87,10 +87,10 @@
                 배송은 지역 택배사 사정에 따라 약간의 지연이 생길 수 있습니다. 배송이 시작되면 구매자에게는 이메일,
                 수령인에게는 카카오톡으로 배송 정보를 전송해 드립니다.
                 <br />
-                - CJ대한통운(<a href="https://www.cjlogistics.com" target="_blank">https://www.cjlogistics.com</a>)
+                - 택배사: <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking" target="_blank">CJ대한통운</a>
                 <br />
                 <br />
-                * 상품 혹은 증정품의 포장(랩핑)을 개봉 및 훼손한 경우 반품이 불가합니다.
+                * 상품 혹은 증정품의 포장을 개봉 및 훼손한 경우 반품이 불가합니다.
                 <br />
                 * 단순 변심 또는 주문 실수로 인한 교환이 불가합니다. 신중한 구매 부탁드립니다.
               </div>
