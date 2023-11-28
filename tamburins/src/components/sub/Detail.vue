@@ -8,8 +8,13 @@
             class="detail-img"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_0.jpg"
             :alt="`${perfumeHandData['name']}`"
+            @click="
+              () => {
+                click();
+              }
+            "
           />
-          <img
+          <!-- <img
             class="detail-img mt"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_1.jpg"
             :alt="`${perfumeHandData['name']}`"
@@ -18,7 +23,7 @@
             class="detail-img mt"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_2.jpg"
             :alt="`${perfumeHandData['name']}`"
-          />
+          /> -->
         </div>
 
         <!-- 오른쪽 상품 정보 -->
@@ -106,13 +111,22 @@
 export default {
   name: 'Detail',
   data() {
-    return {
-      perfumeHandData: Array,
-      tubeHandData: Array,
-      sanitizerData: Array,
-    };
+    return {};
   },
-  methods: {},
+  props: {
+    perfumeHandData: Array,
+    tubeHandData: Array,
+    sanitizerData: Array,
+  },
+  methods: {
+    click() {
+      let detailImg = this.perfumeHandData[0]['detailImg'];
+      for (let i = 0; i < detailImg.length; i++) {
+        // console.log(i);
+        console.log(detailImg[i]);
+      }
+    },
+  },
 };
 </script>
 

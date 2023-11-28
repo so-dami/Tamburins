@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.cont{
+  padding: 0 45px;
+}
+
 .prd-detail-wrap {
   display: flex;
   justify-content: space-between;
