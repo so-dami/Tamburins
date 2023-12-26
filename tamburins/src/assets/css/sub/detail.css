@@ -11,7 +11,7 @@
 }
 
 .detail-prd-img-bx {
-  width: 65%;
+  width: 70%;
   height: 100vh;
   overflow: scroll;
 }
@@ -36,7 +36,7 @@
 }
 
 .detail-prd-info-inner {
-  padding: 20px 0;
+  padding: 70px 0;
 }
 
 .detail-ctg {
@@ -89,11 +89,11 @@
 }
 
 .detail-summary {
-  width: 102%;
+  width: 100%;
   font-size: 14px;
-  font-weight: nomal;
-  word-break: keep-all;
+  text-align: justify;
   line-height: 1.7;
+  word-break: break-all;
 }
 
 .cart-btn-bx {
@@ -130,8 +130,9 @@
   display: none;
   padding: 0 20px;
   margin-bottom: 20px;
-  word-break: break-word;
+  text-align: justify;
   line-height: 1.7;
+  word-break: break-all;
 }
 
 .info-txt span {

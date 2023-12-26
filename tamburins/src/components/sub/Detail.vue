@@ -10,11 +10,11 @@
             :alt="`${perfumeHandData['name']}`"
             @click="
               () => {
-                click();
+                console.log('click');
               }
             "
           />
-          <!-- <img
+          <img
             class="detail-img mt"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_1.jpg"
             :alt="`${perfumeHandData['name']}`"
@@ -23,7 +23,7 @@
             class="detail-img mt"
             src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_2.jpg"
             :alt="`${perfumeHandData['name']}`"
-          /> -->
+          />
         </div>
 
         <!-- 오른쪽 상품 정보 -->
