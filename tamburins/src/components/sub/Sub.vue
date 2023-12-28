@@ -65,19 +65,30 @@
         <!-- 상품 목록 -->
         <div class="prd-list">
           <div class="prd-list-grid">
-            <div class="prd-list-item" v-for="(perfumeHandData, i) in perfumeHandData" :key="i" @click="click">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/hand/${perfumeHandData['prdImg']}`)"
-                  :alt="`${perfumeHandData['name']}`"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ perfumeHandData['desc'] }}</div>
-                <div class="prd-list-name">{{ perfumeHandData['name'] }}</div>
-                <div class="prd-list-price">{{ perfumeHandData['price'][0] }}원</div>
-              </div>
+            <div
+              class="prd-list-item"
+              v-for="(perfumeHandData, i) in perfumeHandData"
+              :key="i"
+              @click="
+                () => {
+                  $emit('click', perfumeHandData['id']);
+                }
+              "
+            >
+              <router-link :to="`/detail/${id}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/hand/${perfumeHandData['prdImg']}`)"
+                    :alt="`${perfumeHandData['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ perfumeHandData['desc'] }}</div>
+                  <div class="prd-list-name">{{ perfumeHandData['name'] }}</div>
+                  <div class="prd-list-price">{{ perfumeHandData['price'][0] }}원</div>
+                </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -97,13 +108,9 @@ export default {
     perfumeHandData: Array,
     tubeHandData: Array,
     sanitizerData: Array,
+    id: Number,
   },
-  methods: {
-    click(e) {
-      let target = e.target;
-      console.log(target.innerHTML);
-    },
-  },
+  methods: {},
 };
 </script>
 

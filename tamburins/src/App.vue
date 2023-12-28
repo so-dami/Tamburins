@@ -8,6 +8,12 @@
       :perfumeHandData="perfumeHandData"
       :tubeHandData="tubeHandData"
       :sanitizerData="sanitizerData"
+      :id="id"
+      @click="
+        console.log($event);
+        id = $event;
+        console.log(id);
+      "
     ></router-view>
 
     <!-- 하단 -->
@@ -30,6 +36,7 @@ export default {
       perfumeHandData: perfumeHandData,
       tubeHandData: tubeHandData,
       sanitizerData: sanitizerData,
+      id: 0,
     };
   },
   components: {
