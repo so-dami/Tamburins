@@ -4,9 +4,11 @@
     <Header></Header>
 
     <!-- 메인 -->
-    <!-- <Home></Home> -->
-    <!-- <Sub :perfumeHandData="perfumeHandData" :tubeHandData="tubeHandData" :sanitizerData="sanitizerData"></Sub> -->
-    <Detail :perfumeHandData="perfumeHandData" :tubeHandData="tubeHandData" :sanitizerData="sanitizerData" />
+    <router-view
+      :perfumeHandData="perfumeHandData"
+      :tubeHandData="tubeHandData"
+      :sanitizerData="sanitizerData"
+    ></router-view>
 
     <!-- 하단 -->
     <Footer></Footer>
@@ -16,9 +18,6 @@
 <script>
 // 컴포넌트
 import Header from './components/common/Header.vue';
-// import Home from './components/common/Home.vue';
-// import Sub from './components/sub/Sub.vue';
-import Detail from './components/sub/Detail.vue';
 import Footer from './components/common/Footer.vue';
 
 // 데이터
@@ -35,9 +34,6 @@ export default {
   },
   components: {
     Header,
-    // Home,
-    // Sub,
-    Detail,
     Footer,
   },
 };
