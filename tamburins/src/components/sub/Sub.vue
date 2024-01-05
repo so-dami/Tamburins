@@ -65,17 +65,8 @@
         <!-- 상품 목록 -->
         <div class="prd-list">
           <div class="prd-list-grid">
-            <div
-              class="prd-list-item"
-              v-for="(perfumeHandData, i) in perfumeHandData"
-              :key="i"
-              @click="
-                () => {
-                  $emit('click', perfumeHandData['id']);
-                }
-              "
-            >
-              <router-link :to="`/detail/${id}`">
+            <div class="prd-list-item" v-for="(perfumeHandData, i) in perfumeHandData" :key="i">
+              <router-link :to="`/detail/${perfumeHandData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
@@ -108,7 +99,6 @@ export default {
     perfumeHandData: Array,
     tubeHandData: Array,
     sanitizerData: Array,
-    id: Number,
   },
   methods: {},
 };

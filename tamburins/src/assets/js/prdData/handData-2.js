@@ -2,7 +2,7 @@ const perfumeHandData = [
   {
     id: 0,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '진득한 카모마일 | 부드러운 나무결 | 머스크',
     name: '퍼퓸 쉘 엑스 카모',
     price: ['32,000'],
@@ -20,7 +20,7 @@ const perfumeHandData = [
   {
     id: 1,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '지중해의 베르가못 | 쌉싸래한 청귤 | 샌달우드',
     name: '퍼퓸 쉘 엑스 버가샌달',
     price: ['32,000'],
@@ -38,7 +38,7 @@ const perfumeHandData = [
   {
     id: 2,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '이슬을 머금은 풋사과 | 화이트 튤립 | 샌달우드',
     name: '퍼퓸 쉘 엑스 라레',
     price: ['32,000'],
@@ -56,7 +56,7 @@ const perfumeHandData = [
   {
     id: 3,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한',
     name: 'FEY9',
     price: ['18,000', '32,000'],
@@ -70,7 +70,7 @@ const perfumeHandData = [
   {
     id: 4,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '월계수 잎 | 은방울꽃 | 정돈된 가죽',
     name: 'VEIN',
     price: ['18,000', '32,000'],
@@ -84,7 +84,7 @@ const perfumeHandData = [
   {
     id: 5,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '삼나무 | 바이올렛 잎 | 시트러스',
     name: 'HER',
     price: ['18,000', '32,000'],
@@ -98,7 +98,7 @@ const perfumeHandData = [
   {
     id: 6,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '장미 덤불 | 패츌리 | 젖은 땅',
     name: 'POSY',
     price: ['18,000', '32,000'],
@@ -112,7 +112,7 @@ const perfumeHandData = [
   {
     id: 7,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '샌달우드 | 패츌리 | 흙 내음',
     name: '000',
     price: ['18,000', '32,000'],
@@ -126,7 +126,7 @@ const perfumeHandData = [
   {
     id: 8,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '블랙베리 | 시트러스 | 프루티함',
     name: 'BLESSED',
     price: ['18,000', '32,000'],
@@ -140,7 +140,7 @@ const perfumeHandData = [
   {
     id: 9,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '단단한 흙과 뿌리 | 자몽 | 청량한 공기',
     name: 'FEAR',
     price: ['18,000', '32,000'],
@@ -154,7 +154,7 @@ const perfumeHandData = [
   {
     id: 10,
     cat1: 'Hand',
-    cat2: 'Perfume Hand',
+    cat2: '퍼퓸 핸드',
     desc: '샌달우드 | 은은한 가죽 향 | 스파이시',
     name: 'FLOW',
     price: ['18,000', '32,000'],
