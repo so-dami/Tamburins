@@ -6,7 +6,7 @@
         <div class="detail-prd-img-bx">
           <img
             class="detail-img"
-            :src="`../../assets/image/prd/hand/detail/${perfumeHandData[$route.params.id]['detailImg'][0]}`"
+            :src="require(`../../assets/image/prd/hand/detail/${perfumeHandData[$route.params.id]['detailImg'][0]}`)"
             :alt="`${perfumeHandData[$route.params.id]['name']}`"
             @click="
               () => {
@@ -16,12 +16,12 @@
           />
           <img
             class="detail-img mt"
-            src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_1.jpg"
+            :src="require(`../../assets/image/prd/hand/detail/${perfumeHandData[$route.params.id]['detailImg'][1]}`)"
             :alt="`${perfumeHandData[$route.params.id]['name']}`"
           />
           <img
             class="detail-img mt"
-            src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_2.jpg"
+            :src="require(`../../assets/image/prd/hand/detail/${perfumeHandData[$route.params.id]['detailImg'][2]}`)"
             :alt="`${perfumeHandData[$route.params.id]['name']}`"
           />
         </div>
