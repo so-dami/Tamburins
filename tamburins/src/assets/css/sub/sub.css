@@ -43,6 +43,11 @@
   border-radius: 50%;
 }
 
+.ctg-thumbnail-txt {
+  display: inline-block;
+  margin-top: 5px;
+}
+
 .ctg-title-bx {
   height: 50px;
 }

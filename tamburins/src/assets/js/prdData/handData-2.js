@@ -1,7 +1,7 @@
 const perfumeHandData = [
   {
     id: 0,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '진득한 카모마일 | 부드러운 나무결 | 머스크',
     name: '퍼퓸 쉘 엑스 카모',
@@ -19,7 +19,7 @@ const perfumeHandData = [
   },
   {
     id: 1,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '지중해의 베르가못 | 쌉싸래한 청귤 | 샌달우드',
     name: '퍼퓸 쉘 엑스 버가샌달',
@@ -37,7 +37,7 @@ const perfumeHandData = [
   },
   {
     id: 2,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '이슬을 머금은 풋사과 | 화이트 튤립 | 샌달우드',
     name: '퍼퓸 쉘 엑스 라레',
@@ -55,7 +55,7 @@ const perfumeHandData = [
   },
   {
     id: 3,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한',
     name: 'FEY9',
@@ -69,7 +69,7 @@ const perfumeHandData = [
   },
   {
     id: 4,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '월계수 잎 | 은방울꽃 | 정돈된 가죽',
     name: 'VEIN',
@@ -83,7 +83,7 @@ const perfumeHandData = [
   },
   {
     id: 5,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '삼나무 | 바이올렛 잎 | 시트러스',
     name: 'HER',
@@ -97,7 +97,7 @@ const perfumeHandData = [
   },
   {
     id: 6,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '장미 덤불 | 패츌리 | 젖은 땅',
     name: 'POSY',
@@ -111,7 +111,7 @@ const perfumeHandData = [
   },
   {
     id: 7,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '샌달우드 | 패츌리 | 흙 내음',
     name: '000',
@@ -125,7 +125,7 @@ const perfumeHandData = [
   },
   {
     id: 8,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '블랙베리 | 시트러스 | 프루티함',
     name: 'BLESSED',
@@ -139,7 +139,7 @@ const perfumeHandData = [
   },
   {
     id: 9,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '단단한 흙과 뿌리 | 자몽 | 청량한 공기',
     name: 'FEAR',
@@ -153,7 +153,7 @@ const perfumeHandData = [
   },
   {
     id: 10,
-    cat1: 'Hand',
+    cat1: '핸드',
     cat2: '퍼퓸 핸드',
     desc: '샌달우드 | 은은한 가죽 향 | 스파이시',
     name: 'FLOW',
@@ -170,8 +170,8 @@ const perfumeHandData = [
 const tubeHandData = [
   {
     id: 0,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '샌달우드 | 패츌리 | 흙 내음',
     name: '000',
     price: ['23,000', '32,000'],
@@ -188,8 +188,8 @@ const tubeHandData = [
   },
   {
     id: 1,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '로즈우드 | 코코넛 향 | 우아함',
     name: '7',
     price: ['23,000', '32,000'],
@@ -206,8 +206,8 @@ const tubeHandData = [
   },
   {
     id: 2,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '패츌리 | 쌉싸래한 풀 줄기 | 스모키함',
     name: '712',
     price: ['23,000', '32,000'],
@@ -224,8 +224,8 @@ const tubeHandData = [
   },
   {
     id: 3,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '바닐라 우디 | 너티함',
     name: '421',
     price: ['23,000', '32,000'],
@@ -242,8 +242,8 @@ const tubeHandData = [
   },
   {
     id: 4,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '회귀의 향 | 나무껍질의 눈물 | 내적 평온',
     name: 'MULBERRY LEAVES',
     price: ['25,000'],
@@ -260,8 +260,8 @@ const tubeHandData = [
   },
   {
     id: 5,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '씁쓸한 프루티함 | 바람에 흔들리는 꽃의 향 | 고요함',
     name: 'SOUNDS OF NIGHT',
     price: ['25,000'],
@@ -278,8 +278,8 @@ const tubeHandData = [
   },
   {
     id: 6,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '본능의 향 | 고귀한 머스크 | 성스러운 나무',
     name: 'COCOON MUSK',
     price: ['25,000'],
@@ -296,8 +296,8 @@ const tubeHandData = [
   },
   {
     id: 7,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한',
     name: 'FEY9',
     price: ['25,000'],
@@ -314,8 +314,8 @@ const tubeHandData = [
   },
   {
     id: 8,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '월계수 잎 | 은방울꽃 | 정돈된 가죽',
     name: 'VEIN',
     price: ['25,000'],
@@ -332,8 +332,8 @@ const tubeHandData = [
   },
   {
     id: 9,
-    cat1: 'Hand',
-    cat2: 'Tube Hand',
+    cat1: '핸드',
+    cat2: '튜브 핸드',
     desc: '샌달우드 | 패츌리 | 흙 내음',
     name: '000',
     price: ['25,000'],
@@ -353,8 +353,8 @@ const tubeHandData = [
 const sanitizerData = [
   {
     id: 0,
-    cat1: 'Hand',
-    cat2: 'Hand Sanitizer',
+    cat1: '핸드',
+    cat2: '손 소독제',
     desc: '무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한',
     name: '손 소독제 FEY9',
     price: ['8,500'],
@@ -367,8 +367,8 @@ const sanitizerData = [
   },
   {
     id: 1,
-    cat1: 'Hand',
-    cat2: 'Hand Sanitizer',
+    cat1: '핸드',
+    cat2: '손 소독제',
     desc: '샌달우드 | 패츌리 | 흙 내음',
     name: '손 소독제 000',
     price: ['8,500'],
@@ -381,8 +381,8 @@ const sanitizerData = [
   },
   {
     id: 2,
-    cat1: 'Hand',
-    cat2: 'Hand Sanitizer',
+    cat1: '핸드',
+    cat2: '손 소독제',
     desc: '로즈우드 | 코코넛 향 | 우아함',
     name: '손 소독제 7',
     price: ['8,500'],
@@ -395,8 +395,8 @@ const sanitizerData = [
   },
   {
     id: 3,
-    cat1: 'Hand',
-    cat2: 'Hand Sanitizer',
+    cat1: '핸드',
+    cat2: '손 소독제',
     desc: '패츌리 | 쌉싸래한 풀 줄기 | 스모키함',
     name: '손 소독제 712',
     price: ['8,500'],
@@ -409,8 +409,8 @@ const sanitizerData = [
   },
   {
     id: 4,
-    cat1: 'Hand',
-    cat2: 'Hand Sanitizer',
+    cat1: '핸드',
+    cat2: '손 소독제',
     desc: '무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한',
     name: '손 소독제 FEY9',
     price: ['32,000'],
@@ -423,8 +423,8 @@ const sanitizerData = [
   },
   {
     id: 5,
-    cat1: 'Hand',
-    cat2: 'Hand Sanitizer',
+    cat1: '핸드',
+    cat2: '손 소독제',
     desc: '샌달우드 | 패츌리 | 흙 내음',
     name: '손 소독제 000',
     price: ['32,000'],
