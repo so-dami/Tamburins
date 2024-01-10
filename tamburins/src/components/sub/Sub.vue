@@ -5,15 +5,19 @@
       <nav>
         <div class="ctg-menu">
           <ul class="list-flex">
-            <li class="ctg-list-item">
+            <li class="ctg-list-item" v-for="(categoryData, i) in categoryData" :key="i">
               <div class="ctg-thumbnail">
                 <div>
-                  <img class="ctg-thumbnail-img" src="../../assets/image/category/cat_all.png" alt="전체 보기" />
+                  <img
+                    class="ctg-thumbnail-img"
+                    :src="require(`../../assets/image/category/${categoryData['img']}`)"
+                    :alt="`${categoryData['name']}`"
+                  />
                 </div>
-                <span class="ctg-thumbnail-txt">전체 보기</span>
+                <span class="ctg-thumbnail-txt">{{ categoryData['name'] }}</span>
               </div>
             </li>
-            <li class="ctg-list-item">
+            <!-- <li class="ctg-list-item">
               <div class="ctg-thumbnail">
                 <div>
                   <img
@@ -54,7 +58,7 @@
                 <div>
                   <img
                     class="ctg-thumbnail-img"
-                    src="../../assets/image/category/cat_body/cat_body_shwry.png"
+                    src="../../assets/image/category/cat_body_shwry.png"
                     alt="샤워리바디"
                   />
                 </div>
@@ -66,11 +70,11 @@
                 <div>
                   <img
                     class="ctg-thumbnail-img"
-                    src="../../assets/image/category/cat_hand_sanitizer.png"
-                    alt="Hand Sanitizer"
+                    src="../../assets/image/category/cat_body_handnbody.png"
+                    alt="핸드 앤 바디"
                   />
                 </div>
-                <span class="ctg-thumbnail-txt">손 소독제</span>
+                <span class="ctg-thumbnail-txt">핸드 앤 바디</span>
               </div>
             </li>
             <li class="ctg-list-item">
@@ -78,11 +82,11 @@
                 <div>
                   <img
                     class="ctg-thumbnail-img"
-                    src="../../assets/image/category/cat_hand_sanitizer.png"
-                    alt="Hand Sanitizer"
+                    src="../../assets/image/category/cat_candle_perfumecandle.png"
+                    alt="퍼퓸 캔들"
                   />
                 </div>
-                <span class="ctg-thumbnail-txt">손 소독제</span>
+                <span class="ctg-thumbnail-txt">퍼퓸 캔들</span>
               </div>
             </li>
             <li class="ctg-list-item">
@@ -90,13 +94,25 @@
                 <div>
                   <img
                     class="ctg-thumbnail-img"
-                    src="../../assets/image/category/cat_hand_sanitizer.png"
-                    alt="Hand Sanitizer"
+                    src="../../assets/image/category/cat_candle_object.png"
+                    alt="오브젝트"
                   />
                 </div>
-                <span class="ctg-thumbnail-txt">손 소독제</span>
+                <span class="ctg-thumbnail-txt">향 오브젝트</span>
               </div>
             </li>
+            <li class="ctg-list-item">
+              <div class="ctg-thumbnail">
+                <div>
+                  <img
+                    class="ctg-thumbnail-img"
+                    src="../../assets/image/category/cat_toilet_fragrance.png"
+                    alt="토일렛 프래그런스"
+                  />
+                </div>
+                <span class="ctg-thumbnail-txt">토일렛 프래그런스</span>
+              </div>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -151,6 +167,7 @@ export default {
   components: {},
   props: {
     handData: Array,
+    categoryData: Array,
   },
   methods: {
     filter() {
