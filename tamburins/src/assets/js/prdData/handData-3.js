@@ -541,7 +541,7 @@ const HandData = [
   // 손 소독제
   {
     id: 21,
-    catNum: 0,
+    catNum: 2,
     cat: {
       cat1: '핸드',
       cat2: '손 소독제',
@@ -564,7 +564,7 @@ const HandData = [
   },
   {
     id: 22,
-    catNum: 0,
+    catNum: 2,
     cat: {
       cat1: '핸드',
       cat2: '손 소독제',
@@ -587,7 +587,7 @@ const HandData = [
   },
   {
     id: 23,
-    catNum: 0,
+    catNum: 2,
     cat: {
       cat1: '핸드',
       cat2: '손 소독제',
@@ -610,7 +610,7 @@ const HandData = [
   },
   {
     id: 24,
-    catNum: 0,
+    catNum: 2,
     cat: {
       cat1: '핸드',
       cat2: '손 소독제',
@@ -633,7 +633,7 @@ const HandData = [
   },
   {
     id: 25,
-    catNum: 0,
+    catNum: 2,
     cat: {
       cat1: '핸드',
       cat2: '손 소독제',
@@ -656,7 +656,7 @@ const HandData = [
   },
   {
     id: 26,
-    catNum: 0,
+    catNum: 2,
     cat: {
       cat1: '핸드',
       cat2: '손 소독제',

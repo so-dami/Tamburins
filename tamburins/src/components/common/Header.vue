@@ -4,7 +4,7 @@
       <nav>
         <div class="nav-wrap">
           <div class="logo">
-            <a href="#" title="tamburins">
+            <router-link :to="`/`">
               <svg
                 class="logo-svg"
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@
                   ></path>
                 </g>
               </svg>
-            </a>
+            </router-link>
           </div>
           <ul class="gnb-list list-flex">
             <li>제품 보기</li>

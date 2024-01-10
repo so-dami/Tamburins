@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.cont{
+.cont {
   padding: 0 45px;
 }
 
@@ -61,6 +61,8 @@
 
 .detail-size {
   margin: 45px 0;
+  display: flex;
+  gap: 5px;
 }
 
 .detail-size-img-bx {
@@ -147,6 +149,6 @@
   border-bottom: 1px solid lightgray;
 }
 
-.show{
+.show {
   display: block;
 }

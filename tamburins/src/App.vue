@@ -4,11 +4,7 @@
     <Header></Header>
 
     <!-- 메인 -->
-    <router-view
-      :perfumeHandData="perfumeHandData"
-      :tubeHandData="tubeHandData"
-      :sanitizerData="sanitizerData"
-    ></router-view>
+    <router-view :handData="handData"></router-view>
 
     <!-- 하단 -->
     <Footer></Footer>
@@ -21,15 +17,13 @@ import Header from './components/common/Header.vue';
 import Footer from './components/common/Footer.vue';
 
 // 데이터
-import { perfumeHandData, tubeHandData, sanitizerData } from './assets/js/prdData/handData-2.js';
+import handData from './assets/js/prdData/handData-3.js';
 
 export default {
   name: 'App',
   data() {
     return {
-      perfumeHandData: perfumeHandData,
-      tubeHandData: tubeHandData,
-      sanitizerData: sanitizerData,
+      handData: handData,
     };
   },
   components: {
