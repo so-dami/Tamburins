@@ -1,5 +1,6 @@
 const categoryData = [
   {
+    catNum: 'all',
     name: '전체 보기',
     img: 'cat_all.png',
   },

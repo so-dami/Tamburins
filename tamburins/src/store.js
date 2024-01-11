@@ -3,10 +3,12 @@ import { createStore } from 'vuex';
 const store = createStore({
   // state 보관
   state() {
-    return {};
+    return {
+      catNum: '',
+    };
   },
 
-  // state 수정 함수
+  // state 수정 방법 정의
   mutations: {},
 });
 

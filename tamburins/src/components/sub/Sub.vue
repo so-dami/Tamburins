@@ -5,7 +5,7 @@
       <nav>
         <div class="ctg-menu">
           <ul class="list-flex">
-            <li class="ctg-list-item" v-for="(categoryData, i) in categoryData" :key="i">
+            <li class="ctg-list-item" v-for="(categoryData, i) in categoryData" :key="i" @click="lookChange()">
               <div class="ctg-thumbnail">
                 <div>
                   <img
@@ -25,8 +25,18 @@
       <div>
         <div class="ctg-title-bx">
           <div class="ctg-title">
-            <span>퍼퓸 핸드</span>
-            <span class="list-count">(10)</span>
+            <span>{{ txt }}</span>
+            <!-- 전체 보기 갯수 -->
+            <span class="list-count" v-if="look == `${categoryData[0]['catNum']}`">({{ handData.length }})</span>
+
+            <!-- 퍼퓸 핸드 갯수 -->
+            <span class="list-count" v-if="look == `${categoryData[1]['catNum']}`">({{ newData.length }})</span>
+
+            <!-- 튜브 핸드 갯수 -->
+            <span class="list-count" v-if="look == `${categoryData[2]['catNum']}`">({{ newData.length }})</span>
+
+            <!-- 손 소독제 갯수 -->
+            <span class="list-count" v-if="look == `${categoryData[3]['catNum']}`">({{ newData.length }})</span>
           </div>
         </div>
 
@@ -36,23 +46,81 @@
 
         <!-- 상품 목록 -->
         <div class="prd-list">
-          <div class="prd-list-grid">
-            <div class="prd-list-item">
+          <!-- 전체 보기 -->
+          <div class="prd-list-grid" v-if="look == `${categoryData[0]['catNum']}`">
+            <div class="prd-list-item" v-for="(handData, i) in handData" :key="i">
               <div class="prd-list-thumbnail">
                 <img
                   class="prd-list-thumbnail-img"
-                  src="../../assets/image/prd/hand/prd_hand_perfumehand_0.jpg"
-                  alt="퍼퓸 쉘 엑스 카모"
+                  :src="require(`../../assets/image/prd/hand/${handData['img']['thumbnail']}`)"
+                  :alt="`${handData['prdInfo']['name']}`"
+                />
+              </div>
+              <div class="prd-list-info">
+                <div class="prd-list-desc">{{ handData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ handData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ handData['prdInfo']['price'][0] }}원</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 퍼퓸 핸드 -->
+          <div class="prd-list-grid" v-if="look == `${categoryData[1]['catNum']}`">
+            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
+              <div class="prd-list-thumbnail">
+                <img
+                  class="prd-list-thumbnail-img"
+                  :src="require(`../../assets/image/prd/hand/${newData['img']['thumbnail']}`)"
+                  :alt="`${newData['prdInfo']['name']}`"
                   @click="filter()"
                 />
               </div>
               <div class="prd-list-info">
-                <div class="prd-list-desc">진득한 카모마일 | 부드러운 나무결 | 머스크</div>
-                <div class="prd-list-name">퍼퓸 쉘 엑스 카모</div>
-                <div class="prd-list-price">32,000원</div>
+                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
               </div>
             </div>
           </div>
+
+          <!-- 튜브 핸드 -->
+          <div class="prd-list-grid" v-if="look == `${categoryData[2]['catNum']}`">
+            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
+              <div class="prd-list-thumbnail">
+                <img
+                  class="prd-list-thumbnail-img"
+                  :src="require(`../../assets/image/prd/hand/${newData['img']['thumbnail']}`)"
+                  :alt="`${newData['prdInfo']['name']}`"
+                  @click="filter()"
+                />
+              </div>
+              <div class="prd-list-info">
+                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 손 소독제 -->
+          <div class="prd-list-grid" v-if="look == `${categoryData[3]['catNum']}`">
+            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
+              <div class="prd-list-thumbnail">
+                <img
+                  class="prd-list-thumbnail-img"
+                  :src="require(`../../assets/image/prd/hand/${newData['img']['thumbnail']}`)"
+                  :alt="`${newData['prdInfo']['name']}`"
+                  @click="filter()"
+                />
+              </div>
+              <div class="prd-list-info">
+                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -64,8 +132,10 @@ export default {
   name: 'Sub',
   data() {
     return {
-      catNum: 0,
+      txt: '전체 보기',
       result: [],
+      newData: [],
+      look: 'all',
     };
   },
   components: {},
@@ -74,11 +144,18 @@ export default {
     categoryData: Array,
   },
   methods: {
-    filter() {
-      this.result = this.handData.filter((a) => {
-        return a['catNum'] == this.catNum;
+    lookChange() {
+      this.txt = event.currentTarget.firstChild.firstChild.nextSibling.innerHTML;
+      this.result = this.categoryData.filter((a) => {
+        return a['name'] == this.txt;
       });
-      console.log(this.result);
+      this.look = this.result[0]['catNum'];
+      console.log(this.look);
+
+      this.newData = this.handData.filter((a) => {
+        return a['catNum'] == this.look;
+      });
+      console.log(this.newData);
     },
   },
 };
