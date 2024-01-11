@@ -27,7 +27,7 @@
           <div class="ctg-title">
             <span>{{ txt }}</span>
             <!-- 전체 보기 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[0]['catNum']}`">({{ handData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[0]['catNum']}`">({{ prdData.length }})</span>
 
             <!-- 퍼퓸 핸드 갯수 -->
             <span class="list-count" v-if="look == `${categoryData[1]['catNum']}`">({{ newData.length }})</span>
@@ -37,29 +37,35 @@
 
             <!-- 손 소독제 갯수 -->
             <span class="list-count" v-if="look == `${categoryData[3]['catNum']}`">({{ newData.length }})</span>
+
+            <!-- 샤워리바디 갯수 -->
+            <span class="list-count" v-if="look == `${categoryData[4]['catNum']}`">({{ newData.length }})</span>
+
+            <!-- 핸드 앤 바디 갯수 -->
+            <span class="list-count" v-if="look == `${categoryData[5]['catNum']}`">({{ newData.length }})</span>
           </div>
         </div>
 
-        <!-- <router-link :to="`/detail/${perfumeHandData['id']}`"> -->
-        <!-- :src="require(`../../assets/image/prd/hand/${perfumeHandData['prdImg']}`)" -->
-        <!-- v-for="(perfumeHandData, i) in perfumeHandData" :key="i" -->
+        <!-- <router-link :to="`/detail/${perfumeprdData['id']}`"> -->
+        <!-- :src="require(`../../assets/image/prd/thumbnail/${perfumeprdData['prdImg']}`)" -->
+        <!-- v-for="(perfumeprdData, i) in perfumeprdData" :key="i" -->
 
         <!-- 상품 목록 -->
         <div class="prd-list">
           <!-- 전체 보기 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[0]['catNum']}`">
-            <div class="prd-list-item" v-for="(handData, i) in handData" :key="i">
+            <div class="prd-list-item" v-for="(prdData, i) in prdData" :key="i">
               <div class="prd-list-thumbnail">
                 <img
                   class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/hand/${handData['img']['thumbnail']}`)"
-                  :alt="`${handData['prdInfo']['name']}`"
+                  :src="require(`../../assets/image/prd/thumbnail/${prdData['img']['thumbnail']}`)"
+                  :alt="`${prdData['prdInfo']['name']}`"
                 />
               </div>
               <div class="prd-list-info">
-                <div class="prd-list-desc">{{ handData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ handData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ handData['prdInfo']['price'][0] }}원</div>
+                <div class="prd-list-desc">{{ prdData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ prdData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ prdData['prdInfo']['price'][0] }}원</div>
               </div>
             </div>
           </div>
@@ -70,7 +76,7 @@
               <div class="prd-list-thumbnail">
                 <img
                   class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/hand/${newData['img']['thumbnail']}`)"
+                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
                   :alt="`${newData['prdInfo']['name']}`"
                   @click="filter()"
                 />
@@ -89,7 +95,7 @@
               <div class="prd-list-thumbnail">
                 <img
                   class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/hand/${newData['img']['thumbnail']}`)"
+                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
                   :alt="`${newData['prdInfo']['name']}`"
                   @click="filter()"
                 />
@@ -108,7 +114,45 @@
               <div class="prd-list-thumbnail">
                 <img
                   class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/hand/${newData['img']['thumbnail']}`)"
+                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                  :alt="`${newData['prdInfo']['name']}`"
+                  @click="filter()"
+                />
+              </div>
+              <div class="prd-list-info">
+                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 샤워리바디 -->
+          <div class="prd-list-grid" v-if="look == `${categoryData[4]['catNum']}`">
+            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
+              <div class="prd-list-thumbnail">
+                <img
+                  class="prd-list-thumbnail-img"
+                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                  :alt="`${newData['prdInfo']['name']}`"
+                  @click="filter()"
+                />
+              </div>
+              <div class="prd-list-info">
+                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 핸드 앤 바디 -->
+          <div class="prd-list-grid" v-if="look == `${categoryData[5]['catNum']}`">
+            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
+              <div class="prd-list-thumbnail">
+                <img
+                  class="prd-list-thumbnail-img"
+                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
                   :alt="`${newData['prdInfo']['name']}`"
                   @click="filter()"
                 />
@@ -140,7 +184,7 @@ export default {
   },
   components: {},
   props: {
-    handData: Array,
+    prdData: Array,
     categoryData: Array,
   },
   methods: {
@@ -152,7 +196,7 @@ export default {
       this.look = this.result[0]['catNum'];
       console.log(this.look);
 
-      this.newData = this.handData.filter((a) => {
+      this.newData = this.prdData.filter((a) => {
         return a['catNum'] == this.look;
       });
       console.log(this.newData);

@@ -30,7 +30,9 @@
             </router-link>
           </div>
           <ul class="gnb-list list-flex">
-            <li>제품 보기</li>
+            <li>
+              <router-link :to="`/sub`">제품 보기</router-link>
+            </li>
             <li>선물 추천</li>
             <li>매장 안내</li>
           </ul>

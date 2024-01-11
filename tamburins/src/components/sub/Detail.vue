@@ -6,7 +6,7 @@
         <div class="detail-prd-img-bx">
           <img
             class="detail-img"
-            src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_0.jpg"
+            src="../../assets/image/prd/detail/prd_hand_perfumehand_detail_0_0.jpg"
             alt="퍼퓸 쉘 엑스 카모"
             @click="
               () => {
@@ -17,12 +17,12 @@
           />
           <img
             class="detail-img mt"
-            src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_1.jpg"
+            src="../../assets/image/prd/detail/prd_hand_perfumehand_detail_0_1.jpg"
             alt="퍼퓸 쉘 엑스 카모"
           />
           <img
             class="detail-img mt"
-            src="../../assets/image/prd/hand/detail/prd_hand_perfumehand_detail_0_2.jpg"
+            src="../../assets/image/prd/detail/prd_hand_perfumehand_detail_0_2.jpg"
             alt="퍼퓸 쉘 엑스 카모"
           />
         </div>
@@ -38,7 +38,7 @@
             <ul class="detail-size">
               <li>
                 <div class="detail-size-img-bx">
-                  <img class="detail-size-img" src="../../assets/image/prd/hand/size/prd_hand_perfumehand_size_0.jpg" />
+                  <img class="detail-size-img" src="../../assets/image/prd/size/prd_hand_perfumehand_size_0.jpg" />
                   <span class="detail-size-txt">30ml</span>
                 </div>
               </li>
@@ -115,7 +115,7 @@ export default {
     return {};
   },
   props: {
-    handData: Array,
+    prdData: Array,
   },
   methods: {},
 };

@@ -1,4 +1,4 @@
-const handData = [
+const prdData = [
   // 퍼퓸 핸드, catNum: 0
   {
     id: 0,
@@ -538,7 +538,7 @@ const handData = [
     },
   },
 
-  // 손 소독제
+  // 손 소독제, catNum: 2
   {
     id: 21,
     catNum: 2,
@@ -677,6 +677,319 @@ const handData = [
       sizeImg: ['prd_hand_sanitizer_size_5.jpg'],
     },
   },
+
+  // 샤워리바디, catNum: 3,
+  {
+    id: 27,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디워시 BIGALICO',
+      price: ['33,000', '52,000'],
+      size: ['240', '470'],
+    },
+    prdDetail: {
+      desc: '씁쓸한 오렌지 | 시더우드 | 달콤한 리코라이스',
+      summary:
+        '초여름 한바탕 시원한 소나기를 겪어 물기를 머금은 비가라드 오렌지의 씁쓸한 시트러스로 시작되는 이 향은, 진한 녹색의 껍질을 벗겨낼 때 툭 터지듯 쏟아지는 달콤한 과육의 느낌을 머금고 공기중에 가득히 퍼져나갑니다. 이어지는 차분하고 향긋한 아로마 노트의 시더우드가 리코라이스의 달콤한 잔향과 어우러져 편안하고 진한 여운을 남깁니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_0.jpg',
+      detailImg: ['prd_body_shwry_detail_0_0', 'prd_body_shwry_detail_0_1', 'prd_body_shwry_detail_0_2'],
+      sizeImg: ['prd_body_shwry_size_0_0', 'prd_body_shwry_size_0_1'],
+    },
+  },
+  {
+    id: 28,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디워시 FOG',
+      price: ['33,000', '52,000'],
+      size: ['240', '470'],
+    },
+    prdDetail: {
+      desc: '물안개 낀 숲 | 젖은 나무 | 캐시미어 우드',
+      summary: '소나무에 맺힌 이슬처럼 시원하고 상쾌한 주니퍼의 향취가 물안개 낀 이른 아침을 떠오르게 합니다. 비에 젖은 나무가 내뿜는 부드러운 캐시미어 우드의 향취가 자연에서 느낄 수 있는 차분한 편안함을 더해줍니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_1.jpg',
+      detailImg: ['prd_body_shwry_detail_1_0', 'prd_body_shwry_detail_1_1', 'prd_body_shwry_detail_1_2'],
+      sizeImg: ['prd_body_shwry_size_1_0', 'prd_body_shwry_size_1_1'],
+    },
+  },
+  {
+    id: 29,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디워시 NIMBUS',
+      price: ['33,000', '52,000'],
+      size: ['240', '470'],
+    },
+    prdDetail: {
+      desc: '도넛피치 | 어린 코코넛의 풋내음 | 포근한 머스크',
+      summary: '도넛피치의 풍성하고 달콤한 향이 포근하고 작은 비구름을 떠오르게 합니다. 어린 코코넛 껍질에서 처음 느껴지는 부드러운 풋내는 도넛 피치 노트의 버터리한 느낌과 만나 고급스러움을 더해주며, 머스크 본연의 깨끗하고 포근한 잔향이 하루의 시작과 마무리를 기분좋게 만들어줍니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_2.jpg',
+      detailImg: ['prd_body_shwry_detail_2_0', 'prd_body_shwry_detail_2_1', 'prd_body_shwry_detail_2_2'],
+      sizeImg: ['prd_body_shwry_size_2_0', 'prd_body_shwry_size_2_1'],
+    },
+  },
+  {
+    id: 30,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디워시 STORM',
+      price: ['33,000', '52,000'],
+      size: ['240', '470'],
+    },
+    prdDetail: {
+      desc: '풀내음 | 짙은 오렌지 | 베티버 뿌리의 쌉쌀함',
+      summary: '갈바넘의 날카로운 그린함과 베티버의 스모키한 우디함을 담고 있는 이 향은 강한 폭풍이 휩쓸고 간 뒤 선명해진 공기를 연상 시킵니다. 잘 익은 오렌지 향이 긴장감을 완화시키고 부드러운 베티버 뿌리의 쌉쌀한 잔향이 섬세한 감각의 호흡을 느끼게 합니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_3.jpg',
+      detailImg: ['prd_body_shwry_detail_3_0', 'prd_body_shwry_detail_3_1', 'prd_body_shwry_detail_3_2'],
+      sizeImg: ['prd_body_shwry_size_3_0', 'prd_body_shwry_size_3_1'],
+    },
+  },
+  {
+    id: 31,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디로션 BIGALICO',
+      price: ['38,500','59,500'],
+      size: ['235','470'],
+    },
+    prdDetail: {
+      desc: '씁쓸한 오렌지 | 시더우드 | 달콤한 리코라이스',
+      summary: '초여름 한바탕 시원한 소나기를 겪어 물기를 머금은 비가라드 오렌지의 씁쓸한 시트러스로 시작되는 이 향은, 진한 녹색의 껍질을 벗겨낼 때 툭 터지듯 쏟아지는 달콤한 과육의 느낌을 머금고 공기중에 가득히 퍼져나갑니다. 이어지는 차분하고 향긋한 아로마 노트의 시더우드가 리코라이스의 달콤한 잔향과 어우러져 편안하고 진한 여운을 남깁니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_4.jpg',
+      detailImg: ['prd_body_shwry_detail_4_0', 'prd_body_shwry_detail_4_1', 'prd_body_shwry_detail_4_2'],
+      sizeImg: ['prd_body_shwry_size_4_0', 'prd_body_shwry_size_4_1'],
+    },
+  },
+  {
+    id: 32,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디로션 FOG',
+      price: ['38,500','59,500'],
+      size: ['235','470'],
+    },
+    prdDetail: {
+      desc: '물안개 낀 숲 | 젖은 나무 | 캐시미어 우드',
+      summary: '소나무에 맺힌 이슬처럼 시원하고 상쾌한 주니퍼의 향취가 물안개 낀 이른 아침을 떠오르게 합니다. 비에 젖은 나무가 내뿜는 부드러운 캐시미어 우드의 향취가 자연에서 느낄 수 있는 차분한 편안함을 더해줍니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_5.jpg',
+      detailImg: ['prd_body_shwry_detail_5_0', 'prd_body_shwry_detail_5_1', 'prd_body_shwry_detail_5_2'],
+      sizeImg: ['prd_body_shwry_size_5_0', 'prd_body_shwry_size_5_1'],
+    },
+  },
+  {
+    id: 33,
+    catNum: 3,
+    cat: {
+      cat1: '바디',
+      cat2: '샤워리바디',
+    },
+    prdInfo: {
+      name: '바디로션 NIMBUS',
+      price: ['38,500','59,500'],
+      size: ['235','470'],
+    },
+    prdDetail: {
+      desc: '도넛피치 | 어린 코코넛의 풋내음 | 포근한 머스크',
+      summary: '도넛피치의 풍성하고 달콤한 향이 포근하고 작은 비구름을 떠오르게 합니다. 어린 코코넛 껍질에서 처음 느껴지는 부드러운 풋내는 도넛 피치 노트의 버터리한 느낌과 만나 고급스러움을 더해주며, 머스크 본연의 깨끗하고 포근한 잔향이 하루의 시작과 마무리를 기분좋게 만들어줍니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_shwry_6.jpg',
+      detailImg: ['prd_body_shwry_detail_6_0', 'prd_body_shwry_detail_6_1', 'prd_body_shwry_detail_6_2'],
+      sizeImg: ['prd_body_shwry_size_6_0', 'prd_body_shwry_size_6_1'],
+    },
+  },
+
+  // 핸드 앤 바디, catNum: 4
+  {
+    id: 34,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드워시 카모',
+      price: ['34,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '진득한 카모마일 | 부드러운 나무결 | 머스크',
+      summary: '꿀처럼 진득하고 달콤한 카모마일과 씁쓸한 클라리세이지의 허브 향이 오묘한 조화를 이루어 중독성 있는 향을 선사합니다. 자칫 차갑게 느껴질 수 있는 촉촉한 이끼의 느낌을 우아하고 부드러운 나무결의 블론드 우드와 따뜻한 머스크로 감싸주어 당신의 지친 마음에 특별하고 작은 위안을 선물합니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_0.jpg',
+      detailImg: ['prd_body_handnbody_detail_0_0', 'prd_body_handnbody_detail_0_1', 'prd_body_handnbody_detail_0_2'],
+      sizeImg: ['prd_body_handnbody_size_0_0', 'prd_body_handnbody_size_0_1'],
+    },
+  },
+  {
+    id: 35,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드워시 000',
+      price: ['34,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '샌달우드 | 패츌리 | 흙 내음',
+      summary: '바르는 순간 코 끝을 스치는 베르가못의 시원함, 수분을 머금은 흙을 연상시키는 패츌리와 무겁게 내려앉은 샌달우드는 갓 꺾은 야생화를 품에 가득 안았을 때 느껴지는 대지의 활기를 떠올리게 합니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_1.jpg',
+      detailImg: ['prd_body_handnbody_detail_1_0', 'prd_body_handnbody_detail_1_1', 'prd_body_handnbody_detail_1_2'],
+      sizeImg: ['prd_body_handnbody_size_1_0', 'prd_body_handnbody_size_1_1'],
+    },
+  },
+  {
+    id: 36,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드워시 7',
+      price: ['34,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '로즈우드 | 코코넛 향 | 우아함',
+      summary: '잔잔한 꽃 향이 섞인 로즈우드와 라반딘의 정제되지 않은 야생화 본연의 향기에 코코넛의 달콤한 잔향이 어우러져 우아하고 매력적인 여운을 남깁니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_2.jpg',
+      detailImg: ['prd_body_handnbody_detail_2_0', 'prd_body_handnbody_detail_2_1', 'prd_body_handnbody_detail_2_2'],
+      sizeImg: ['prd_body_handnbody_size_2_0', 'prd_body_handnbody_size_2_1'],
+    },
+  },
+  {
+    id: 37,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드앤바디 워시 712',
+      price: ['34,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '패츌리 | 쌉싸래한 풀 줄기 | 스모키함',
+      summary: '첫 향에서 느껴지는 부드럽고 매혹적인 오스만투스의 투명함과 짙게 남는 타바코의 퇴폐적인 향은 감각의 양면성이 가진 매력을 표현합니다. 순수와 퇴폐의 상반된 혼합은 새롭고 강렬한 아름다움을 선사합니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_3.jpg',
+      detailImg: ['prd_body_handnbody_detail_3_0', 'prd_body_handnbody_detail_3_1', 'prd_body_handnbody_detail_3_2'],
+      sizeImg: ['prd_body_handnbody_size_3_0', 'prd_body_handnbody_size_3_1'],
+    },
+  },
+  {
+    id: 38,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드앤바디 에멀전 000',
+      price: ['43,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '샌달우드 | 패츌리 | 흙 내음',
+      summary: '바르는 순간 코 끝을 스치는 베르가못의 시원함, 수분을 머금은 흙을 연상시키는 패츌리와 무겁게 내려앉은 샌달우드는 갓 꺾은 야생화를 품에 가득 안았을 때 느껴지는 대지의 활기를 떠올리게 합니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_4.jpg',
+      detailImg: ['prd_body_handnbody_detail_4_0', 'prd_body_handnbody_detail_4_1', 'prd_body_handnbody_detail_42'],
+      sizeImg: ['prd_body_handnbody_size_4_0', 'prd_body_handnbody_size_4_1'],
+    },
+  },
+  {
+    id: 39,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드앤바디 에멀전 7',
+      price: ['43,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '로즈우드 | 코코넛 향 | 우아함',
+      summary: '잔잔한 꽃 향이 섞인 로즈우드와 라반딘의 정제되지 않은 야생화 본연의 향기에 코코넛의 달콤한 잔향이 어우러져 우아하고 매력적인 여운을 남깁니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_5.jpg',
+      detailImg: ['prd_body_handnbody_detail_5_0', 'prd_body_handnbody_detail_5_1', 'prd_body_handnbody_detail_5_2'],
+      sizeImg: ['prd_body_handnbody_size_5_0', 'prd_body_handnbody_size_5_1'],
+    },
+  },
+  {
+    id: 40,
+    catNum: 4,
+    cat: {
+      cat1: '바디',
+      cat2: '핸드 앤 바디',
+    },
+    prdInfo: {
+      name: '퍼퓸드 핸드앤바디 에멀전 712',
+      price: ['43,000'],
+      size: ['250'],
+    },
+    prdDetail: {
+      desc: '패츌리 | 쌉싸래한 풀 줄기 | 스모키함',
+      summary: '첫 향에서 느껴지는 부드럽고 매혹적인 오스만투스의 투명함과 짙게 남는 타바코의 퇴폐적인 향은 감각의 양면성이 가진 매력을 표현합니다. 순수와 퇴폐의 상반된 혼합은 새롭고 강렬한 아름다움을 선사합니다.',
+    },
+    img: {
+      thumbnail: 'prd_body_handnbody_6.jpg',
+      detailImg: ['prd_body_handnbody_detail_6_0', 'prd_body_handnbody_detail_6_1', 'prd_body_handnbody_detail_6_2'],
+      sizeImg: ['prd_body_handnbody_size_6_0', 'prd_body_handnbody_size_6_1'],
+    },
+  },
 ];
 
-export default handData;
+export default prdData;
