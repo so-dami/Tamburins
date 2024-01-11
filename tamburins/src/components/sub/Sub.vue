@@ -133,9 +133,9 @@ export default {
   data() {
     return {
       txt: '전체 보기',
+      look: 'all',
       result: [],
       newData: [],
-      look: 'all',
     };
   },
   components: {},
