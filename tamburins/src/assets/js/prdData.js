@@ -698,8 +698,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_0.jpg',
-      detailImg: ['prd_body_shwry_detail_0_0', 'prd_body_shwry_detail_0_1', 'prd_body_shwry_detail_0_2'],
-      sizeImg: ['prd_body_shwry_size_0_0', 'prd_body_shwry_size_0_1'],
+      detailImg: ['prd_body_shwry_detail_0_0.jpg', 'prd_body_shwry_detail_0_1.jpg', 'prd_body_shwry_detail_0_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_0_0.jpg', 'prd_body_shwry_size_0_1.jpg'],
     },
   },
   {
@@ -721,8 +721,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_1.jpg',
-      detailImg: ['prd_body_shwry_detail_1_0', 'prd_body_shwry_detail_1_1', 'prd_body_shwry_detail_1_2'],
-      sizeImg: ['prd_body_shwry_size_1_0', 'prd_body_shwry_size_1_1'],
+      detailImg: ['prd_body_shwry_detail_1_0.jpg', 'prd_body_shwry_detail_1_1.jpg', 'prd_body_shwry_detail_1_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_1_0.jpg', 'prd_body_shwry_size_1_1.jpg'],
     },
   },
   {
@@ -744,8 +744,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_2.jpg',
-      detailImg: ['prd_body_shwry_detail_2_0', 'prd_body_shwry_detail_2_1', 'prd_body_shwry_detail_2_2'],
-      sizeImg: ['prd_body_shwry_size_2_0', 'prd_body_shwry_size_2_1'],
+      detailImg: ['prd_body_shwry_detail_2_0.jpg', 'prd_body_shwry_detail_2_1.jpg', 'prd_body_shwry_detail_2_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_2_0.jpg', 'prd_body_shwry_size_2_1.jpg'],
     },
   },
   {
@@ -767,8 +767,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_3.jpg',
-      detailImg: ['prd_body_shwry_detail_3_0', 'prd_body_shwry_detail_3_1', 'prd_body_shwry_detail_3_2'],
-      sizeImg: ['prd_body_shwry_size_3_0', 'prd_body_shwry_size_3_1'],
+      detailImg: ['prd_body_shwry_detail_3_0.jpg', 'prd_body_shwry_detail_3_1.jpg', 'prd_body_shwry_detail_3_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_3_0.jpg', 'prd_body_shwry_size_3_1.jpg'],
     },
   },
   {
@@ -790,8 +790,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_4.jpg',
-      detailImg: ['prd_body_shwry_detail_4_0', 'prd_body_shwry_detail_4_1', 'prd_body_shwry_detail_4_2'],
-      sizeImg: ['prd_body_shwry_size_4_0', 'prd_body_shwry_size_4_1'],
+      detailImg: ['prd_body_shwry_detail_4_0.jpg', 'prd_body_shwry_detail_4_1.jpg', 'prd_body_shwry_detail_4_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_4_0.jpg', 'prd_body_shwry_size_4_1.jpg'],
     },
   },
   {
@@ -813,8 +813,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_5.jpg',
-      detailImg: ['prd_body_shwry_detail_5_0', 'prd_body_shwry_detail_5_1', 'prd_body_shwry_detail_5_2'],
-      sizeImg: ['prd_body_shwry_size_5_0', 'prd_body_shwry_size_5_1'],
+      detailImg: ['prd_body_shwry_detail_5_0.jpg', 'prd_body_shwry_detail_5_1.jpg', 'prd_body_shwry_detail_5_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_5_0.jpg', 'prd_body_shwry_size_5_1.jpg'],
     },
   },
   {
@@ -836,8 +836,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_shwry_6.jpg',
-      detailImg: ['prd_body_shwry_detail_6_0', 'prd_body_shwry_detail_6_1', 'prd_body_shwry_detail_6_2'],
-      sizeImg: ['prd_body_shwry_size_6_0', 'prd_body_shwry_size_6_1'],
+      detailImg: ['prd_body_shwry_detail_6_0.jpg', 'prd_body_shwry_detail_6_1.jpg', 'prd_body_shwry_detail_6_2.jpg'],
+      sizeImg: ['prd_body_shwry_size_6_0.jpg', 'prd_body_shwry_size_6_1.jpg'],
     },
   },
 
@@ -861,8 +861,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_0.jpg',
-      detailImg: ['prd_body_handnbody_detail_0_0', 'prd_body_handnbody_detail_0_1', 'prd_body_handnbody_detail_0_2'],
-      sizeImg: ['prd_body_handnbody_size_0_0', 'prd_body_handnbody_size_0_1'],
+      detailImg: ['prd_body_handnbody_detail_0_0.jpg', 'prd_body_handnbody_detail_0_1.jpg', 'prd_body_handnbody_detail_0_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_0_0.jpg', 'prd_body_handnbody_size_0_1.jpg'],
     },
   },
   {
@@ -884,8 +884,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_1.jpg',
-      detailImg: ['prd_body_handnbody_detail_1_0', 'prd_body_handnbody_detail_1_1', 'prd_body_handnbody_detail_1_2'],
-      sizeImg: ['prd_body_handnbody_size_1_0', 'prd_body_handnbody_size_1_1'],
+      detailImg: ['prd_body_handnbody_detail_1_0.jpg', 'prd_body_handnbody_detail_1_1.jpg', 'prd_body_handnbody_detail_1_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_1_0.jpg', 'prd_body_handnbody_size_1_1.jpg'],
     },
   },
   {
@@ -907,8 +907,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_2.jpg',
-      detailImg: ['prd_body_handnbody_detail_2_0', 'prd_body_handnbody_detail_2_1', 'prd_body_handnbody_detail_2_2'],
-      sizeImg: ['prd_body_handnbody_size_2_0', 'prd_body_handnbody_size_2_1'],
+      detailImg: ['prd_body_handnbody_detail_2_0.jpg', 'prd_body_handnbody_detail_2_1.jpg', 'prd_body_handnbody_detail_2_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_2_0.jpg', 'prd_body_handnbody_size_2_1.jpg'],
     },
   },
   {
@@ -930,8 +930,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_3.jpg',
-      detailImg: ['prd_body_handnbody_detail_3_0', 'prd_body_handnbody_detail_3_1', 'prd_body_handnbody_detail_3_2'],
-      sizeImg: ['prd_body_handnbody_size_3_0', 'prd_body_handnbody_size_3_1'],
+      detailImg: ['prd_body_handnbody_detail_3_0.jpg', 'prd_body_handnbody_detail_3_1.jpg', 'prd_body_handnbody_detail_3_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_3_0.jpg', 'prd_body_handnbody_size_3_1.jpg'],
     },
   },
   {
@@ -953,8 +953,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_4.jpg',
-      detailImg: ['prd_body_handnbody_detail_4_0', 'prd_body_handnbody_detail_4_1', 'prd_body_handnbody_detail_42'],
-      sizeImg: ['prd_body_handnbody_size_4_0', 'prd_body_handnbody_size_4_1'],
+      detailImg: ['prd_body_handnbody_detail_4_0.jpg', 'prd_body_handnbody_detail_4_1.jpg', 'prd_body_handnbody_detail_4_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_4_0.jpg', 'prd_body_handnbody_size_4_1.jpg'],
     },
   },
   {
@@ -976,8 +976,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_5.jpg',
-      detailImg: ['prd_body_handnbody_detail_5_0', 'prd_body_handnbody_detail_5_1', 'prd_body_handnbody_detail_5_2'],
-      sizeImg: ['prd_body_handnbody_size_5_0', 'prd_body_handnbody_size_5_1'],
+      detailImg: ['prd_body_handnbody_detail_5_0.jpg', 'prd_body_handnbody_detail_5_1.jpg', 'prd_body_handnbody_detail_5_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_5_0.jpg', 'prd_body_handnbody_size_5_1.jpg'],
     },
   },
   {
@@ -999,8 +999,8 @@ const prdData = [
     },
     img: {
       thumbnail: 'prd_body_handnbody_6.jpg',
-      detailImg: ['prd_body_handnbody_detail_6_0', 'prd_body_handnbody_detail_6_1', 'prd_body_handnbody_detail_6_2'],
-      sizeImg: ['prd_body_handnbody_size_6_0', 'prd_body_handnbody_size_6_1'],
+      detailImg: ['prd_body_handnbody_detail_6_0.jpg', 'prd_body_handnbody_detail_6_1.jpg', 'prd_body_handnbody_detail_6_2.jpg'],
+      sizeImg: ['prd_body_handnbody_size_6_0.jpg', 'prd_body_handnbody_size_6_1.jpg'],
     },
   },
 
@@ -1434,11 +1434,7 @@ const prdData = [
     },
     prdDetail: {
       desc: '삼나무 | 오래된 숲 | 스모키한',
-      summary:
-        '*디퓨저 리필' +
-        <br /> +
-        <br /> +
-        '산뜻한 타임 오일의 향이 오감을 일깨워 줍니다. 묵직하게 이어지는 우디 노트와 따스한 흙내음으로 대지의 온화한 정취를 경험할 수 있습니다.',
+      summary: `산뜻한 타임 오일의 향이 오감을 일깨워 줍니다. 묵직하게 이어지는 우디 노트와 따스한 흙내음으로 대지의 온화한 정취를 경험할 수 있습니다.`,
     },
     img: {
       thumbnail: 'prd_candle_object_10.jpg',
@@ -1461,9 +1457,6 @@ const prdData = [
     prdDetail: {
       desc: '솥에서 찐 쑥  |  소나무 진액  |  부드럽게 감싸는 솔잎',
       summary:
-        '*디퓨저 리필' +
-        <br /> +
-        <br /> +
         '쑥의 일종인 웜우드의 따스함에 은은하게 더해지는 솔잎이 동양적인 정취를 표현하며, 말갛게 스며드는 엠버의 깊은 잔향이 부드럽게 여운을 남깁니다.',
     },
     img: {
@@ -1511,11 +1504,16 @@ const prdData = [
     },
     prdDetail: {
       desc: '클라리세이지ㅣ로즈마리ㅣ만다린',
-      summary: '당신의 개인적인 공간을 멋진 영감으로 가득 채워 줄 세이지마리 향은 시트러스 중 풍미가 강하고 달콤한 클레멘타인과 차분한 만다린의 조합으로 산뜻하게 시작됩니다. 허벌한 클라리세이지와 로즈마리의 청량함이 블렌딩되어 깨끗하고 상쾌한 느낌을 불어넣고, 오일리하고 묵직한 무게감의 샌달우드 노트가 긴 잔향으로 이끌어 숨기고 싶은 냄새를 효과적으로 가려줍니다.',
+      summary:
+        '당신의 개인적인 공간을 멋진 영감으로 가득 채워 줄 세이지마리 향은 시트러스 중 풍미가 강하고 달콤한 클레멘타인과 차분한 만다린의 조합으로 산뜻하게 시작됩니다. 허벌한 클라리세이지와 로즈마리의 청량함이 블렌딩되어 깨끗하고 상쾌한 느낌을 불어넣고, 오일리하고 묵직한 무게감의 샌달우드 노트가 긴 잔향으로 이끌어 숨기고 싶은 냄새를 효과적으로 가려줍니다.',
     },
     img: {
       thumbnail: 'prd_toilet_fragrance_0.jpg',
-      detailImg: ['prd_toilet_fragrance_detail_0_0.jpg','prd_toilet_fragrance_detail_0_1.jpg','prd_toilet_fragrance_detail_0_2.jpg'],
+      detailImg: [
+        'prd_toilet_fragrance_detail_0_0.jpg',
+        'prd_toilet_fragrance_detail_0_1.jpg',
+        'prd_toilet_fragrance_detail_0_2.jpg',
+      ],
       sizeImg: ['prd_toilet_fragrance_size_0_0.jpg'],
     },
   },

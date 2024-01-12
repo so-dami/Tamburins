@@ -4,51 +4,34 @@
       <div class="prd-detail-wrap">
         <!-- 왼쪽 상품 이미지 -->
         <div class="detail-prd-img-bx">
-          <img
-            class="detail-img"
-            src="../../assets/image/prd/detail/prd_hand_perfumehand_detail_0_0.jpg"
-            alt="퍼퓸 쉘 엑스 카모"
-            @click="
-              () => {
-                console.log('click');
-              }
-            "
-            
-          />
-          <img
-            class="detail-img mt"
-            src="../../assets/image/prd/detail/prd_hand_perfumehand_detail_0_1.jpg"
-            alt="퍼퓸 쉘 엑스 카모"
-          />
-          <img
-            class="detail-img mt"
-            src="../../assets/image/prd/detail/prd_hand_perfumehand_detail_0_2.jpg"
-            alt="퍼퓸 쉘 엑스 카모"
-          />
+          <div v-for="(img, i) in prdData[num]['img']['detailImg']" :key="i">
+            <img
+              class="detail-img"
+              :src="require(`../../assets/image/prd/detail/${img}`)"
+              :alt="`${prdData[num]['prdInfo']['name']}`"
+              @click="find()"
+            />
+          </div>
         </div>
 
         <!-- 오른쪽 상품 정보 -->
         <div class="detail-prd-info-bx">
           <div class="detail-prd-info-inner">
-            <div class="detail-ctg">퍼퓸 핸드</div>
+            <div class="detail-ctg">{{ prdData[num]['cat']['cat2'] }}</div>
             <div class="detail-flex">
-              <div class="detail-name">퍼퓸 쉘 엑스 카모</div>
-              <div class="detail-price">32,000원</div>
+              <div class="detail-name">{{ prdData[num]['prdInfo']['name'] }}</div>
+              <div class="detail-price">{{ prdData[num]['prdInfo']['price'][0] }}원</div>
             </div>
             <ul class="detail-size">
               <li>
                 <div class="detail-size-img-bx">
                   <img class="detail-size-img" src="../../assets/image/prd/size/prd_hand_perfumehand_size_0.jpg" />
-                  <span class="detail-size-txt">30ml</span>
+                  <span class="detail-size-txt">{{ prdData[num]['prdInfo']['size'][0] }}</span>
                 </div>
               </li>
             </ul>
-            <div class="detail-desc">진득한 카모마일 | 부드러운 나무결 | 머스크</div>
-            <div class="detail-summary">
-              꿀처럼 진득하고 달콤한 카모마일과 씁쓸한 클라리세이지의 허브 향이 오묘한 조화를 이루어 중독성 있는 향을
-              선사합니다. 자칫 차갑게 느껴질 수 있는 촉촉한 이끼의 느낌을 우아하고 부드러운 나무결의 블론드 우드와
-              따뜻한 머스크로 감싸주어 당신의 지친 마음에 특별하고 작은 위안을 선물합니다.
-            </div>
+            <div class="detail-desc">{{ prdData[num]['prdDetail']['desc'] }}</div>
+            <div class="detail-summary">{{ prdData[num]['prdDetail']['summary'] }}</div>
 
             <!-- 장바구니 담기 버튼 -->
             <div class="cart-btn-bx">
@@ -112,12 +95,18 @@
 export default {
   name: 'Detail',
   data() {
-    return {};
+    return {
+      num: this.$route.params.id,
+    };
   },
   props: {
     prdData: Array,
   },
-  methods: {},
+  methods: {
+    find() {
+      console.log(this.prdData[this.num]['img']['detailImg'][0].includes('mp4'));
+    },
+  },
 };
 </script>
 

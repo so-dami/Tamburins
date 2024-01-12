@@ -5,6 +5,7 @@
 }
 
 .prd-detail-wrap {
+  padding: 0 45px;
   display: flex;
   justify-content: space-between;
   gap: 5%;
