@@ -5,11 +5,11 @@
 }
 
 .cont {
-  padding: 0 45px;
+  /* padding: 0 45px; */
 }
 
 .ctg-menu {
-  padding: 40px 0px;
+  padding: 40px 45px;
 }
 
 .ctg-list-item {
@@ -50,9 +50,11 @@
 
 .ctg-title-bx {
   height: 50px;
+  border-bottom: 1px solid #000;
 }
 
 .ctg-title {
+  padding: 0 45px;
   font-size: 16px;
   font-weight: 400;
   line-height: 50px;
@@ -65,6 +67,7 @@
 }
 
 .prd-list-grid {
+  padding: 0 45px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 7px;
