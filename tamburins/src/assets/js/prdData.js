@@ -25,6 +25,7 @@ const prdData = [
         'prd_hand_perfumehand_detail_0_2.jpg',
       ],
       sizeImg: ['prd_hand_perfumehand_size_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -52,6 +53,7 @@ const prdData = [
         'prd_hand_perfumehand_detail_1_2.jpg',
       ],
       sizeImg: ['prd_hand_perfumehand_size_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -79,6 +81,7 @@ const prdData = [
         'prd_hand_perfumehand_detail_2_2.jpg',
       ],
       sizeImg: ['prd_hand_perfumehand_size_2.jpg'],
+      file: 'img',
     },
   },
   {
@@ -102,6 +105,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_3.jpg',
       detailImg: ['prd_hand_perfumehand_detail_3_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_3_0.jpg', 'prd_hand_perfumehand_size_3_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -125,6 +129,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_4.jpg',
       detailImg: ['prd_hand_perfumehand_detail_4_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_4_0.jpg', 'prd_hand_perfumehand_size_4_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -148,6 +153,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_5.jpg',
       detailImg: ['prd_hand_perfumehand_detail_5_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_5_0.jpg', 'prd_hand_perfumehand_size_5_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -171,6 +177,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_6.jpg',
       detailImg: ['prd_hand_perfumehand_detail_6_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_6_0.jpg', 'prd_hand_perfumehand_size_6_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -194,6 +201,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_7.jpg',
       detailImg: ['prd_hand_perfumehand_detail_7_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_7_0.jpg', 'prd_hand_perfumehand_size_7_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -217,6 +225,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_8.jpg',
       detailImg: ['prd_hand_perfumehand_detail_8_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_8_0.jpg', 'prd_hand_perfumehand_size_8_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -240,6 +249,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_9.jpg',
       detailImg: ['prd_hand_perfumehand_detail_9_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_9_0.jpg', 'prd_hand_perfumehand_size_9_1.jpg'],
+      file: 'mp4',
     },
   },
   {
@@ -263,6 +273,7 @@ const prdData = [
       thumbnail: 'prd_hand_perfumehand_10.jpg',
       detailImg: ['prd_hand_perfumehand_detail_10_0.mp4'],
       sizeImg: ['prd_hand_perfumehand_size_10_0.jpg', 'prd_hand_perfumehand_size_10_1.jpg'],
+      file: 'mp4',
     },
   },
 
@@ -292,6 +303,7 @@ const prdData = [
         'prd_hand_tubehand_detail_0_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_0_0.jpg', 'prd_hand_tubehand_size_0_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -319,6 +331,7 @@ const prdData = [
         'prd_hand_tubehand_detail_1_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_1_0.jpg', 'prd_hand_tubehand_size_1_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -346,6 +359,7 @@ const prdData = [
         'prd_hand_tubehand_detail_2_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_2_0.jpg', 'prd_hand_tubehand_size_2_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -373,6 +387,7 @@ const prdData = [
         'prd_hand_tubehand_detail_3_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_3_0.jpg', 'prd_hand_tubehand_size_3_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -400,6 +415,7 @@ const prdData = [
         'prd_hand_tubehand_detail_4_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_4.jpg'],
+      file: 'img',
     },
   },
   {
@@ -427,6 +443,7 @@ const prdData = [
         'prd_hand_tubehand_detail_5_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_5.jpg'],
+      file: 'img',
     },
   },
   {
@@ -454,6 +471,7 @@ const prdData = [
         'prd_hand_tubehand_detail_6_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_6.jpg'],
+      file: 'img',
     },
   },
   {
@@ -481,6 +499,7 @@ const prdData = [
         'prd_hand_tubehand_detail_7_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_7.jpg'],
+      file: 'img',
     },
   },
   {
@@ -508,6 +527,7 @@ const prdData = [
         'prd_hand_tubehand_detail_8_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_8.jpg'],
+      file: 'img',
     },
   },
   {
@@ -535,6 +555,7 @@ const prdData = [
         'prd_hand_tubehand_detail_9_2.jpg',
       ],
       sizeImg: ['prd_hand_tubehand_size_9.jpg'],
+      file: 'img',
     },
   },
 
@@ -560,6 +581,7 @@ const prdData = [
       thumbnail: 'prd_hand_sanitizer_0.jpg',
       detailImg: ['prd_hand_sanitizer_detail_0_0.jpg', 'prd_hand_sanitizer_detail_0_1.jpg'],
       sizeImg: ['prd_hand_sanitizer_size_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -583,6 +605,7 @@ const prdData = [
       thumbnail: 'prd_hand_sanitizer_1.jpg',
       detailImg: ['prd_hand_sanitizer_detail_1_0.jpg', 'prd_hand_sanitizer_detail_1_1.jpg'],
       sizeImg: ['prd_hand_sanitizer_size_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -606,6 +629,7 @@ const prdData = [
       thumbnail: 'prd_hand_sanitizer_2.jpg',
       detailImg: ['prd_hand_sanitizer_detail_2_0.jpg', 'prd_hand_sanitizer_detail_2_1.jpg'],
       sizeImg: ['prd_hand_sanitizer_size_2.jpg'],
+      file: 'img',
     },
   },
   {
@@ -629,6 +653,7 @@ const prdData = [
       thumbnail: 'prd_hand_sanitizer_3.jpg',
       detailImg: ['prd_hand_sanitizer_detail_3_0.jpg', 'prd_hand_sanitizer_detail_3_1.jpg'],
       sizeImg: ['prd_hand_sanitizer_size_3.jpg'],
+      file: 'img',
     },
   },
   {
@@ -652,6 +677,7 @@ const prdData = [
       thumbnail: 'prd_hand_sanitizer_4.jpg',
       detailImg: ['prd_hand_sanitizer_detail_4_0.jpg', 'prd_hand_sanitizer_detail_4_1.jpg'],
       sizeImg: ['prd_hand_sanitizer_size_4.jpg'],
+      file: 'img',
     },
   },
   {
@@ -675,6 +701,7 @@ const prdData = [
       thumbnail: 'prd_hand_sanitizer_5.jpg',
       detailImg: ['prd_hand_sanitizer_detail_5_0.jpg', 'prd_hand_sanitizer_detail_5_1.jpg'],
       sizeImg: ['prd_hand_sanitizer_size_5.jpg'],
+      file: 'img',
     },
   },
 
@@ -700,6 +727,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_0.jpg',
       detailImg: ['prd_body_shwry_detail_0_0.jpg', 'prd_body_shwry_detail_0_1.jpg', 'prd_body_shwry_detail_0_2.jpg'],
       sizeImg: ['prd_body_shwry_size_0_0.jpg', 'prd_body_shwry_size_0_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -723,6 +751,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_1.jpg',
       detailImg: ['prd_body_shwry_detail_1_0.jpg', 'prd_body_shwry_detail_1_1.jpg', 'prd_body_shwry_detail_1_2.jpg'],
       sizeImg: ['prd_body_shwry_size_1_0.jpg', 'prd_body_shwry_size_1_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -746,6 +775,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_2.jpg',
       detailImg: ['prd_body_shwry_detail_2_0.jpg', 'prd_body_shwry_detail_2_1.jpg', 'prd_body_shwry_detail_2_2.jpg'],
       sizeImg: ['prd_body_shwry_size_2_0.jpg', 'prd_body_shwry_size_2_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -769,6 +799,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_3.jpg',
       detailImg: ['prd_body_shwry_detail_3_0.jpg', 'prd_body_shwry_detail_3_1.jpg', 'prd_body_shwry_detail_3_2.jpg'],
       sizeImg: ['prd_body_shwry_size_3_0.jpg', 'prd_body_shwry_size_3_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -792,6 +823,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_4.jpg',
       detailImg: ['prd_body_shwry_detail_4_0.jpg', 'prd_body_shwry_detail_4_1.jpg', 'prd_body_shwry_detail_4_2.jpg'],
       sizeImg: ['prd_body_shwry_size_4_0.jpg', 'prd_body_shwry_size_4_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -815,6 +847,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_5.jpg',
       detailImg: ['prd_body_shwry_detail_5_0.jpg', 'prd_body_shwry_detail_5_1.jpg', 'prd_body_shwry_detail_5_2.jpg'],
       sizeImg: ['prd_body_shwry_size_5_0.jpg', 'prd_body_shwry_size_5_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -838,6 +871,7 @@ const prdData = [
       thumbnail: 'prd_body_shwry_6.jpg',
       detailImg: ['prd_body_shwry_detail_6_0.jpg', 'prd_body_shwry_detail_6_1.jpg', 'prd_body_shwry_detail_6_2.jpg'],
       sizeImg: ['prd_body_shwry_size_6_0.jpg', 'prd_body_shwry_size_6_1.jpg'],
+      file: 'img',
     },
   },
 
@@ -863,6 +897,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_0.jpg',
       detailImg: ['prd_body_handnbody_detail_0_0.jpg', 'prd_body_handnbody_detail_0_1.jpg', 'prd_body_handnbody_detail_0_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_0_0.jpg', 'prd_body_handnbody_size_0_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -886,6 +921,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_1.jpg',
       detailImg: ['prd_body_handnbody_detail_1_0.jpg', 'prd_body_handnbody_detail_1_1.jpg', 'prd_body_handnbody_detail_1_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_1_0.jpg', 'prd_body_handnbody_size_1_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -909,6 +945,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_2.jpg',
       detailImg: ['prd_body_handnbody_detail_2_0.jpg', 'prd_body_handnbody_detail_2_1.jpg', 'prd_body_handnbody_detail_2_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_2_0.jpg', 'prd_body_handnbody_size_2_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -932,6 +969,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_3.jpg',
       detailImg: ['prd_body_handnbody_detail_3_0.jpg', 'prd_body_handnbody_detail_3_1.jpg', 'prd_body_handnbody_detail_3_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_3_0.jpg', 'prd_body_handnbody_size_3_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -955,6 +993,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_4.jpg',
       detailImg: ['prd_body_handnbody_detail_4_0.jpg', 'prd_body_handnbody_detail_4_1.jpg', 'prd_body_handnbody_detail_4_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_4_0.jpg', 'prd_body_handnbody_size_4_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -978,6 +1017,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_5.jpg',
       detailImg: ['prd_body_handnbody_detail_5_0.jpg', 'prd_body_handnbody_detail_5_1.jpg', 'prd_body_handnbody_detail_5_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_5_0.jpg', 'prd_body_handnbody_size_5_1.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1001,6 +1041,7 @@ const prdData = [
       thumbnail: 'prd_body_handnbody_6.jpg',
       detailImg: ['prd_body_handnbody_detail_6_0.jpg', 'prd_body_handnbody_detail_6_1.jpg', 'prd_body_handnbody_detail_6_2.jpg'],
       sizeImg: ['prd_body_handnbody_size_6_0.jpg', 'prd_body_handnbody_size_6_1.jpg'],
+      file: 'img',
     },
   },
 
@@ -1030,6 +1071,7 @@ const prdData = [
         'prd_candle_perfumecandle_detail_0_2.jpg',
       ],
       sizeImg: ['prd_candle_perfumecandle_size_0_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1057,6 +1099,7 @@ const prdData = [
         'prd_candle_perfumecandle_detail_1_2.jpg',
       ],
       sizeImg: ['prd_candle_perfumecandle_size_1_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1084,6 +1127,7 @@ const prdData = [
         'prd_candle_perfumecandle_detail_2_2.jpg',
       ],
       sizeImg: ['prd_candle_perfumecandle_size_2_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1111,6 +1155,7 @@ const prdData = [
         'prd_candle_perfumecandle_detail_3_2.jpg',
       ],
       sizeImg: ['prd_candle_perfumecandle_size_3_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1134,6 +1179,7 @@ const prdData = [
       thumbnail: 'prd_candle_perfumecandle_4.jpg',
       detailImg: ['prd_candle_perfumecandle_detail_4_0.jpg', 'prd_candle_perfumecandle_detail_4_1.jpg'],
       sizeImg: ['prd_candle_perfumecandle_size_4_0.jpg'],
+      file: 'img',
     },
   },
 
@@ -1166,6 +1212,7 @@ const prdData = [
         'prd_candle_object_detail_0_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_0_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1196,6 +1243,7 @@ const prdData = [
         'prd_candle_object_detail_1_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_1_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1226,6 +1274,7 @@ const prdData = [
         'prd_candle_object_detail_2_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_2_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1256,6 +1305,7 @@ const prdData = [
         'prd_candle_object_detail_3_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_3_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1286,6 +1336,7 @@ const prdData = [
         'prd_candle_object_detail_4_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_4_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1312,6 +1363,7 @@ const prdData = [
         'prd_candle_object_detail_5_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_5_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1338,6 +1390,7 @@ const prdData = [
         'prd_candle_object_detail_6_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_6_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1364,6 +1417,7 @@ const prdData = [
         'prd_candle_object_detail_7_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_7_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1391,6 +1445,7 @@ const prdData = [
         'prd_candle_object_detail_8_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_8_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1418,6 +1473,7 @@ const prdData = [
         'prd_candle_object_detail_9_2.jpg',
       ],
       sizeImg: ['prd_candle_object_size_9_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1440,6 +1496,7 @@ const prdData = [
       thumbnail: 'prd_candle_object_10.jpg',
       detailImg: ['prd_candle_object_detail_10_0.jpg'],
       sizeImg: ['prd_candle_object_size_10_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1463,6 +1520,7 @@ const prdData = [
       thumbnail: 'prd_candle_object_11.jpg',
       detailImg: ['prd_candle_object_detail_11_0.jpg'],
       sizeImg: ['prd_candle_object_size_11_0.jpg'],
+      file: 'img',
     },
   },
   {
@@ -1486,6 +1544,7 @@ const prdData = [
       thumbnail: 'prd_candle_object_12.jpg',
       detailImg: ['prd_candle_object_detail_12_0.jpg', 'prd_candle_object_detail_12_1.jpg'],
       sizeImg: ['prd_candle_object_size_12_0.jpg'],
+      file: 'img',
     },
   },
 
@@ -1515,6 +1574,7 @@ const prdData = [
         'prd_toilet_fragrance_detail_0_2.jpg',
       ],
       sizeImg: ['prd_toilet_fragrance_size_0_0.jpg'],
+      file: 'img',
     },
   },
 ];
