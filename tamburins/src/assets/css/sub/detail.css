@@ -32,6 +32,11 @@
   display: block;
 }
 
+.detail-video {
+  width: 100%;
+  display: block;
+}
+
 .detail-prd-info-bx {
   width: 30%;
 }
@@ -63,7 +68,7 @@
 .detail-size {
   margin: 45px 0;
   display: flex;
-  gap: 5px;
+  gap: 7px;
 }
 
 .detail-size-img-bx {
@@ -77,6 +82,10 @@
   height: auto;
   border: 1px solid #000;
   border-radius: 3px;
+}
+
+.detail-size-txt-bx {
+  text-align: center;
 }
 
 .detail-size-txt {
@@ -152,4 +161,8 @@
 
 .show {
   display: block;
+}
+
+.pointer{
+  cursor: pointer;
 }

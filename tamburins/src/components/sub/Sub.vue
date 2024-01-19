@@ -5,7 +5,7 @@
       <nav>
         <div class="ctg-menu">
           <ul class="list-flex">
-            <li class="ctg-list-item" v-for="(categoryData, i) in categoryData" :key="i" @click="lookChange()">
+            <li class="ctg-list-item pointer" v-for="(categoryData, i) in categoryData" :key="i" @click="lookChange()">
               <div class="ctg-thumbnail">
                 <div>
                   <img
@@ -62,7 +62,7 @@
         <!-- 상품 목록 -->
         <div class="prd-list">
           <!-- 전체 보기 -->
-          <div class="prd-list-grid" v-if="look == `${categoryData[0]['catNum']}`">
+          <div class="prd-list-grid pointer" v-if="look == `${categoryData[0]['catNum']}`">
             <div class="prd-list-item" v-for="(prdData, i) in prdData" :key="i">
               <div class="prd-list-thumbnail">
                 <img
@@ -230,7 +230,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -267,7 +266,7 @@ export default {
       this.newData = this.prdData.filter((a) => {
         return a['catNum'] == this.look;
       });
-      
+
       console.log(this.newData);
     },
   },

@@ -4,12 +4,23 @@
       <div class="prd-detail-wrap">
         <!-- 왼쪽 상품 이미지 -->
         <div class="detail-prd-img-bx">
-          <div v-for="(img, i) in prdData[num]['img']['detailImg']" :key="i">
+          <div v-for="(detailImg, i) in prdData[num]['img']['detailImg']" :key="i">
+            <!-- 상품 이미지 -->
             <img
               class="detail-img"
-              :src="require(`../../assets/image/prd/detail/${img}`)"
+              v-if="prdData[num]['img']['file'] == 'img'"
+              :src="require(`../../assets/image/prd/detail/${detailImg}`)"
               :alt="`${prdData[num]['prdInfo']['name']}`"
-              @click="find()"
+            />
+            <!-- 상품 비디오 -->
+            <video
+              class="detail-video"
+              v-if="prdData[num]['img']['file'] == 'mp4'"
+              :src="require(`../../assets/image/prd/detail/${detailImg}`)"
+              :alt="`${prdData[num]['prdInfo']['name']}`"
+              autoplay
+              loop
+              muted
             />
           </div>
         </div>
@@ -23,10 +34,12 @@
               <div class="detail-price">{{ prdData[num]['prdInfo']['price'][0] }}원</div>
             </div>
             <ul class="detail-size">
-              <li>
-                <div class="detail-size-img-bx">
-                  <img class="detail-size-img" src="../../assets/image/prd/size/prd_hand_perfumehand_size_0.jpg" />
-                  <span class="detail-size-txt">{{ prdData[num]['prdInfo']['size'][0] }}</span>
+              <li v-for="(sizeImg, i) in prdData[num]['img']['sizeImg']" :key="i">
+                <div class="detail-size-img-bx pointer">
+                  <img class="detail-size-img" :src="require(`../../assets/image/prd/size/${sizeImg}`)" />
+                </div>
+                <div class="detail-size-txt-bx">
+                  <span class="detail-size-txt">{{ prdData[num]['prdInfo']['size'][i] }}</span>
                 </div>
               </li>
             </ul>
@@ -35,13 +48,13 @@
 
             <!-- 장바구니 담기 버튼 -->
             <div class="cart-btn-bx">
-              <button class="cart-btn">장바구니 담기</button>
+              <button class="cart-btn pointer">장바구니 담기</button>
             </div>
 
             <!-- 정보...? -->
             <div class="info-wrap">
               <!-- 온라인 혜택 설명 -->
-              <div class="info-bx">
+              <div class="info-bx pointer" @click="infoShow()">
                 <div class="info-subject-bx">
                   <span class="info-subject"> 온라인 단독 혜택 </span>
                   <span class="info-arrow">+</span>
@@ -56,19 +69,18 @@
                 <br />
                 * 구매 금액의 2% 적립
                 <br />
-                * 생일 축하 5,000 포인트 혜택 (1년 이내 구매 이력 있을 시)
+                * 생일 축하 5,000P 혜택 (1년 이내 구매 이력 있을 시)
               </div>
 
               <!-- 배송 & 반품 설명 -->
-              <div class="info-bx">
+              <div class="info-bx pointer" @click="infoShow()">
                 <div class="info-subject-bx">
                   <span class="info-subject"> 배송 & 반품 </span>
                   <span class="info-arrow">+</span>
                 </div>
               </div>
-              <div class="info-txt show">
-                3만원 이상 구매하실 경우 배송비는 무료입니다.
-                <br />
+              <div class="info-txt">
+                30,000원 이상 구매하실 경우 배송비는 무료이며,
                 <br />
                 <span>주문일로부터 1-2 영업일 이내 출고됩니다.</span>
                 <br />
@@ -81,7 +93,7 @@
                 <br />
                 * 상품 혹은 증정품의 포장을 개봉 및 훼손한 경우 반품이 불가합니다.
                 <br />
-                * 단순 변심 또는 주문 실수로 인한 교환이 불가합니다. 신중한 구매 부탁드립니다.
+                * 단순 변심 또는 주문 실수로 인한 교환이 불가합니다.
               </div>
             </div>
           </div>
@@ -97,14 +109,21 @@ export default {
   data() {
     return {
       num: this.$route.params.id,
+      infoClick: false,
     };
   },
   props: {
     prdData: Array,
   },
   methods: {
-    find() {
-      console.log(this.prdData[this.num]['img']['detailImg'][0].includes('mp4'));
+    infoShow() {
+      this.infoClick = !this.infoClick;
+      console.log(this.infoClick);
+      if (this.infoClick == true) {
+        event.currentTarget.nextSibling.classList.add('show');
+      } else {
+        event.currentTarget.nextSibling.classList.remove('show');
+      }
     },
   },
 };

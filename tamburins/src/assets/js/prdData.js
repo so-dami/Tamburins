@@ -896,7 +896,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_0.jpg',
       detailImg: ['prd_body_handnbody_detail_0_0.jpg', 'prd_body_handnbody_detail_0_1.jpg', 'prd_body_handnbody_detail_0_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_0_0.jpg', 'prd_body_handnbody_size_0_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_0_0.jpg'],
       file: 'img',
     },
   },
@@ -920,7 +920,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_1.jpg',
       detailImg: ['prd_body_handnbody_detail_1_0.jpg', 'prd_body_handnbody_detail_1_1.jpg', 'prd_body_handnbody_detail_1_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_1_0.jpg', 'prd_body_handnbody_size_1_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_1_0.jpg'],
       file: 'img',
     },
   },
@@ -944,7 +944,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_2.jpg',
       detailImg: ['prd_body_handnbody_detail_2_0.jpg', 'prd_body_handnbody_detail_2_1.jpg', 'prd_body_handnbody_detail_2_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_2_0.jpg', 'prd_body_handnbody_size_2_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_2_0.jpg'],
       file: 'img',
     },
   },
@@ -968,7 +968,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_3.jpg',
       detailImg: ['prd_body_handnbody_detail_3_0.jpg', 'prd_body_handnbody_detail_3_1.jpg', 'prd_body_handnbody_detail_3_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_3_0.jpg', 'prd_body_handnbody_size_3_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_3_0.jpg'],
       file: 'img',
     },
   },
@@ -992,7 +992,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_4.jpg',
       detailImg: ['prd_body_handnbody_detail_4_0.jpg', 'prd_body_handnbody_detail_4_1.jpg', 'prd_body_handnbody_detail_4_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_4_0.jpg', 'prd_body_handnbody_size_4_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_4_0.jpg'],
       file: 'img',
     },
   },
@@ -1016,7 +1016,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_5.jpg',
       detailImg: ['prd_body_handnbody_detail_5_0.jpg', 'prd_body_handnbody_detail_5_1.jpg', 'prd_body_handnbody_detail_5_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_5_0.jpg', 'prd_body_handnbody_size_5_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_5_0.jpg'],
       file: 'img',
     },
   },
@@ -1040,7 +1040,7 @@ const prdData = [
     img: {
       thumbnail: 'prd_body_handnbody_6.jpg',
       detailImg: ['prd_body_handnbody_detail_6_0.jpg', 'prd_body_handnbody_detail_6_1.jpg', 'prd_body_handnbody_detail_6_2.jpg'],
-      sizeImg: ['prd_body_handnbody_size_6_0.jpg', 'prd_body_handnbody_size_6_1.jpg'],
+      sizeImg: ['prd_body_handnbody_size_6_0.jpg'],
       file: 'img',
     },
   },

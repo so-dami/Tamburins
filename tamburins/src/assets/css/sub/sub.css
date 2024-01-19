@@ -15,7 +15,6 @@
 .ctg-list-item {
   min-width: 110px;
   width: 110px;
-  cursor: pointer;
 }
 
 .ctg-list-item:hover .ctg-thumbnail > div {
