@@ -54,13 +54,25 @@
             <!-- 정보...? -->
             <div class="info-wrap">
               <!-- 온라인 혜택 설명 -->
-              <div class="info-bx pointer" @click="infoShow()">
+              <div
+                class="info-bx pointer"
+                @click="
+                  () => {
+                    infoCount[0]++;
+                    if (infoCount[0] % 2 == 1) {
+                      infoClick[0] = 1;
+                    } else {
+                      infoClick[0] = 0;
+                    }
+                  }
+                "
+              >
                 <div class="info-subject-bx">
                   <span class="info-subject"> 온라인 단독 혜택 </span>
                   <span class="info-arrow">+</span>
                 </div>
               </div>
-              <div class="info-txt">
+              <div class="info-txt" :class="infoClick[0] == 1 ? 'show' : ''">
                 탬버린즈는 고객님들께 빠른 배송 및 반품과 최고의 경험을 제공하기 위해 언제나 세심한 주의를 기울입니다.
                 고객님을 위한 익스클루시브 서비스를 경험해보세요.
                 <br />
@@ -73,13 +85,25 @@
               </div>
 
               <!-- 배송 & 반품 설명 -->
-              <div class="info-bx pointer" @click="infoShow()">
+              <div
+                class="info-bx pointer"
+                @click="
+                  () => {
+                    infoCount[1]++;
+                    if (infoCount[1] % 2 == 1) {
+                      infoClick[1] = 1;
+                    } else {
+                      infoClick[1] = 0;
+                    }
+                  }
+                "
+              >
                 <div class="info-subject-bx">
                   <span class="info-subject"> 배송 & 반품 </span>
                   <span class="info-arrow">+</span>
                 </div>
               </div>
-              <div class="info-txt">
+              <div class="info-txt" :class="infoClick[1] == 1 ? 'show' : ''">
                 30,000원 이상 구매하실 경우 배송비는 무료이며,
                 <br />
                 <span>주문일로부터 1-2 영업일 이내 출고됩니다.</span>
@@ -109,23 +133,14 @@ export default {
   data() {
     return {
       num: this.$route.params.id,
-      infoClick: false,
+      infoClick: [0, 0],
+      infoCount: [0, 0],
     };
   },
   props: {
     prdData: Array,
   },
-  methods: {
-    infoShow() {
-      this.infoClick = !this.infoClick;
-      console.log(this.infoClick);
-      if (this.infoClick == true) {
-        event.currentTarget.nextSibling.classList.add('show');
-      } else {
-        event.currentTarget.nextSibling.classList.remove('show');
-      }
-    },
-  },
+  methods: {},
 };
 </script>
 
