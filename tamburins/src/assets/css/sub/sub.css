@@ -91,6 +91,20 @@
   font-weight: 500;
 }
 
+.prd-list-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .prd-list-price {
   font-size: 14px;
+}
+
+.prd-list-size{
+  font-size: 13px;
+}
+
+.prd-list-size span{
+  color: #535353;
 }

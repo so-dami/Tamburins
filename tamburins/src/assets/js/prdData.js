@@ -1255,7 +1255,7 @@ const prdData = [
     },
     prdInfo: {
       name: '블루밍 캔들 버드',
-      price: ['219,000원'],
+      price: ['219,000'],
       size: ['900g'],
     },
     prdDetail: {

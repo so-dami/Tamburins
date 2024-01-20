@@ -80,8 +80,13 @@
   width: 100%;
   display: block;
   height: auto;
-  border: 1px solid #000;
   border-radius: 3px;
+}
+
+.detail-size-img-bx:hover .detail-size-img,
+.size-show {
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 
 .detail-size-txt-bx {
@@ -117,8 +122,17 @@
   height: 50px;
   color: #fff;
   font-size: 14px;
-  background-color: #000;
+  background: #000;
   border: none;
+  box-sizing: border-box;
+
+  transition: all 0.5s ease-out;
+}
+
+.cart-btn:hover {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
 }
 
 .info-wrap {
@@ -159,7 +173,7 @@
   border-bottom: 1px solid lightgray;
 }
 
-.show {
+.info-show {
   display: block;
 }
 

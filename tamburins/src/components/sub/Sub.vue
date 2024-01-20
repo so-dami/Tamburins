@@ -56,178 +56,231 @@
         </div>
 
         <!-- <router-link :to="`/detail/${perfumeprdData['id']}`"> -->
-        <!-- :src="require(`../../assets/image/prd/thumbnail/${perfumeprdData['prdImg']}`)" -->
-        <!-- v-for="(perfumeprdData, i) in perfumeprdData" :key="i" -->
 
         <!-- 상품 목록 -->
         <div class="prd-list">
           <!-- 전체 보기 -->
-          <div class="prd-list-grid pointer" v-if="look == `${categoryData[0]['catNum']}`">
+          <div class="prd-list-grid" v-if="look == `${categoryData[0]['catNum']}`">
             <div class="prd-list-item" v-for="(prdData, i) in prdData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${prdData['img']['thumbnail']}`)"
-                  :alt="`${prdData['prdInfo']['name']}`"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ prdData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ prdData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ prdData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${prdData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${prdData['img']['thumbnail']}`)"
+                    :alt="`${prdData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ prdData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ prdData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ prdData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ prdData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 퍼퓸 핸드 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[1]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 튜브 핸드 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[2]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 손 소독제 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[3]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 샤워리바디 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[4]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 핸드 앤 바디 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[5]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 퍼퓸 캔들 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[6]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 향 오브젝트 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[7]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
 
           <!-- 토일렛 프래그런스 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[8]['catNum']}`">
             <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <div class="prd-list-thumbnail">
-                <img
-                  class="prd-list-thumbnail-img"
-                  :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                  :alt="`${newData['prdInfo']['name']}`"
-                  @click="filter()"
-                />
-              </div>
-              <div class="prd-list-info">
-                <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
-                <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
-              </div>
+              <router-link :to="`/detail/${newData['id']}`">
+                <div class="prd-list-thumbnail">
+                  <img
+                    class="prd-list-thumbnail-img"
+                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
+                    :alt="`${newData['prdInfo']['name']}`"
+                  />
+                </div>
+                <div class="prd-list-info">
+                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-flex">
+                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-size">
+                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                    </div>
+                  </div>
+                </div>
+              </router-link>
             </div>
           </div>
         </div>
@@ -266,8 +319,6 @@ export default {
       this.newData = this.prdData.filter((a) => {
         return a['catNum'] == this.look;
       });
-
-      console.log(this.newData);
     },
   },
 };

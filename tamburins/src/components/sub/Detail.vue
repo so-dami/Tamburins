@@ -31,12 +31,30 @@
             <div class="detail-ctg">{{ prdData[num]['cat']['cat2'] }}</div>
             <div class="detail-flex">
               <div class="detail-name">{{ prdData[num]['prdInfo']['name'] }}</div>
-              <div class="detail-price">{{ prdData[num]['prdInfo']['price'][0] }}원</div>
+              <div class="detail-price" v-if="sizeClick[0] == 1">{{ prdData[num]['prdInfo']['price'][0] }}원</div>
+              <div class="detail-price" v-if="sizeClick[1] == 1">{{ prdData[num]['prdInfo']['price'][1] }}원</div>
             </div>
             <ul class="detail-size">
               <li v-for="(sizeImg, i) in prdData[num]['img']['sizeImg']" :key="i">
-                <div class="detail-size-img-bx pointer">
-                  <img class="detail-size-img" :src="require(`../../assets/image/prd/size/${sizeImg}`)" />
+                <div
+                  class="detail-size-img-bx pointer"
+                  @click="
+                    () => {
+                      if (i == 0) {
+                        sizeClick[0] = 1;
+                        sizeClick[1] = 0;
+                      } else {
+                        sizeClick[0] = 0;
+                        sizeClick[1] = 1;
+                      }
+                    }
+                  "
+                >
+                  <img
+                    class="detail-size-img"
+                    :class="sizeClick[i] == 1 ? 'size-show' : ''"
+                    :src="require(`../../assets/image/prd/size/${sizeImg}`)"
+                  />
                 </div>
                 <div class="detail-size-txt-bx">
                   <span class="detail-size-txt">{{ prdData[num]['prdInfo']['size'][i] }}</span>
@@ -69,10 +87,11 @@
               >
                 <div class="info-subject-bx">
                   <span class="info-subject"> 온라인 단독 혜택 </span>
-                  <span class="info-arrow">+</span>
+                  <span class="info-arrow" v-if="infoClick[0] == 0">+</span>
+                  <span class="info-arrow" v-if="infoClick[0] == 1">-</span>
                 </div>
               </div>
-              <div class="info-txt" :class="infoClick[0] == 1 ? 'show' : ''">
+              <div class="info-txt" :class="infoClick[0] == 1 ? 'info-show' : ''">
                 탬버린즈는 고객님들께 빠른 배송 및 반품과 최고의 경험을 제공하기 위해 언제나 세심한 주의를 기울입니다.
                 고객님을 위한 익스클루시브 서비스를 경험해보세요.
                 <br />
@@ -100,10 +119,11 @@
               >
                 <div class="info-subject-bx">
                   <span class="info-subject"> 배송 & 반품 </span>
-                  <span class="info-arrow">+</span>
+                  <span class="info-arrow" v-if="infoClick[1] == 0">+</span>
+                  <span class="info-arrow" v-if="infoClick[1] == 1">-</span>
                 </div>
               </div>
-              <div class="info-txt" :class="infoClick[1] == 1 ? 'show' : ''">
+              <div class="info-txt" :class="infoClick[1] == 1 ? 'info-show' : ''">
                 30,000원 이상 구매하실 경우 배송비는 무료이며,
                 <br />
                 <span>주문일로부터 1-2 영업일 이내 출고됩니다.</span>
@@ -135,12 +155,15 @@ export default {
       num: this.$route.params.id,
       infoClick: [0, 0],
       infoCount: [0, 0],
+      sizeClick: [1, 0],
     };
   },
   props: {
     prdData: Array,
   },
-  methods: {},
+  methods: {
+    size() {},
+  },
 };
 </script>
 
