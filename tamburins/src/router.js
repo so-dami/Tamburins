@@ -4,6 +4,7 @@ import { createWebHistory, createRouter } from 'vue-router';
 import Home from './components/common/Home.vue';
 import Sub from './components/sub/Sub.vue';
 import Detail from './components/sub/Detail.vue';
+import Store from './components/sub/Store.vue';
 
 const routes = [
   // {
@@ -28,6 +29,10 @@ const routes = [
   {
     path: '/detail/:id',
     component: Detail,
+  },
+  {
+    path: '/store',
+    component: Store,
   },
 ];
 

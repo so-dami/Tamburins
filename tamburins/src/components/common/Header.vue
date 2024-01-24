@@ -34,7 +34,9 @@
               <router-link :to="`/sub`">제품 보기</router-link>
             </li>
             <li>선물 추천</li>
-            <li>매장 안내</li>
+            <li>
+              <router-link :to="`/store`">매장 안내</router-link>
+            </li>
           </ul>
         </div>
         <ul class="side-list list-flex">
