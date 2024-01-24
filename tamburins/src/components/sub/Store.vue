@@ -16,14 +16,27 @@
         <div class="store-list-grid">
           <div class="store-list-item">
             <div class="store-img">
-              <img src="" alt="" />
+              <img src="../../assets/image/store/store_seongsu.jpg" alt="매장 사진" />
             </div>
             <div class="store-info-wrap">
-              <h4 class="store-name">
+              <h3 class="store-name">
+                플래그십 스토어 성수
+                <span class="store-map pointer"><font-awesome-icon :icon="['fas', 'location-dot']" style="color: #535353;" /></span>
+              </h3>
+              <p class="store-addr">서울 성동구 연무장5길 8</p>
+              <p class="store-phone">+82 70 4266 6142</p>
+              <p class="store-hours">월-일 11:00am-9:00pm</p>
+            </div>
+          </div>
+          <div class="store-list-item">
+            <div class="store-img">
+              <img src="../../assets/image/store/store_seongsu.jpg" alt="매장 사진" />
+            </div>
+            <div class="store-info-wrap">
+              <h3 class="store-name">
                 플래그십 스토어 성수
                 <span class="store-map pointer">지도</span>
-              </h4>
-
+              </h3>
               <p class="store-addr">서울 성동구 연무장5길 8</p>
               <p class="store-phone">+82 70 4266 6142</p>
               <p class="store-hours">월-일 11:00am-9:00pm</p>

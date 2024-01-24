@@ -1,1 +1,30 @@
 @charset "utf-8";
+
+.store-menu {
+  padding: 40px 45px;
+}
+
+.store-list-grid {
+  padding: 0 45px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3%;
+}
+
+.store-img > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.store-info-wrap {
+  padding: 20px 0;
+}
+
+.store-addr{
+  margin-top: 10px;
+}
+
+.store-phone, .store-hours{
+  margin-top: 3px;
+}
