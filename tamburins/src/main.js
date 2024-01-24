@@ -5,4 +5,10 @@ import App from './App.vue';
 import router from './router.js';
 import store from './store.js';
 
-createApp(App).use(router, store).mount('#app');
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
+library.add(faUserSecret, faLocationDot);
+
+createApp(App).use(router, store).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

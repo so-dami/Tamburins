@@ -4,7 +4,7 @@
     <Header></Header>
 
     <!-- 메인 -->
-    <router-view :prdData="prdData" :categoryData="categoryData"></router-view>
+    <router-view :prdData="prdData" :categoryData="categoryData" :storeData="storeData"></router-view>
 
     <!-- 하단 -->
     <Footer></Footer>
@@ -19,6 +19,7 @@ import Footer from './components/common/Footer.vue';
 // 데이터
 import prdData from './assets/js/prdData.js';
 import categoryData from './assets/js/categoryData.js';
+import storeData from './assets/js/storeData.js';
 
 export default {
   name: 'App',
@@ -26,6 +27,7 @@ export default {
     return {
       prdData: prdData,
       categoryData: categoryData,
+      storeData: storeData,
     };
   },
   components: {

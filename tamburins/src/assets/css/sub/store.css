@@ -1,7 +1,32 @@
 @charset "utf-8";
 
 .store-menu {
-  padding: 40px 45px;
+  padding: 15px 40px 45px;
+}
+
+.store-menu-flex{
+  display: flex;
+  gap: 7px;
+}
+
+.store-menu-item {
+  display: inline-flex;
+  align-items: center;
+  height: 35px;
+  padding: 0 20px;
+  color: #767676;
+  background: #efefef;
+  border-radius: 50px;
+}
+
+.on {
+  display: inline-flex;
+  align-items: center;
+  height: 35px;
+  padding: 0 20px;
+  color: #fff;
+  background: #000;
+  border-radius: 50px;
 }
 
 .store-list-grid {
@@ -13,18 +38,24 @@
 
 .store-img > img {
   width: 100%;
-  height: auto;
+  display: block;
+}
+
+.store-img > video {
+  width: 100%;
   display: block;
 }
 
 .store-info-wrap {
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
-.store-addr{
+.store-addr {
   margin-top: 10px;
 }
 
-.store-phone, .store-hours{
+.store-phone,
+.store-hours {
   margin-top: 3px;
 }
