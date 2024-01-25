@@ -30,28 +30,28 @@
             <span class="list-count" v-if="look == `${categoryData[0]['catNum']}`">({{ prdData.length }})</span>
 
             <!-- 퍼퓸 핸드 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[1]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[1]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 튜브 핸드 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[2]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[2]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 손 소독제 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[3]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[3]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 샤워리바디 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[4]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[4]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 핸드 앤 바디 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[5]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[5]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 퍼퓸 캔들 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[6]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[6]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 향 오브젝트 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[7]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[7]['catNum']}`">({{ newCategoryData.length }})</span>
 
             <!-- 토일렛 프래그런스 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[8]['catNum']}`">({{ newData.length }})</span>
+            <span class="list-count" v-if="look == `${categoryData[8]['catNum']}`">({{ newCategoryData.length }})</span>
           </div>
         </div>
 
@@ -86,22 +86,22 @@
 
           <!-- 퍼퓸 핸드 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[1]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -111,22 +111,22 @@
 
           <!-- 튜브 핸드 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[2]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -136,22 +136,22 @@
 
           <!-- 손 소독제 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[3]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -161,22 +161,22 @@
 
           <!-- 샤워리바디 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[4]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -186,22 +186,22 @@
 
           <!-- 핸드 앤 바디 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[5]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -211,22 +211,22 @@
 
           <!-- 퍼퓸 캔들 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[6]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -236,22 +236,22 @@
 
           <!-- 향 오브젝트 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[7]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -261,22 +261,22 @@
 
           <!-- 토일렛 프래그런스 -->
           <div class="prd-list-grid" v-if="look == `${categoryData[8]['catNum']}`">
-            <div class="prd-list-item" v-for="(newData, i) in newData" :key="i">
-              <router-link :to="`/detail/${newData['id']}`">
+            <div class="prd-list-item" v-for="(newCategoryData, i) in newCategoryData" :key="i">
+              <router-link :to="`/detail/${newCategoryData['id']}`">
                 <div class="prd-list-thumbnail">
                   <img
                     class="prd-list-thumbnail-img"
-                    :src="require(`../../assets/image/prd/thumbnail/${newData['img']['thumbnail']}`)"
-                    :alt="`${newData['prdInfo']['name']}`"
+                    :src="require(`../../assets/image/prd/thumbnail/${newCategoryData['img']['thumbnail']}`)"
+                    :alt="`${newCategoryData['prdInfo']['name']}`"
                   />
                 </div>
                 <div class="prd-list-info">
-                  <div class="prd-list-desc">{{ newData['prdDetail']['desc'] }}</div>
-                  <div class="prd-list-name">{{ newData['prdInfo']['name'] }}</div>
+                  <div class="prd-list-desc">{{ newCategoryData['prdDetail']['desc'] }}</div>
+                  <div class="prd-list-name">{{ newCategoryData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ newData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">{{ newCategoryData['prdInfo']['price'][0] }}원</div>
                     <div class="prd-list-size">
-                      <span>+ </span>{{ newData['prdInfo']['size'].length }}<span>size</span>
+                      <span>+ </span>{{ newCategoryData['prdInfo']['size'].length }}<span>size</span>
                     </div>
                   </div>
                 </div>
@@ -297,7 +297,7 @@ export default {
       txt: '전체 보기',
       look: 'all',
       result: [],
-      newData: [],
+      newCategoryData: [],
     };
   },
   components: {},
@@ -316,7 +316,7 @@ export default {
       this.look = this.result[0]['catNum'];
       console.log(this.look);
 
-      this.newData = this.prdData.filter((a) => {
+      this.newCategoryData = this.prdData.filter((a) => {
         return a['catNum'] == this.look;
       });
     },
