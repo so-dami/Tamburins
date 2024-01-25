@@ -168,7 +168,7 @@ export default {
   name: 'Store',
   data() {
     return {
-      menuClick: 2,
+      menuClick: 0,
       storeCat: '',
       summaryShow: false,
       newStoreData: [],
@@ -185,9 +185,11 @@ export default {
         return a['storeCat'] == this.storeCat;
       });
     },
-    summaryClick() {
-      this.summaryShow = !this.summaryShow;
-    },
+  },
+  mounted() {
+    this.newStoreData = this.storeData.filter((a) => {
+      return a['storeCat'] == '대한민국';
+    });
   },
 };
 </script>

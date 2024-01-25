@@ -38,11 +38,7 @@
   position: relative;
 }
 
-.store-img-bx > img {
-  width: 100%;
-  display: block;
-}
-
+.store-img-bx > img,
 .store-img-bx > video {
   width: 100%;
   display: block;
