@@ -31,6 +31,10 @@ const routes = [
     component: Detail,
   },
   {
+    path: '/gift',
+    component: Sub,
+  },
+  {
     path: '/store',
     component: Store,
   },

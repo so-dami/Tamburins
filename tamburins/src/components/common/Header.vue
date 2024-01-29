@@ -33,7 +33,7 @@
             <li>
               <router-link :to="`/sub`">제품 보기</router-link>
             </li>
-            <li>선물 추천</li>
+            <!-- <li><router-link :to="`/gift`">선물 추천</router-link></li> -->
             <li>
               <router-link :to="`/store`">매장 안내</router-link>
             </li>

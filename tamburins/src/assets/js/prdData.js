@@ -1589,35 +1589,103 @@ const prdData = [
     },
   },
 
-  // 선물 추천, catNum: 8
-  // {
-  //   id: '60',
-  //   catNum: 8,
-  //   cat: {
-  //     cat1: '',
-  //     cat2: '',
-  //   },
-  //   prdInfo: {
-  //     name: '',
-  //     price: [''],
-  //     size: [''],
-  //   },
-  //   prdDetail: {
-  //     desc: '',
-  //     summary:
-  //       '',
-  //   },
-  //   img: {
-  //     thumbnail: '',
-  //     detailImg: [
-  //       '',
-  //       '',
-  //       '',
-  //     ],
-  //     sizeImg: [''],
-  //     file: 'img',
-  //   },
-  // },
+  // 에그 립밤, catNum: 8
+  {
+    id: '60',
+    catNum: 8,
+    cat: {
+      cat1: '립밤',
+      cat2: '에그 립밤',
+    },
+    prdInfo: {
+      name: '에그 립밤 로즈우디',
+      price: ['28,900'],
+      size: ['5g'],
+    },
+    prdDetail: {
+      desc: '자몽ㅣ우아한 장미ㅣ머스크',
+      summary:
+        '섬세한 장미향은 시대를 초월하면서도 현대적인 우아함을 간직하고 있습니다. 여기에 자몽의 시트러스함과 유향의 스파이시함이 더해져 매력적이고 모던한 느낌을 경험하게 합니다. 우디한 잔향은 머스크 노트로 따뜻하고 부드럽게 전체 향을 감싸줍니다',
+    },
+    img: {
+      thumbnail: 'prd_lipbalm_egglipbalm_0.jpg',
+      detailImg: ['prd_lipbalm_egglipbalm_detail_0_0.jpg', 'prd_lipbalm_egglipbalm_detail_0_1.jpg'],
+      sizeImg: ['prd_lipbalm_egglipbalm_size_0_0.jpg'],
+      file: 'img',
+    },
+  },
+  {
+    id: '61',
+    catNum: 8,
+    cat: {
+      cat1: '립밤',
+      cat2: '에그 립밤',
+    },
+    prdInfo: {
+      name: '에그 립밤 밀크티',
+      price: ['28,900'],
+      size: ['5g'],
+    },
+    prdDetail: {
+      desc: '베르가못ㅣ은은한 블랙티ㅣ코코넛',
+      summary:
+        '은은한 꽃내음을 가진 블랙티를 메인으로 사용한 이 향은 따끈한 우유를 한 방울 떨어뜨려 휘저은 블랙티 한 잔을 마실 때 코끝 가득 들어오는 부드러운 향을 상상하게 하고, 그 따뜻한 온기는 온전한 휴식을 취할 때에 느껴지는 편안함을 선사합니다. 상큼하고 신선한 버가못과 레몬이 블랙티의 씁쓸한 느낌과 어우러져 데일리하게 사용할 수 있도록 레이어를 더했습니다. 잔향은 코코넛노트를 더해 부드럽고 달콤하게 마무리됩니다.',
+    },
+    img: {
+      thumbnail: 'prd_lipbalm_egglipbalm_1.jpg',
+      detailImg: ['prd_lipbalm_egglipbalm_detail_1_0.jpg', 'prd_lipbalm_egglipbalm_detail_1_1.jpg'],
+      sizeImg: ['prd_lipbalm_egglipbalm_size_1_0.jpg'],
+      file: 'img',
+    },
+  },
+  {
+    id: '62',
+    catNum: 8,
+    cat: {
+      cat1: '립밤',
+      cat2: '에그 립밤',
+    },
+    prdInfo: {
+      name: '에그 립밤 언센티드',
+      price: ['28,900'],
+      size: ['5g'],
+    },
+    prdDetail: {
+      desc: '언센티드(무향)',
+      summary:
+        '코 끝에 은은한 향기를 전하는 립밤. 풍부한 식물성 오일로 즉각적인 영양을 공급하여 건조한 입술을 촉촉하고 부드럽게 보호해줍니다. 안전한 식향으로 만들어진 향은 달걀의 부드러운 곡선과 질감을 닮은 핸디한 케이스에 담겨 언제 어디서든 기분좋은 느낌을 전합니다.',
+    },
+    img: {
+      thumbnail: 'prd_lipbalm_egglipbalm_2.jpg',
+      detailImg: ['prd_lipbalm_egglipbalm_detail_2_0.jpg', 'prd_lipbalm_egglipbalm_detail_2_1.jpg'],
+      sizeImg: ['prd_lipbalm_egglipbalm_size_2_0.jpg'],
+      file: 'img',
+    },
+  },
+  {
+    id: '63',
+    catNum: 8,
+    cat: {
+      cat1: '립밤',
+      cat2: '에그 립밤',
+    },
+    prdInfo: {
+      name: '에그 립밤 우디그린',
+      price: ['28,900'],
+      size: ['5g'],
+    },
+    prdDetail: {
+      desc: '신선한 만다린 과즙ㅣ아로마틱 허브ㅣ부쿠',
+      summary:
+        '동이 틀 무렵, 새벽이슬 맺힌 깊은 숲 속을 걸을 때 느껴지는 프레쉬한 풀 내음을 만다린의 상큼한 과즙과 부쿠잎사귀, 바질을 사용하여 짙은 초록의 느낌으로 전합니다. 라벤더, 타임이 보여주는 허벌 노트는 입술에 닿을 때 시원하고 아로마틱한 느낌을 더해 릴렉싱한 감정을 느끼게 하고, 잔향엔 바닐라가 스위트한 우디함을 더해 진득하게 마무리됩니다.',
+    },
+    img: {
+      thumbnail: 'prd_lipbalm_egglipbalm_3.jpg',
+      detailImg: ['prd_lipbalm_egglipbalm_detail_3_0.jpg', 'prd_lipbalm_egglipbalm_detail_3_1.jpg'],
+      sizeImg: ['prd_lipbalm_egglipbalm_size_3_0.jpg'],
+      file: 'img',
+    },
+  },
 ];
 
 export default prdData;

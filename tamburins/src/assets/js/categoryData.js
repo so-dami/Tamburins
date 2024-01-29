@@ -44,6 +44,11 @@ const categoryData = [
     name: '토일렛 프래그런스',
     img: 'cat_toilet_fragrance.png',
   },
+  {
+    catNum: 8,
+    name: '에그 립밤',
+    img: 'cat_lipbalm_egglipbalm.jpg',
+  },
 ];
 
 export default categoryData;

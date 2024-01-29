@@ -5,7 +5,15 @@
       <nav>
         <div class="ctg-menu">
           <ul class="list-flex">
-            <li class="ctg-list-item pointer" v-for="(categoryData, i) in categoryData" :key="i" @click="lookChange()">
+            <li
+              class="ctg-list-item pointer"
+              v-for="(categoryData, i) in categoryData"
+              :key="i"
+              @click="
+                lookChange();
+                console.log();
+              "
+            >
               <div class="ctg-thumbnail">
                 <div class="thumbnail-img-box" :class="txt == categoryData['name'] ? 'bd-on' : ''">
                   <img
