@@ -11,8 +11,8 @@
   left: 0;
   right: 0;
   width: 100%;
-  height: 18.594vw;
-  max-height: 357px;
+  height: 19vw;
+  max-height: 360px;
   opacity: 0.2;
   mix-blend-mode: multiply;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000);
@@ -46,7 +46,7 @@
 }
 
 .new-title {
-  font-size: 26.5px;
+  font-size: 25px;
   font-weight: 500;
 }
 

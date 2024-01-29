@@ -59,6 +59,10 @@
   line-height: 50px;
 }
 
+.list-count-box {
+  display: inline-block;
+}
+
 .list-count {
   margin-left: 5px;
   font-weight: lighter;
@@ -102,10 +106,10 @@
   font-size: 14px;
 }
 
-.prd-list-size{
+.prd-list-size {
   font-size: 13px;
 }
 
-.prd-list-size span{
+.prd-list-size span {
   color: #535353;
 }

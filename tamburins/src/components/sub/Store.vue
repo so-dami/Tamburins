@@ -4,43 +4,25 @@
       <!-- 메뉴 -->
       <nav>
         <div class="store-menu">
-          <ul class="store-menu-flex" @click="menuChange()">
+          <ul class="store-menu-flex">
             <li
+              v-for="(menu, i) in menu"
+              :key="i"
               class="store-menu-item pointer"
-              :class="menuClick == 0 ? 'on' : ''"
+              :class="menuClick == i ? 'menu-on' : ''"
               @click="
                 () => {
-                  menuClick = 0;
+                  menuClick = i;
+                  menuChange();
                 }
               "
             >
-              대한민국
-            </li>
-            <li
-              class="store-menu-item pointer"
-              :class="menuClick == 1 ? 'on' : ''"
-              @click="
-                () => {
-                  menuClick = 1;
-                }
-              "
-            >
-              중국
-            </li>
-            <li
-              class="store-menu-item pointer"
-              :class="menuClick == 2 ? 'on' : ''"
-              @click="
-                () => {
-                  menuClick = 2;
-                }
-              "
-            >
-              전시
+              {{ menu }}
             </li>
           </ul>
         </div>
       </nav>
+
       <!-- 매장 안내 -->
       <div class="store-list">
         <!-- 대한민국 -->
@@ -118,17 +100,23 @@
         <!-- 전시 -->
         <div class="store-list-grid" v-if="menuClick == 2">
           <div class="store-list-item" v-for="(newStoreData, i) in newStoreData" :key="i">
-            <div class="store-img-bx">
+            <div
+              class="store-img-bx"
+              @mouseover="summaryShow(i)"
+              @mouseout="
+                () => {
+                  summary[i] = 0;
+                }
+              "
+            >
               <!-- 이미지 -->
               <img
-                class="pointer"
                 v-if="newStoreData['file'] == 'jpg'"
                 :src="require(`../../assets/image/store/${newStoreData['img']}`)"
                 :alt="`${newStoreData['name']}`"
               />
               <!-- 비디오 -->
               <video
-                class="pointer"
                 v-if="newStoreData['file'] == 'mp4'"
                 :src="require(`../../assets/image/store/${newStoreData['img']}`)"
                 :alt="`${newStoreData['name']}`"
@@ -136,7 +124,8 @@
                 loop
                 muted
               />
-              <div class="summary-bg">
+              <!-- 전시 설명 요약 -->
+              <div class="summary-bg pointer" :class="summary[i] == 1 ? 'summary-show' : ''">
                 <div>
                   <p class="summary-txt">
                     {{ newStoreData['summary'] }}
@@ -144,6 +133,7 @@
                 </div>
               </div>
             </div>
+            <!-- 전시 정보 -->
             <div class="store-info-wrap">
               <h3 class="store-name">
                 {{ newStoreData['name'] }}
@@ -168,9 +158,9 @@ export default {
   name: 'Store',
   data() {
     return {
+      menu: ['대한민국', '중국', '전시'],
       menuClick: '',
-      storeCat: '',
-      summaryShow: false,
+      summary: [],
       newStoreData: [],
     };
   },
@@ -180,10 +170,16 @@ export default {
   },
   methods: {
     menuChange() {
-      this.storeCat = event.target.innerText;
+      let storeCat = event.target.innerText;
       this.newStoreData = this.storeData.filter((a) => {
-        return a['storeCat'] == this.storeCat;
+        return a['storeCat'] == storeCat;
       });
+    },
+    summaryShow(a) {
+      for (let i = 0; i < this.newStoreData.length; i++) {
+        this.summary.push(0);
+      }
+      this.summary[a] = 1;
     },
   },
   mounted() {

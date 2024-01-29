@@ -30,7 +30,11 @@
             <span class="list-count" v-if="look == `${categoryData[0]['catNum']}`">({{ prdData.length }})</span>
 
             <!-- 퍼퓸 핸드 갯수 -->
-            <span class="list-count" v-if="look == `${categoryData[1]['catNum']}`">({{ newCategoryData.length }})</span>
+            <div class="list-count-box">
+              <span class="list-count" v-if="look == `${categoryData[1]['catNum']}`">
+                ({{ newCategoryData.length }})
+              </span>
+            </div>
 
             <!-- 튜브 핸드 갯수 -->
             <span class="list-count" v-if="look == `${categoryData[2]['catNum']}`">({{ newCategoryData.length }})</span>
@@ -54,8 +58,6 @@
             <span class="list-count" v-if="look == `${categoryData[8]['catNum']}`">({{ newCategoryData.length }})</span>
           </div>
         </div>
-
-        <!-- <router-link :to="`/detail/${perfumeprdData['id']}`"> -->
 
         <!-- 상품 목록 -->
         <div class="prd-list">
@@ -307,11 +309,12 @@ export default {
   },
   methods: {
     lookChange() {
-      this.txt = event.currentTarget.firstChild.firstChild.nextSibling.innerHTML;
+      this.txt = event.currentTarget.firstChild.firstChild.nextSibling.innerText;
 
       this.result = this.categoryData.filter((a) => {
         return a['name'] == this.txt;
       });
+      console.log('result:', this.result);
 
       this.look = this.result[0]['catNum'];
       console.log(this.look);

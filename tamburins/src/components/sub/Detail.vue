@@ -31,6 +31,7 @@
             <div class="detail-ctg">{{ prdData[num]['cat']['cat2'] }}</div>
             <div class="detail-flex">
               <div class="detail-name">{{ prdData[num]['prdInfo']['name'] }}</div>
+              <!-- 사이즈별 상품 가격 -->
               <div class="detail-price" v-if="sizeClick[0] == 1">{{ prdData[num]['prdInfo']['price'][0] }}원</div>
               <div class="detail-price" v-if="sizeClick[1] == 1">{{ prdData[num]['prdInfo']['price'][1] }}원</div>
             </div>

@@ -6,10 +6,11 @@
           <img class="bg-img" src="../../assets/image/main_bg_left.jpg" />
         </div>
         <div class="main-bg-section">
-          <img class="bg-img" src="../../assets/image/main_bg_right.jpg" />
+          <!-- <img class="bg-img" src="../../assets/image/main_bg_right.jpg" /> -->
+          <video class="bg-img" src="../../assets/image/main_bg_right.mp4" autoplay muted loop />
         </div>
         <div class="new-bx">
-          <h1 class="new-title">TOILET FRAGRANCE</h1>
+          <h1 class="new-title">PERFUME 14ML</h1>
           <div class="new-btn-bx">
             <a href="#" class="new-btn">신제품 보기</a>
           </div>
