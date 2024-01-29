@@ -8,7 +8,7 @@
             <!-- 상품 이미지 -->
             <img
               class="detail-img"
-              v-if="prdData[num]['img']['file'] == 'img'"
+              v-if="prdData[num]['img']['file'] == 'jpg'"
               :src="require(`../../assets/image/prd/detail/${detailImg}`)"
               :alt="`${prdData[num]['prdInfo']['name']}`"
             />
