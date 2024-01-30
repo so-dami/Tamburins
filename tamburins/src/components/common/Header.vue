@@ -43,12 +43,9 @@
           <li>로그인</li>
           <li>회원가입</li>
           <li>
-            <div class="cart-wrap">
-              <router-link :to="`/cart`">
-                <span class="cart-txt">장바구니</span>
-              </router-link>
-              <span class="cart-count">(0)</span>
-            </div>
+            <router-link :to="`/cart`">
+              <span class="cart-txt">장바구니(0)</span>
+            </router-link>
           </li>
         </ul>
       </nav>
