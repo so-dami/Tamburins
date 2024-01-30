@@ -29,10 +29,10 @@
         </div>
       </nav>
 
-      <!-- 카테고리 제목 -->
       <div>
         <div class="ctg-title-bx">
           <div class="ctg-title">
+            <!-- 카테고리 제목 -->
             <span>{{ txt }}</span>
 
             <!-- 전체 보기 갯수 -->

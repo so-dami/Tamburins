@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.cart-wrap{
+  padding: 0px 45px;
+}
+
+.cart-item-img{
+  display: block;
+}

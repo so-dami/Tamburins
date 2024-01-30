@@ -164,7 +164,6 @@ export default {
       newStoreData: [],
     };
   },
-  components: {},
   props: {
     storeData: Array,
   },
