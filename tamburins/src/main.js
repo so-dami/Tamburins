@@ -6,9 +6,10 @@ import router from './router.js';
 import store from './store.js';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faCircleQuestion } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
-library.add(faUserSecret, faLocationDot);
+library.add(faUserSecret, faLocationDot, faTrashCan, faCircleQuestion);
 
 createApp(App).use(router, store).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
