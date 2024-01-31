@@ -27,11 +27,7 @@
   scrollbar-width: none; /* Firefox */
 }
 
-.detail-img {
-  width: 100%;
-  display: block;
-}
-
+.detail-img,
 .detail-video {
   width: 100%;
   display: block;

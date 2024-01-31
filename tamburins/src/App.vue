@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- 장바구니 검정 배경 -->
-    
-    
+    <Cart></Cart>
+
     <!-- 상단 -->
     <Header></Header>
 
@@ -18,6 +18,7 @@
 // 컴포넌트
 import Header from './components/common/Header.vue';
 import Footer from './components/common/Footer.vue';
+import Cart from './components/sub/Cart.vue';
 
 // 데이터
 import prdData from './assets/js/prdData.js';
@@ -36,6 +37,7 @@ export default {
   components: {
     Header,
     Footer,
+    Cart,
   },
 };
 </script>
