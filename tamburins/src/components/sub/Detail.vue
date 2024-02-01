@@ -66,7 +66,25 @@
             <div class="detail-summary">{{ prdData[num]['prdDetail']['summary'] }}</div>
 
             <!-- 장바구니 담기 버튼 -->
-            <div class="cart-btn-bx">
+            <div
+              class="cart-btn-bx"
+              @click="
+                () => {
+                  if (sizeClick[0] == 1) {
+                    price = prdData[num]['prdInfo']['price'][0];
+                    quantity[0]++;
+                    prdQuantity = quantity[0];
+                  } else {
+                    price = prdData[num]['prdInfo']['price'][1];
+                    quantity[1]++;
+                    prdQuantity = quantity[1];
+                  }
+                  name = prdData[num]['prdInfo']['name'];
+                  cartImg = prdData[num]['img']['thumbnail'];
+                  addCart();
+                }
+              "
+            >
               <button class="cart-btn pointer">장바구니 담기</button>
             </div>
 
@@ -157,13 +175,52 @@ export default {
       infoClick: [0, 0],
       infoCount: [0, 0],
       sizeClick: [1, 0],
+      name: '',
+      price: '',
+      cartImg: '',
+      quantity: [0, 0],
+      prdQuantity: '',
+      localSet: [],
+      localGet: [],
     };
   },
   props: {
     prdData: Array,
+    cartQuantity: Number,
+    cartLocal: Array,
   },
   methods: {
-    size() {},
+    addCart() {
+      let localData = { name: this.name, price: this.price, quantity: this.prdQuantity, img: this.cartImg };
+
+      if (localStorage.getItem('cart') == null) {
+        this.localSet.push(localData);
+        localStorage.setItem('cart', JSON.stringify(this.localSet));
+      } else {
+        this.localGet = JSON.parse(localStorage.getItem('cart'));
+        if (
+          this.localGet.findIndex((a) => {
+            return a['name'] == this.name && a['price'] == this.price;
+          }) == -1
+        ) {
+          this.localGet.push(localData);
+          localStorage.setItem('cart', JSON.stringify(this.localGet));
+        } else {
+          this.localGet[
+            this.localGet.findIndex((a) => {
+              return a['name'] == this.name && a['price'] == this.price;
+            })
+          ]['quantity']++;
+          localStorage.setItem('cart', JSON.stringify(this.localGet));
+        }
+      }
+      let newQuantity = 0;
+      JSON.parse(localStorage.getItem('cart')).forEach((a) => {
+        return (newQuantity = newQuantity += a['quantity']);
+      });
+      this.$emit('cartQuantity', newQuantity);
+      this.$emit('cartLocal', JSON.parse(localStorage.getItem('cart')));
+    },
   },
   mounted() {
     // 스크롤 상단 고정

@@ -43,9 +43,7 @@
           <li>로그인</li>
           <li>회원가입</li>
           <li>
-            <router-link :to="`/cart`">
-              <span class="cart-txt">장바구니(0)</span>
-            </router-link>
+            <span class="cart-txt pointer" @click="$emit('openCart')">장바구니({{ cartQuantity }})</span>
           </li>
         </ul>
       </nav>
@@ -59,8 +57,9 @@ export default {
   data() {
     return {};
   },
-  components: {},
-  methods: {},
+  props: {
+    cartQuantity: Number,
+  },
 };
 </script>
 

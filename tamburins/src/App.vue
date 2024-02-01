@@ -1,13 +1,21 @@
 <template>
   <div>
-    <!-- 장바구니 검정 배경 -->
-    <Cart></Cart>
+    <!-- 장바구니 -->
+    <Cart :cartClick="cartClick" :cartLocal="cartLocal" @closeCart="cartClick = false"></Cart>
 
     <!-- 상단 -->
-    <Header></Header>
+    <Header :cartQuantity="cartQuantity" :cartLocal="cartLocal" @openCart="cartClick = true"></Header>
 
     <!-- 메인 -->
-    <router-view :prdData="prdData" :categoryData="categoryData" :storeData="storeData"></router-view>
+    <router-view
+      :prdData="prdData"
+      :categoryData="categoryData"
+      :storeData="storeData"
+      :cartQuantity="cartQuantity"
+      :cartLocal="cartLocal"
+      @cartQuantity="cartQuantity = $event"
+      @cartLocal="cartLocal = $event"
+    ></router-view>
 
     <!-- 하단 -->
     <Footer></Footer>
@@ -32,6 +40,9 @@ export default {
       prdData: prdData,
       categoryData: categoryData,
       storeData: storeData,
+      cartClick: false,
+      cartQuantity: 0,
+      cartLocal: [],
     };
   },
   components: {
@@ -39,6 +50,7 @@ export default {
     Footer,
     Cart,
   },
+  mounted() {},
 };
 </script>
 

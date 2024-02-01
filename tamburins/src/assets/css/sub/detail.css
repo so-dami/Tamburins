@@ -21,10 +21,14 @@
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+/* ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+.detail-prd-img-bx::-webkit-scrollbar {
+  display: none;
+}
+
 .detail-prd-img-bx {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
 }
 
 .detail-img,
@@ -119,7 +123,8 @@
   color: #fff;
   font-size: 14px;
   background: #000;
-  border: none;
+  border: 1px solid transparent;
+  /* border-radius: 5px; */
   box-sizing: border-box;
 
   transition: all 0.5s ease-out;
@@ -127,7 +132,7 @@
 
 .cart-btn:hover {
   background: #fff;
-  border: 1px solid #000;
+  border-color: #000;
   color: #000;
 }
 
