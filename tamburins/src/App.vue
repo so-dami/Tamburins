@@ -15,6 +15,7 @@
       :cartLocal="cartLocal"
       @cartQuantity="cartQuantity = $event"
       @cartLocal="cartLocal = $event"
+      @openCart="cartClick = true"
     ></router-view>
 
     <!-- 하단 -->

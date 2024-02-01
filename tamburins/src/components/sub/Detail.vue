@@ -82,6 +82,7 @@
                   name = prdData[num]['prdInfo']['name'];
                   cartImg = prdData[num]['img']['thumbnail'];
                   addCart();
+                  $emit('openCart');
                 }
               "
             >

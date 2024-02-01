@@ -28,53 +28,24 @@
               </tr>
             </thead> -->
             <tbody>
-              <tr>
+              <tr v-for="(cartLocal, i) in cartLocal" :key="i">
                 <td>
                   <div class="cart-img-flex">
                     <div class="cart-item-img-box">
                       <img
                         class="cart-item-img pointer"
-                        src="../../assets/image/prd/thumbnail/prd_candle_perfumecandle_1.jpg
-                          "
-                        alt="퍼퓸 캔들 홀리메탈"
+                        :src="require(`../../assets/image/prd/thumbnail/${cartLocal['img']}`)"
+                        :alt="`${cartLocal['name']}`"
                       />
                     </div>
-                    <div>퍼퓸 캔들 홀리메탈</div>
+                    <div>{{ cartLocal['name'] }}</div>
                   </div>
                 </td>
-                <td>208,000원</td>
+                <td>{{ cartLocal['price'] }}</td>
                 <td>
                   <div class="cart-quantity-flex">
                     <button type="button" class="cart-item-btn pointer">-</button>
-                    <div>1</div>
-                    <button type="button" class="cart-item-btn pointer">+</button>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="cart-item-del-btn btn-style pointer">
-                    <font-awesome-icon icon="fa-regular fa-trash-can" style="color: #535353" />
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="cart-img-flex">
-                    <div class="cart-item-img-box">
-                      <img
-                        class="cart-item-img pointer"
-                        src="../../assets/image/prd/thumbnail/prd_candle_perfumecandle_4.jpg
-                          "
-                        alt="퍼퓸 캔들 홀리메탈"
-                      />
-                    </div>
-                    <div>퍼퓸 캔들 네 가지 향 세트</div>
-                  </div>
-                </td>
-                <td>1,000,000원</td>
-                <td>
-                  <div class="cart-quantity-flex">
-                    <button type="button" class="cart-item-btn pointer">-</button>
-                    <div>1</div>
+                    <div>{{ cartLocal['quantity'] }}</div>
                     <button type="button" class="cart-item-btn pointer">+</button>
                   </div>
                 </td>
