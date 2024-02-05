@@ -32,8 +32,20 @@
             <div class="detail-flex">
               <div class="detail-name">{{ prdData[num]['prdInfo']['name'] }}</div>
               <!-- 사이즈별 상품 가격 -->
-              <div class="detail-price" v-if="sizeClick[0] == 1">{{ prdData[num]['prdInfo']['price'][0] }}원</div>
-              <div class="detail-price" v-if="sizeClick[1] == 1">{{ prdData[num]['prdInfo']['price'][1] }}원</div>
+              <div class="detail-price" v-if="sizeClick[0] == 1">
+                {{
+                  Number(prdData[num]['prdInfo']['price'][0])
+                    .toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                }}원
+              </div>
+              <div class="detail-price" v-if="sizeClick[1] == 1">
+                {{
+                  Number(prdData[num]['prdInfo']['price'][1])
+                    .toString()
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                }}원
+              </div>
             </div>
             <ul class="detail-size">
               <li v-for="(sizeImg, i) in prdData[num]['img']['sizeImg']" :key="i">
@@ -81,8 +93,8 @@
                   }
                   name = prdData[num]['prdInfo']['name'];
                   cartImg = prdData[num]['img']['thumbnail'];
-                  addCart();
                   $emit('openCart');
+                  addCart();
                 }
               "
             >
@@ -187,7 +199,6 @@ export default {
   },
   props: {
     prdData: Array,
-    cartQuantity: Number,
     cartLocal: Array,
   },
   methods: {
@@ -216,11 +227,13 @@ export default {
         }
       }
       let newQuantity = 0;
+      let newTotal = 0;
       JSON.parse(localStorage.getItem('cart')).forEach((a) => {
-        return (newQuantity = newQuantity += a['quantity']);
+        return (newQuantity = newQuantity += a['quantity']), (newTotal = newTotal += a['price'] * a['quantity']);
       });
       this.$emit('cartQuantity', newQuantity);
       this.$emit('cartLocal', JSON.parse(localStorage.getItem('cart')));
+      this.$emit('total', newTotal);
     },
   },
   mounted() {

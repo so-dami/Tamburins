@@ -64,7 +64,13 @@
                   <div class="prd-list-desc">{{ prdData['prdDetail']['desc'] }}</div>
                   <div class="prd-list-name">{{ prdData['prdInfo']['name'] }}</div>
                   <div class="prd-list-flex">
-                    <div class="prd-list-price">{{ prdData['prdInfo']['price'][0] }}원</div>
+                    <div class="prd-list-price">
+                      {{
+                        Number(prdData['prdInfo']['price'][0])
+                          .toString()
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                      }}원
+                    </div>
                     <div class="prd-list-size">
                       <span>+ </span>{{ prdData['prdInfo']['size'].length }}<span>size</span>
                     </div>
@@ -90,7 +96,13 @@
                     <div class="prd-list-desc">{{ newPrdData['prdDetail']['desc'] }}</div>
                     <div class="prd-list-name">{{ newPrdData['prdInfo']['name'] }}</div>
                     <div class="prd-list-flex">
-                      <div class="prd-list-price">{{ newPrdData['prdInfo']['price'][0] }}원</div>
+                      <div class="prd-list-price">
+                        {{
+                          Number(newPrdData['prdInfo']['price'][0])
+                            .toString()
+                            .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                        }}원
+                      </div>
                       <div class="prd-list-size">
                         <span>+ </span>{{ newPrdData['prdInfo']['size'].length }}<span>size</span>
                       </div>

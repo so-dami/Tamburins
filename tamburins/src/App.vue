@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 장바구니 -->
-    <Cart :cartClick="cartClick" :cartLocal="cartLocal" @closeCart="cartClick = false"></Cart>
+    <Cart :cartClick="cartClick" :cartLocal="cartLocal" :total="total" @closeCart="cartClick = false"></Cart>
 
     <!-- 상단 -->
     <Header :cartQuantity="cartQuantity" :cartLocal="cartLocal" @openCart="cartClick = true"></Header>
@@ -11,11 +11,11 @@
       :prdData="prdData"
       :categoryData="categoryData"
       :storeData="storeData"
-      :cartQuantity="cartQuantity"
       :cartLocal="cartLocal"
       @cartQuantity="cartQuantity = $event"
       @cartLocal="cartLocal = $event"
       @openCart="cartClick = true"
+      @total="total = $event"
     ></router-view>
 
     <!-- 하단 -->
@@ -44,6 +44,7 @@ export default {
       cartClick: false,
       cartQuantity: 0,
       cartLocal: [],
+      total: 0,
     };
   },
   components: {
@@ -51,7 +52,19 @@ export default {
     Footer,
     Cart,
   },
-  mounted() {},
+  mounted() {
+    // 새로고침 후에도 Header의 장바구니(수량) 및 장바구니 내용 유지
+    this.cartLocal = JSON.parse(localStorage.getItem('cart'));
+    if (localStorage.getItem('cart') == null) {
+      this.cartQuantity = 0;
+      this.total = 0;
+    } else {
+      for (let i = 0; i < this.cartLocal.length; i++) {
+        this.cartQuantity = this.cartQuantity += this.cartLocal[i]['quantity'];
+        this.total = this.total += this.cartLocal[i]['price'] * this.cartLocal[i]['quantity'];
+      }
+    }
+  },
 };
 </script>
 

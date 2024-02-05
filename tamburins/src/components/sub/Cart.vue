@@ -41,7 +41,13 @@
                     <div>{{ cartLocal['name'] }}</div>
                   </div>
                 </td>
-                <td>{{ cartLocal['price'] }}</td>
+                <td>
+                  {{
+                    Number(cartLocal['price'])
+                      .toString()
+                      .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                  }}
+                </td>
                 <td>
                   <div class="cart-quantity-flex">
                     <button type="button" class="cart-item-btn pointer">-</button>
@@ -83,18 +89,40 @@
         <div class="payment-mt">
           <div class="payment-flex">
             <div>주문금액</div>
-            <div>1,208,000원</div>
+            <div>
+              {{
+                Number(total)
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}원
+            </div>
           </div>
           <div class="payment-flex payment-mt">
             <div class="shipping-wrap">
               <div>배송비</div>
               <div class="shipping-free">3만원 이상 구매 시 무료배송</div>
             </div>
-            <div>0원</div>
+            <div v-if="total < 30000 && total != 0">
+              {{ shippingFee.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') }}원
+            </div>
+            <div v-if="total >= 30000 || total == 0">0원</div>
           </div>
           <div class="payment-total payment-flex payment-mt">
             <div>총 주문금액</div>
-            <div>1,208,000원</div>
+            <div v-if="total < 30000 && total != 0">
+              {{
+                Number(total + shippingFee)
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}원
+            </div>
+            <div v-if="total >= 30000 || total == 0">
+              {{
+                Number(total)
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+              }}원
+            </div>
           </div>
         </div>
         <!-- 결제하기 -->
@@ -109,12 +137,15 @@
 export default {
   name: 'Cart',
   data() {
-    return {};
+    return {
+      shippingFee: 3000,
+    };
   },
   props: {
     prdData: Array,
     cartLocal: Array,
     cartClick: Boolean,
+    total: Number,
   },
   methods: {},
 };

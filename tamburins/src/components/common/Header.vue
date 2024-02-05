@@ -55,10 +55,13 @@
 export default {
   name: 'Header',
   data() {
-    return {};
+    return {
+      test: 0,
+    };
   },
   props: {
     cartQuantity: Number,
+    cartLocal: Array,
   },
 };
 </script>

@@ -9,7 +9,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 쉘 엑스 카모',
-      price: ['32,000'],
+      price: ['32000'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -37,7 +37,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 쉘 엑스 버가샌달',
-      price: ['32,000'],
+      price: ['32000'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -65,7 +65,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 쉘 엑스 라레',
-      price: ['32,000'],
+      price: ['32000'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -93,7 +93,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'FEY9',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -117,7 +117,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'VEIN',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -141,7 +141,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'HER',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -165,7 +165,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'POSY',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -189,7 +189,7 @@ const prdData = [
     },
     prdInfo: {
       name: '000',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -213,7 +213,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'BLESSED',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -237,7 +237,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'FEAR',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -261,7 +261,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'FLOW',
-      price: ['18,000', '32,000'],
+      price: ['18000', '32000'],
       size: ['15ml', '40ml'],
     },
     prdDetail: {
@@ -287,7 +287,7 @@ const prdData = [
     },
     prdInfo: {
       name: '000',
-      price: ['23,000', '32,000'],
+      price: ['23000', '32000'],
       size: ['30ml', '65ml'],
     },
     prdDetail: {
@@ -315,7 +315,7 @@ const prdData = [
     },
     prdInfo: {
       name: '7',
-      price: ['23,000', '32,000'],
+      price: ['23000', '32000'],
       size: ['30ml', '65ml'],
     },
     prdDetail: {
@@ -343,7 +343,7 @@ const prdData = [
     },
     prdInfo: {
       name: '712',
-      price: ['23,000', '32,000'],
+      price: ['23000', '32000'],
       size: ['30ml', '65ml'],
     },
     prdDetail: {
@@ -371,7 +371,7 @@ const prdData = [
     },
     prdInfo: {
       name: '421',
-      price: ['23,000', '32,000'],
+      price: ['23000', '32000'],
       size: ['30ml', '65ml'],
     },
     prdDetail: {
@@ -399,7 +399,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'MULBERRY LEAVES',
-      price: ['25,000'],
+      price: ['25000'],
       size: ['65ml'],
     },
     prdDetail: {
@@ -427,7 +427,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'SOUNDS OF NIGHT',
-      price: ['25,000'],
+      price: ['25000'],
       size: ['65ml'],
     },
     prdDetail: {
@@ -455,7 +455,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'COCOON MUSK',
-      price: ['25,000'],
+      price: ['25000'],
       size: ['65ml'],
     },
     prdDetail: {
@@ -483,7 +483,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'FEY9',
-      price: ['25,000'],
+      price: ['25000'],
       size: ['65ml'],
     },
     prdDetail: {
@@ -511,7 +511,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'VEIN',
-      price: ['25,000'],
+      price: ['25000'],
       size: ['65ml'],
     },
     prdDetail: {
@@ -539,7 +539,7 @@ const prdData = [
     },
     prdInfo: {
       name: '000',
-      price: ['25,000'],
+      price: ['25000'],
       size: ['65ml'],
     },
     prdDetail: {
@@ -569,7 +569,7 @@ const prdData = [
     },
     prdInfo: {
       name: '손 소독제 FEY9',
-      price: ['8,500'],
+      price: ['8500'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -593,7 +593,7 @@ const prdData = [
     },
     prdInfo: {
       name: '손 소독제 000',
-      price: ['8,500'],
+      price: ['8500'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -617,7 +617,7 @@ const prdData = [
     },
     prdInfo: {
       name: '손 소독제 7',
-      price: ['8,500'],
+      price: ['8500'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -641,7 +641,7 @@ const prdData = [
     },
     prdInfo: {
       name: '손 소독제 712',
-      price: ['8,500'],
+      price: ['8500'],
       size: ['30ml'],
     },
     prdDetail: {
@@ -665,7 +665,7 @@ const prdData = [
     },
     prdInfo: {
       name: '손 소독제 FEY9',
-      price: ['32,000'],
+      price: ['32000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -689,7 +689,7 @@ const prdData = [
     },
     prdInfo: {
       name: '손 소독제 000',
-      price: ['32,000'],
+      price: ['32000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -715,7 +715,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디워시 BIGALICO',
-      price: ['33,000', '52,000'],
+      price: ['33000', '52000'],
       size: ['240ml', '470ml'],
     },
     prdDetail: {
@@ -739,7 +739,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디워시 FOG',
-      price: ['33,000', '52,000'],
+      price: ['33000', '52000'],
       size: ['240ml', '470ml'],
     },
     prdDetail: {
@@ -763,7 +763,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디워시 NIMBUS',
-      price: ['33,000', '52,000'],
+      price: ['33000', '52000'],
       size: ['240ml', '470ml'],
     },
     prdDetail: {
@@ -787,7 +787,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디워시 STORM',
-      price: ['33,000', '52,000'],
+      price: ['33000', '52000'],
       size: ['240ml', '470ml'],
     },
     prdDetail: {
@@ -811,7 +811,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디로션 BIGALICO',
-      price: ['38,500', '59,500'],
+      price: ['38500', '59500'],
       size: ['235ml', '470ml'],
     },
     prdDetail: {
@@ -835,7 +835,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디로션 FOG',
-      price: ['38,500', '59,500'],
+      price: ['38500', '59500'],
       size: ['235ml', '470ml'],
     },
     prdDetail: {
@@ -859,7 +859,7 @@ const prdData = [
     },
     prdInfo: {
       name: '바디로션 NIMBUS',
-      price: ['38,500', '59,500'],
+      price: ['38500', '59500'],
       size: ['235ml', '470ml'],
     },
     prdDetail: {
@@ -885,7 +885,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드워시 카모',
-      price: ['34,000'],
+      price: ['34000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -913,7 +913,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드워시 000',
-      price: ['34,000'],
+      price: ['34000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -941,7 +941,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드워시 7',
-      price: ['34,000'],
+      price: ['34000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -969,7 +969,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드앤바디 워시 712',
-      price: ['34,000'],
+      price: ['34000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -997,7 +997,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드앤바디 에멀전 000',
-      price: ['43,000'],
+      price: ['43000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1025,7 +1025,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드앤바디 에멀전 7',
-      price: ['43,000'],
+      price: ['43000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1053,7 +1053,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸드 핸드앤바디 에멀전 712',
-      price: ['43,000'],
+      price: ['43000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1083,7 +1083,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 캔들 펌키니',
-      price: ['83,000'],
+      price: ['83000'],
       size: ['210g'],
     },
     prdDetail: {
@@ -1111,7 +1111,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 캔들 홀리메탈',
-      price: ['83,000'],
+      price: ['83000'],
       size: ['210g'],
     },
     prdDetail: {
@@ -1139,7 +1139,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 캔들 베이더인더레이크',
-      price: ['83,000'],
+      price: ['83000'],
       size: ['210g'],
     },
     prdDetail: {
@@ -1167,7 +1167,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 캔들 레이트어텀',
-      price: ['83,000'],
+      price: ['83000'],
       size: ['210g'],
     },
     prdDetail: {
@@ -1195,7 +1195,7 @@ const prdData = [
     },
     prdInfo: {
       name: '퍼퓸 캔들 미니 세트',
-      price: ['148,000'],
+      price: ['148000'],
       size: ['60g*4ea'],
     },
     prdDetail: {
@@ -1221,7 +1221,7 @@ const prdData = [
     },
     prdInfo: {
       name: '블루밍 캔들 씨드',
-      price: ['76,000'],
+      price: ['76000'],
       size: ['365g'],
     },
     prdDetail: {
@@ -1249,7 +1249,7 @@ const prdData = [
     },
     prdInfo: {
       name: '블루밍 캔들 모닝글로리',
-      price: ['58,000'],
+      price: ['58000'],
       size: ['100g'],
     },
     prdDetail: {
@@ -1277,7 +1277,7 @@ const prdData = [
     },
     prdInfo: {
       name: '블루밍 캔들 버드',
-      price: ['219,000'],
+      price: ['219000'],
       size: ['900g'],
     },
     prdDetail: {
@@ -1305,7 +1305,7 @@ const prdData = [
     },
     prdInfo: {
       name: '블루밍 캔들 스몰트리',
-      price: ['179,000'],
+      price: ['179000'],
       size: ['370g'],
     },
     prdDetail: {
@@ -1333,7 +1333,7 @@ const prdData = [
     },
     prdInfo: {
       name: '블루밍 캔들 빅트리',
-      price: ['225,000'],
+      price: ['225000'],
       size: ['740g'],
     },
     prdDetail: {
@@ -1361,7 +1361,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'COCOON MUSK',
-      price: ['150,000'],
+      price: ['150000'],
       size: ['180g'],
     },
     prdDetail: {
@@ -1388,7 +1388,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'MULBERRY LEAVES',
-      price: ['150,000'],
+      price: ['150000'],
       size: ['180g'],
     },
     prdDetail: {
@@ -1415,7 +1415,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'SOUNDS OF NIGHT',
-      price: ['150,000'],
+      price: ['150000'],
       size: ['180g'],
     },
     prdDetail: {
@@ -1442,7 +1442,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'MIDDLE-EARTH SET',
-      price: ['250,000'],
+      price: ['250000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1469,7 +1469,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'WORMWOOD SET',
-      price: ['250,000'],
+      price: ['250000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1496,7 +1496,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'MIDDLE-EARTH Refill',
-      price: ['45,000'],
+      price: ['45000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1519,7 +1519,7 @@ const prdData = [
     },
     prdInfo: {
       name: 'WORMWOOD Refill',
-      price: ['45,000'],
+      price: ['45000'],
       size: ['250ml'],
     },
     prdDetail: {
@@ -1543,7 +1543,7 @@ const prdData = [
     },
     prdInfo: {
       name: '디퓨저 스틱',
-      price: ['3,000'],
+      price: ['3000'],
       size: ['5ea'],
     },
     prdDetail: {
@@ -1569,7 +1569,7 @@ const prdData = [
     },
     prdInfo: {
       name: '토일렛 프래그런스 세이지마리',
-      price: ['36,500'],
+      price: ['36500'],
       size: ['38ml'],
     },
     prdDetail: {
@@ -1599,7 +1599,7 @@ const prdData = [
     },
     prdInfo: {
       name: '에그 립밤 로즈우디',
-      price: ['28,900'],
+      price: ['28900'],
       size: ['5g'],
     },
     prdDetail: {
@@ -1623,7 +1623,7 @@ const prdData = [
     },
     prdInfo: {
       name: '에그 립밤 밀크티',
-      price: ['28,900'],
+      price: ['28900'],
       size: ['5g'],
     },
     prdDetail: {
@@ -1647,7 +1647,7 @@ const prdData = [
     },
     prdInfo: {
       name: '에그 립밤 언센티드',
-      price: ['28,900'],
+      price: ['28900'],
       size: ['5g'],
     },
     prdDetail: {
@@ -1671,7 +1671,7 @@ const prdData = [
     },
     prdInfo: {
       name: '에그 립밤 우디그린',
-      price: ['28,900'],
+      price: ['28900'],
       size: ['5g'],
     },
     prdDetail: {
