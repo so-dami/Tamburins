@@ -184,6 +184,8 @@ export default {
         return value['id'] != this.cartLocal[a]['id'];
       });
       localStorage.setItem('cart', JSON.stringify(delVal));
+
+      // 한 번에 데이터를 전송할 수 있는 방법이 없나...
       this.$emit('itemDelete1', JSON.parse(localStorage.getItem('cart')));
       this.$emit('itemDelete2', this.cartLocal[a]['quantity'] * this.cartLocal[a]['price']);
       this.$emit('itemDelete3', (this.cartLocal[a]['quantity']));
