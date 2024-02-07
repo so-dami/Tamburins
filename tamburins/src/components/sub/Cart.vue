@@ -50,13 +50,39 @@
                 </td>
                 <td>
                   <div class="cart-quantity-flex">
-                    <button type="button" class="cart-item-btn pointer">-</button>
+                    <button
+                      type="button"
+                      class="cart-item-btn pointer"
+                      @click="
+                        () => {
+                          if (cartLocal['quantity'] > 1) {
+                            cartLocal['quantity']--;
+                            $emit('cartMinus', Number(cartLocal['price']));
+                          }
+                          quantityClick(i);
+                        }
+                      "
+                    >
+                      -
+                    </button>
                     <div>{{ cartLocal['quantity'] }}</div>
-                    <button type="button" class="cart-item-btn pointer">+</button>
+                    <button
+                      type="button"
+                      class="cart-item-btn pointer"
+                      @click="
+                        () => {
+                          cartLocal['quantity']++;
+                          quantityClick(i);
+                          $emit('cartPlus', Number(cartLocal['price']));
+                        }
+                      "
+                    >
+                      +
+                    </button>
                   </div>
                 </td>
                 <td>
-                  <button type="button" class="cart-item-del-btn btn-style pointer">
+                  <button type="button" class="cart-item-del-btn btn-style pointer" @click="itemDelete(i)">
                     <font-awesome-icon icon="fa-regular fa-trash-can" style="color: #535353" />
                   </button>
                 </td>
@@ -147,7 +173,22 @@ export default {
     cartClick: Boolean,
     total: Number,
   },
-  methods: {},
+  methods: {
+    quantityClick(a) {
+      let newVal = JSON.parse(localStorage.getItem('cart'));
+      newVal[a]['quantity'] = this.cartLocal[a]['quantity'];
+      localStorage.setItem('cart', JSON.stringify(newVal));
+    },
+    itemDelete(a) {
+      let delVal = JSON.parse(localStorage.getItem('cart')).filter((value) => {
+        return value['id'] != this.cartLocal[a]['id'];
+      });
+      localStorage.setItem('cart', JSON.stringify(delVal));
+      this.$emit('itemDelete1', JSON.parse(localStorage.getItem('cart')));
+      this.$emit('itemDelete2', this.cartLocal[a]['quantity'] * this.cartLocal[a]['price']);
+      this.$emit('itemDelete3', (this.cartLocal[a]['quantity']));
+    },
+  },
 };
 </script>
 <style>

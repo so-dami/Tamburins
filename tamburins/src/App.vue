@@ -1,7 +1,17 @@
 <template>
   <div>
     <!-- 장바구니 -->
-    <Cart :cartClick="cartClick" :cartLocal="cartLocal" :total="total" @closeCart="cartClick = false"></Cart>
+    <Cart
+      :cartClick="cartClick"
+      :cartLocal="cartLocal"
+      :total="total"
+      @closeCart="cartClick = false"
+      @cartPlus="cartQuantity++, (total = total + $event)"
+      @cartMinus="cartQuantity--, (total = total - $event)"
+      @itemDelete1="cartLocal = $event"
+      @itemDelete2="total = total - $event"
+      @itemDelete3="cartQuantity = cartQuantity - $event"
+    ></Cart>
 
     <!-- 상단 -->
     <Header :cartQuantity="cartQuantity" :cartLocal="cartLocal" @openCart="cartClick = true"></Header>

@@ -86,10 +86,12 @@
                     price = prdData[num]['prdInfo']['price'][0];
                     quantity[0]++;
                     prdQuantity = quantity[0];
+                    id = prdData[num]['id']+'-0';
                   } else {
                     price = prdData[num]['prdInfo']['price'][1];
                     quantity[1]++;
                     prdQuantity = quantity[1];
+                    id = prdData[num]['id']+'-1';
                   }
                   name = prdData[num]['prdInfo']['name'];
                   cartImg = prdData[num]['img']['thumbnail'];
@@ -191,6 +193,7 @@ export default {
       name: '',
       price: '',
       cartImg: '',
+      id: '',
       quantity: [0, 0],
       prdQuantity: '',
       localSet: [],
@@ -203,7 +206,13 @@ export default {
   },
   methods: {
     addCart() {
-      let localData = { name: this.name, price: this.price, quantity: this.prdQuantity, img: this.cartImg };
+      let localData = {
+        name: this.name,
+        price: this.price,
+        quantity: this.prdQuantity,
+        img: this.cartImg,
+        id: this.id,
+      };
 
       if (localStorage.getItem('cart') == null) {
         this.localSet.push(localData);
