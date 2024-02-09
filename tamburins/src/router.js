@@ -5,7 +5,7 @@ import Home from './components/common/Home.vue';
 import Sub from './components/sub/Sub.vue';
 import Detail from './components/sub/Detail.vue';
 import Store from './components/sub/Store.vue';
-// import Cart from './components/sub/Cart.vue';
+import Login from './components/sub/Login.vue';
 
 const routes = [
   // {
@@ -39,10 +39,10 @@ const routes = [
     path: '/store',
     component: Store,
   },
-  // {
-  //   path: '/cart',
-  //   component: Cart,
-  // },
+  {
+    path: '/login',
+    component: Login,
+  },
 ];
 
 const router = createRouter({
