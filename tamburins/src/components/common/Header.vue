@@ -40,8 +40,12 @@
           </ul>
         </div>
         <ul class="side-list list-flex">
-          <li>로그인</li>
-          <li>회원가입</li>
+          <li>
+            <router-link :to="`/login`">로그인</router-link>
+          </li>
+          <li>
+            <router-link :to="`/signup`">회원가입</router-link>
+          </li>
           <li>
             <span class="cart-txt pointer" @click="$emit('openCart')">장바구니({{ cartQuantity }})</span>
           </li>

@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+.signUp-client-container {
+  max-width: 35%;
+  margin: 0 auto;
+  padding: 25px 0 50px 0;
+}
+
+.login-title-box {
+  text-align: center;
+}
+
+.login-title-txt {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.login-client-form {
+  margin-top: 35px;
+}
+
+.form-label-box {
+  margin: 10px 0;
+}
+
+.form-label,
+.chk-label {
+  font-size: 12px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #535353;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.form-input::placeholder {
+}
+
+.policy-check-box {
+  margin: 40px 0;
+}
+
+.policy-each-check {
+  margin-top: 20px;
+}
+
+.agree-all,
+.check-field {
+  display: flex;
+  align-items: center;
+}
+
+.check-field + .check-field {
+  margin-top: 5px;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.chk-label a {
+  text-decoration: underline;
+}
+
+.standard-btn-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.standard-btn {
+  width: 100%;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #000;
+  font-size: 13px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.standard-btn:hover {
+  border-color: #000;
+  background-color: transparent;
+  color: #000;
+}

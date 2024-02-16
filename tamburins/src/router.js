@@ -6,13 +6,15 @@ import Sub from './components/sub/Sub.vue';
 import Detail from './components/sub/Detail.vue';
 import Store from './components/sub/Store.vue';
 import Login from './components/sub/Login.vue';
+import SignUp from './components/sub/SignUp.vue';
+
+// {
+//   path: '',
+//   component: '',
+//   children: [],
+// },
 
 const routes = [
-  // {
-  //   path: '',
-  //   component: '',
-  //   children: [],
-  // },
   {
     path: '/',
     component: Home,
@@ -42,6 +44,10 @@ const routes = [
   {
     path: '/login',
     component: Login,
+  },
+  {
+    path: '/signup',
+    component: SignUp,
   },
 ];
 

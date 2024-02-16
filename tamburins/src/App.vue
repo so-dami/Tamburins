@@ -65,7 +65,7 @@ export default {
   mounted() {
     // 새로고침 후에도 Header의 장바구니(수량) 및 장바구니 내용 유지
     this.cartLocal = JSON.parse(localStorage.getItem('cart'));
-    if (localStorage.getItem('cart') == null) {
+    if (localStorage.getItem('cart') == null || localStorage.getItem('cart') == '[]') {
       this.cartQuantity = 0;
       this.total = 0;
     } else {
