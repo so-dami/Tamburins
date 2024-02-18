@@ -40,14 +40,14 @@
           </ul>
         </div>
         <ul class="side-list list-flex">
-          <li v-if="isLogin == '0'">
+          <li v-if="isLogin == 0">
             <router-link :to="`/login`">로그인</router-link>
           </li>
-          <li class="pointer" v-if="isLogin == '1'" @click="logoutClick()">로그아웃</li>
-          <li v-if="isLogin == '0'">
+          <li class="pointer" v-if="isLogin == 1" @click="logoutClick()">로그아웃</li>
+          <li v-if="isLogin == 0">
             <router-link :to="`/signup`">회원가입</router-link>
           </li>
-          <li class="pointer" v-if="isLogin == '1'">마이페이지</li>
+          <li class="pointer" v-if="isLogin == 1" @click="alert()">마이페이지</li>
           <li>
             <span class="cart-txt pointer" @click="$emit('openCart')">장바구니({{ cartQuantity }})</span>
           </li>
@@ -68,12 +68,15 @@ export default {
   props: {
     cartQuantity: Number,
     cartLocal: Array,
-    isLogin: String,
+    isLogin: Number,
   },
   methods: {
     logoutClick() {
-      document.cookie = 'login=true;max-age=0';
-      this.$emit('logout', '0');
+      document.cookie = 'login=true; max-age=0';
+      this.$emit('logout', 0);
+    },
+    alert() {
+      alert('준비 중');
     },
   },
 };

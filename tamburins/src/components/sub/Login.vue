@@ -53,11 +53,11 @@ export default {
         alert('이메일을 입력해 주세요.');
       }
       // 비밀번호 공백 체크
-      else if (userInfo['pw'] == '') {
+      if (userInfo['pw'] == '') {
         alert('비밀번호를 입력해 주세요.');
       }
-      // 이메일, 비밀번호 공백이 아니면?
-      else if (userInfo['email'] != '') {
+      // 이메일, 비밀번호가 공백이 아닐 때
+      if (userInfo['email'] != '') {
         // 이메일 일치 여부
         if (localStorage.getItem('join') != null) {
           let infoGet = JSON.parse(localStorage.getItem('join'));
@@ -78,8 +78,8 @@ export default {
             }
             // 로그인 성공
             else {
-              alert('로그인이 되었습니다.');
-              document.cookie = 'login=true; max-age=1800';
+              alert('TAMBURINS에 오신 것을 환영합니다!');
+              document.cookie = 'login=true; expires';
               window.location.href = 'http://localhost:8080';
             }
           }

@@ -61,7 +61,7 @@ export default {
       cartQuantity: 0,
       cartLocal: [],
       total: 0,
-      isLogin: '',
+      isLogin: 0,
     };
   },
   components: {
@@ -85,10 +85,10 @@ export default {
     console.log(document.cookie.split('=')[1]);
     console.log(this.isLogin);
     if (document.cookie.split('=')[1] == 'true') {
-      this.isLogin = '1';
+      this.isLogin = 1;
       console.log(this.isLogin);
     } else {
-      this.isLogin = '0';
+      this.isLogin = 0;
       console.log(this.isLogin);
     }
   },
