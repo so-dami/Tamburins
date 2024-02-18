@@ -41,7 +41,50 @@ export default {
   props: {},
   methods: {
     loginClick() {
+      let userEmail = document.querySelector('#loginEmail').value;
+      let userPw = document.querySelector('#loginPassword').value;
+      let userInfo = { email: userEmail, pw: userPw };
+      console.log(userInfo);
+
       event.preventDefault();
+
+      // 이메일 공백 체크
+      if (userInfo['email'] == '') {
+        alert('이메일을 입력해 주세요.');
+      }
+      // 비밀번호 공백 체크
+      else if (userInfo['pw'] == '') {
+        alert('비밀번호를 입력해 주세요.');
+      }
+      // 이메일, 비밀번호 공백이 아니면?
+      else if (userInfo['email'] != '') {
+        // 이메일 일치 여부
+        if (localStorage.getItem('join') != null) {
+          let infoGet = JSON.parse(localStorage.getItem('join'));
+          if (
+            infoGet.findIndex((a) => {
+              return a['email'] == userEmail;
+            }) == -1
+          ) {
+            alert('존재하지 않는 이메일입니다.');
+          } else {
+            // 비밀번호 일치 여부
+            if (
+              infoGet.findIndex((a) => {
+                return a['password'] == userPw;
+              }) == -1
+            ) {
+              alert('비밀번호를 확인해 주세요.');
+            }
+            // 로그인 성공
+            else {
+              alert('로그인이 되었습니다.');
+              document.cookie = 'login=true; max-age=1800';
+              window.location.href = 'http://localhost:8080';
+            }
+          }
+        }
+      }
     },
   },
 };

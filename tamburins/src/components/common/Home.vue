@@ -27,7 +27,10 @@ export default {
     return {};
   },
   components: {},
-  methods: {},
+  mounted() {
+    // 스크롤 상단 고정
+    window.scrollTo(0, 0);
+  },
 };
 </script>
 

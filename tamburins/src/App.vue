@@ -14,7 +14,13 @@
     ></Cart>
 
     <!-- 상단 -->
-    <Header :cartQuantity="cartQuantity" :cartLocal="cartLocal" @openCart="cartClick = true"></Header>
+    <Header
+      :cartQuantity="cartQuantity"
+      :cartLocal="cartLocal"
+      :isLogin="isLogin"
+      @openCart="cartClick = true"
+      @logout="isLogin = $event"
+    ></Header>
 
     <!-- 메인 -->
     <router-view
@@ -55,6 +61,7 @@ export default {
       cartQuantity: 0,
       cartLocal: [],
       total: 0,
+      isLogin: '',
     };
   },
   components: {
@@ -73,6 +80,16 @@ export default {
         this.cartQuantity = this.cartQuantity += this.cartLocal[i]['quantity'];
         this.total = this.total += this.cartLocal[i]['price'] * this.cartLocal[i]['quantity'];
       }
+    }
+    // 로그인 상태값 저장
+    console.log(document.cookie.split('=')[1]);
+    console.log(this.isLogin);
+    if (document.cookie.split('=')[1] == 'true') {
+      this.isLogin = '1';
+      console.log(this.isLogin);
+    } else {
+      this.isLogin = '0';
+      console.log(this.isLogin);
     }
   },
 };

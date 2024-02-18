@@ -100,14 +100,16 @@
               />
             </div>
 
-            <!-- 약관 -->
+            <!-- 약관동의 -->
             <div class="policy-check-box">
               <div class="policy-all-check">
-                <div class="agree-all">
+                <!-- 모두 동의 -->
+                <div class="agree-all" @click="allChk()">
                   <input type="checkbox" name="all-check" id="all-check" />
                   <label class="chk-label" for="all-check">모두 동의합니다.</label>
                 </div>
               </div>
+              <!-- 필수 동의 -->
               <div class="policy-each-check">
                 <div class="check-field">
                   <input type="checkbox" name="policy-age" id="policy-age" />
@@ -128,6 +130,7 @@
                     동의합니다.</label
                   >
                 </div>
+                <!-- 선택 동의 -->
                 <div class="check-field">
                   <input type="checkbox" name="policy-privacy-optional" id="policy-privacy-optional" />
                   <label class="chk-label" for="policy-privacy-optional"
@@ -184,6 +187,8 @@ export default {
       if (localStorage.getItem('join') == null) {
         this.joinSet.push(joinData);
         localStorage.setItem('join', JSON.stringify(this.joinSet));
+        // 로그인 페이지로 이동
+        window.location.href = 'http://localhost:8080/login';
       } else {
         this.joinGet = JSON.parse(localStorage.getItem('join'));
         if (
@@ -198,6 +203,16 @@ export default {
         }
       }
     },
+    allChk() {
+      let a = document.querySelectorAll(".policy-each-check input[type='checkbox']");
+      for (let i = 0; i < a.length; i++) {
+        a[i].checked = true;
+      }
+    },
+  },
+  mounted() {
+    // 스크롤 상단 고정
+    window.scrollTo(0, 0);
   },
 };
 </script>
