@@ -37,11 +37,9 @@
                 id="signUpPhone"
                 class="form-input"
                 placeholder="핸드폰 번호 입력 (ex. 01012345678)"
-                pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
                 maxlength="14"
                 @change="
                   (e) => {
-                    phoneChange();
                     phone = e.target.value;
                   }
                 "
@@ -105,26 +103,26 @@
           <div class="policy-check-box">
             <div class="policy-all-check">
               <!-- 모두 동의 -->
-              <div class="agree-all">
-                <input type="checkbox" name="all-check" id="all-check" @input="allChk()" />
+              <div class="agree-all" @input="allChk()">
+                <input type="checkbox" name="all-check" id="all-check" />
                 <label class="chk-label" for="all-check">모두 동의합니다.</label>
               </div>
             </div>
-            <!-- 필수 동의 -->
-            <div class="policy-each-check">
+            <div class="policy-each-check" @input="eachChk()">
+              <!-- 필수 동의 -->
               <div class="check-field">
-                <input type="checkbox" name="policy-age" id="policy-age" @input="eachChk()" />
+                <input type="checkbox" name="policy-age" id="policy-age" />
                 <label class="chk-label" for="policy-age">(필수) 본인은 만 14세 미만이 아닙니다.</label>
               </div>
               <div class="check-field">
-                <input type="checkbox" name="policy-termsOfUse" id="policy-termsOfUse" @input="eachChk()" />
+                <input type="checkbox" name="policy-termsOfUse" id="policy-termsOfUse" />
                 <label class="chk-label" for="policy-termsOfUse"
                   >(필수) <a href="https://www.tamburins.com/kr/terms-and-conditions/" target="_blank">이용약관</a>에
                   동의합니다.</label
                 >
               </div>
               <div class="check-field">
-                <input type="checkbox" name="policy-privacy" id="policy-privacy" @input="eachChk()" />
+                <input type="checkbox" name="policy-privacy" id="policy-privacy" />
                 <label class="chk-label" for="policy-privacy"
                   >(필수) <a href="https://www.tamburins.com/kr/privacy-policy/" target="_blank">개인정보처리방침</a>에
                   동의합니다.</label
@@ -132,7 +130,7 @@
               </div>
               <!-- 선택 동의 -->
               <div class="check-field">
-                <input type="checkbox" name="policy-privacy-optional" id="policy-privacy-optional" @input="eachChk()" />
+                <input type="checkbox" name="policy-privacy-optional" id="policy-privacy-optional" />
                 <label class="chk-label" for="policy-privacy-optional"
                   >(선택)
                   <a href="https://www.tamburins.com/kr/privacy-policy/" target="_blank"
@@ -141,7 +139,7 @@
                 >
               </div>
               <div class="check-field">
-                <input type="checkbox" name="policy-marketing" id="policy-marketing" @input="eachChk()" />
+                <input type="checkbox" name="policy-marketing" id="policy-marketing" />
                 <label class="chk-label" for="policy-marketing"
                   >(선택) 탬버린즈에서 제공하는 소식을 SMS, 이메일로 받겠습니다.</label
                 >
@@ -240,7 +238,7 @@ export default {
               this.joinGet = JSON.parse(localStorage.getItem('join'));
               if (
                 this.joinGet.findIndex((a) => {
-                  return a['name'] == this.name && (a['phone'] == this.phone || a['email'] == this.email);
+                  return a['email'] == this.email;
                 }) == -1
               ) {
                 this.joinGet.push(joinData);
@@ -266,15 +264,31 @@ export default {
       }
     },
 
+    // 약관 동의 체크박스(5개) 각자 클릭
     eachChk() {
       let allChkBox = document.querySelector('.policy-all-check input[type="checkbox"]');
-      // let b = document.querySelectorAll('.policy-each-check input[type="checkbox"]');
+      let b = document.querySelectorAll('.policy-each-check input[type="checkbox"]');
+
       if (event.target.checked == false) {
         allChkBox.checked = false;
+      } else {
+        let isChecked = [];
+
+        for (let i = 0; i < b.length; i++) {
+          isChecked.push(b[i].checked);
+        }
+
+        if (
+          isChecked.findIndex((a) => {
+            return a == false;
+          }) == -1
+        ) {
+          allChkBox.checked = true;
+        }
       }
-      
     },
   },
+
   mounted() {
     // 스크롤 상단 고정
     window.scrollTo(0, 0);

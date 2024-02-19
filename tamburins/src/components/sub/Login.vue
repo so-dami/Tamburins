@@ -38,26 +38,30 @@ export default {
   data() {
     return {};
   },
-  props: {},
   methods: {
     loginClick() {
-      let userEmail = document.querySelector('#loginEmail').value;
-      let userPw = document.querySelector('#loginPassword').value;
-      let userInfo = { email: userEmail, pw: userPw };
-      console.log(userInfo);
+      let userEmail = document.querySelector('#loginEmail');
+      let userPw = document.querySelector('#loginPassword');
 
       event.preventDefault();
 
       // 이메일 공백 체크
-      if (userInfo['email'] == '') {
+      if (userEmail.value == '') {
         alert('이메일을 입력해 주세요.');
       }
+
       // 비밀번호 공백 체크
-      if (userInfo['pw'] == '') {
+      else if (userPw.value == '') {
         alert('비밀번호를 입력해 주세요.');
       }
+
       // 이메일, 비밀번호가 공백이 아닐 때
-      if (userInfo['email'] != '') {
+      if (userEmail.value != '' && userPw.value != '') {
+        if (localStorage.getItem('join') == null) {
+          alert('일치하는 회원정보가 없습니다.');
+          userEmail.value = '';
+          userPw.value = '';
+        }
         // 이메일 일치 여부
         if (localStorage.getItem('join') != null) {
           let infoGet = JSON.parse(localStorage.getItem('join'));
@@ -67,6 +71,7 @@ export default {
             }) == -1
           ) {
             alert('존재하지 않는 이메일입니다.');
+            userEmail.value = '';
           } else {
             // 비밀번호 일치 여부
             if (
@@ -75,10 +80,17 @@ export default {
               }) == -1
             ) {
               alert('비밀번호를 확인해 주세요.');
+              userPw.value = '';
             }
             // 로그인 성공
             else {
-              alert('TAMBURINS에 오신 것을 환영합니다!');
+              alert(
+                infoGet[
+                  infoGet.findIndex((a) => {
+                    return a['email'] == userEmail;
+                  })
+                ]['name'] + '님 TAMBURINS에 오신 것을 환영합니다!'
+              );
               document.cookie = 'login=true; expires';
               window.location.href = 'http://localhost:8080';
             }
