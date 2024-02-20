@@ -89,7 +89,7 @@ export default {
                   infoGet.findIndex((a) => {
                     return a['email'] == userEmail.value;
                   })
-                ]['name'] + '님 TAMBURINS에 오신 것을 환영합니다!'
+                ]['name'] + '님, TAMBURINS에 오신 것을 환영합니다!'
               );
 
               // 쿠키 저장
@@ -97,7 +97,7 @@ export default {
 
               // 홈으로 이동
               // window.location.href = 'http://localhost:8080';
-              this.$router.push('/');
+              this.$router.push({ path: '/' });
             }
           }
         }

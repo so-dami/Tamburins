@@ -232,9 +232,12 @@ export default {
             if (localStorage.getItem('join') == null) {
               this.joinSet.push(joinData);
               localStorage.setItem('join', JSON.stringify(this.joinSet));
+
+              alert('회원가입이 완료되었습니다.');
+
               // 로그인 페이지로 이동
               // window.location.href = 'http://localhost:8080/login';
-              this.$router.push('/login')
+              this.$router.push({ path: '/login' });
             } else {
               this.joinGet = JSON.parse(localStorage.getItem('join'));
               if (
