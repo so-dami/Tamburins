@@ -32,6 +32,7 @@
       @cartLocal="cartLocal = $event"
       @openCart="cartClick = true"
       @total="total = $event"
+      @login="isLogin = true"
     ></router-view>
 
     <!-- 하단 -->

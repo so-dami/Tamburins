@@ -38,6 +38,7 @@ export default {
   data() {
     return {};
   },
+  props: {},
   methods: {
     loginClick() {
       let userEmail = document.querySelector('#loginEmail');
@@ -94,6 +95,8 @@ export default {
 
               // 쿠키 저장
               document.cookie = 'login=true; expires';
+
+              this.$emit('login');
 
               // 홈으로 이동
               // window.location.href = 'http://localhost:8080';
