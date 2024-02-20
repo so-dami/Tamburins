@@ -67,7 +67,7 @@ export default {
           let infoGet = JSON.parse(localStorage.getItem('join'));
           if (
             infoGet.findIndex((a) => {
-              return a['email'] == userEmail;
+              return a['email'] == userEmail.value;
             }) == -1
           ) {
             alert('존재하지 않는 이메일입니다.');
@@ -76,7 +76,7 @@ export default {
             // 비밀번호 일치 여부
             if (
               infoGet.findIndex((a) => {
-                return a['password'] == userPw;
+                return a['password'] == userPw.value;
               }) == -1
             ) {
               alert('비밀번호를 확인해 주세요.');
@@ -87,12 +87,17 @@ export default {
               alert(
                 infoGet[
                   infoGet.findIndex((a) => {
-                    return a['email'] == userEmail;
+                    return a['email'] == userEmail.value;
                   })
                 ]['name'] + '님 TAMBURINS에 오신 것을 환영합니다!'
               );
+
+              // 쿠키 저장
               document.cookie = 'login=true; expires';
-              window.location.href = 'http://localhost:8080';
+
+              // 홈으로 이동
+              // window.location.href = 'http://localhost:8080';
+              this.$router.push('/');
             }
           }
         }

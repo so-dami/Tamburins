@@ -233,7 +233,8 @@ export default {
               this.joinSet.push(joinData);
               localStorage.setItem('join', JSON.stringify(this.joinSet));
               // 로그인 페이지로 이동
-              window.location.href = 'http://localhost:8080/login';
+              // window.location.href = 'http://localhost:8080/login';
+              this.$router.push('/login')
             } else {
               this.joinGet = JSON.parse(localStorage.getItem('join'));
               if (

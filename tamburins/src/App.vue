@@ -19,7 +19,7 @@
       :cartLocal="cartLocal"
       :isLogin="isLogin"
       @openCart="cartClick = true"
-      @logout="isLogin = $event"
+      @logout="isLogin = false"
     ></Header>
 
     <!-- 메인 -->
@@ -61,7 +61,7 @@ export default {
       cartQuantity: 0,
       cartLocal: [],
       total: 0,
-      isLogin: 0,
+      isLogin: false,
     };
   },
   components: {
@@ -81,15 +81,15 @@ export default {
         this.total = this.total += this.cartLocal[i]['price'] * this.cartLocal[i]['quantity'];
       }
     }
+
     // 로그인 상태값 저장
-    console.log(document.cookie.split('=')[1]);
-    console.log(this.isLogin);
+    console.log('cookie value:', document.cookie.split('=')[1]);
     if (document.cookie.split('=')[1] == 'true') {
-      this.isLogin = 1;
-      console.log(this.isLogin);
+      this.isLogin = true;
+      console.log('login:', this.isLogin);
     } else {
-      this.isLogin = 0;
-      console.log(this.isLogin);
+      this.isLogin = false;
+      console.log('login:', this.isLogin);
     }
   },
 };
