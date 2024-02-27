@@ -84,14 +84,17 @@
                 () => {
                   if (sizeClick[0] == 1) {
                     price = prdData[num]['prdInfo']['price'][0];
-                    quantity[0]++;
-                    prdQuantity = quantity[0];
-                    id = prdData[num]['id']+'-0';
+                    // quantity[0]++;
+                    // $store.state.quantity[0]
+                    $store.commit('quantitySet', 0);
+                    prdQuantity = $store.state.quantity[0];
+                    id = prdData[num]['id'] + '-0';
                   } else {
                     price = prdData[num]['prdInfo']['price'][1];
-                    quantity[1]++;
-                    prdQuantity = quantity[1];
-                    id = prdData[num]['id']+'-1';
+                    // quantity[1]++;
+                    $store.commit('quantitySet', 1);
+                    prdQuantity = $store.state.quantity[1];
+                    id = prdData[num]['id'] + '-1';
                   }
                   name = prdData[num]['prdInfo']['name'];
                   cartImg = prdData[num]['img']['thumbnail'];

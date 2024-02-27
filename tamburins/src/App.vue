@@ -51,6 +51,7 @@ import prdData from './assets/js/prdData.js';
 import categoryData from './assets/js/categoryData.js';
 import storeData from './assets/js/storeData.js';
 
+
 export default {
   name: 'App',
   data() {
