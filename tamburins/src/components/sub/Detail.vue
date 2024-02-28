@@ -84,16 +84,13 @@
                 () => {
                   if (sizeClick[0] == 1) {
                     price = prdData[num]['prdInfo']['price'][0];
-                    // quantity[0]++;
-                    // $store.state.quantity[0]
-                    $store.commit('quantitySet', 0);
-                    prdQuantity = $store.state.quantity[0];
+                    quantity[0] = 1;
+                    prdQuantity = quantity[0];
                     id = prdData[num]['id'] + '-0';
                   } else {
                     price = prdData[num]['prdInfo']['price'][1];
-                    // quantity[1]++;
-                    $store.commit('quantitySet', 1);
-                    prdQuantity = $store.state.quantity[1];
+                    quantity[1] = 1;
+                    prdQuantity = quantity[1];
                     id = prdData[num]['id'] + '-1';
                   }
                   name = prdData[num]['prdInfo']['name'];
@@ -230,12 +227,13 @@ export default {
           this.localGet.push(localData);
           localStorage.setItem('cart', JSON.stringify(this.localGet));
         } else {
-          this.localGet[
-            this.localGet.findIndex((a) => {
-              return a['name'] == this.name && a['price'] == this.price;
-            })
-          ]['quantity']++;
-          localStorage.setItem('cart', JSON.stringify(this.localGet));
+          // this.localGet[
+          //   this.localGet.findIndex((a) => {
+          //     return a['name'] == this.name && a['price'] == this.price;
+          //   })
+          // ]['quantity']++;
+          // localStorage.setItem('cart', JSON.stringify(this.localGet));
+          alert('장바구니에 담겨있는 상품입니다. 장바구니에서 수량을 변경해 주세요.')
         }
       }
       let newQuantity = 0;
