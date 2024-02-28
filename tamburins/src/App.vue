@@ -93,6 +93,12 @@ export default {
       this.isLogin = false;
       console.log('login:', this.isLogin);
     }
+
+    // 테스트용 회원정보 저장
+    // localStorage.setItem(
+    //   'join',
+    //   JSON.stringify({ name: '테스트', phone: '01012345678', email: 'abc@naver.com', password: '1111' })
+    // );
   },
 };
 </script>
