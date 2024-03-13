@@ -120,7 +120,7 @@
                 "
               >
                 <div class="info-subject-bx">
-                  <span class="info-subject"> 온라인 단독 혜택 </span>
+                  <span class="info-subject">온라인 단독 혜택</span>
                   <span class="info-arrow" v-if="infoClick[0] == 0">+</span>
                   <span class="info-arrow" v-if="infoClick[0] == 1">-</span>
                 </div>
